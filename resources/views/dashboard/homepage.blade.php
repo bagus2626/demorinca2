@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -40,13 +39,13 @@
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">Tracking</a></li>
-          <li><a href="#services">Regulasi</a></li>
+          <li><a href="#regulasi">Regulasi</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#about">Get Started</a>
+      <a class="btn-getstarted" href="#about">Signin</a>
 
     </div>
   </header>
@@ -59,24 +58,20 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <h1>Better Solutions For Your Business</h1>
-            <p>We are team of talented designers making websites with Bootstrap</p>
-            <div class="footer-newsletter">
-              <div class="container">
-                <div class="row justify-content-center text-center">
-                  <div class="col-lg-6">
-                    <h4>Join Our Newsletter</h4>
-                    <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-                    <form action="forms/newsletter.php" method="post" class="php-email-form">
-                      <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-                    </form>
-                  </div>
-                </div>
+            <h1>PT. Rinca Karya Cipta</h1>
+            <p>konsultan perencanaan 
+              arsitek dan pengurusan perizinan bangunan gedung yang 
+              sudah memiliki lisensi.</p>
+           <form action="">
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Nomer dokumen">
+              </div>
+              <div class="col">
+                <button type="submit" class="btn text-dark ps-3 pe-3" style="background-color: #ffffff"><i class="bi bi-search"></i></button>
               </div>
             </div>
+           </form>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
@@ -130,14 +125,13 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/rosalia-indah.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/cozy-coliving.jpeg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/flimty.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/alva.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/ultra-sakti.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/imcp.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/eco-spirit.jpg" class="img-fluid" alt=""></div>
           </div>
         </div>
 
@@ -150,7 +144,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Us</h2>
+        <h2>Tentang Kami</h2>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -158,20 +152,26 @@
         <div class="row gy-4">
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <h4>
+              Visi
+            </h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Menjadi Konsultan Enjiniring yang Handal, Cakap, dan Meme- gang Teguh Sustatainable Desain Untuk Keberlangsungan 
+              Bumi Beserta Isinya
             </p>
-            <ul>
-              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo</span></li>
-            </ul>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            <h4>
+              Misi
+            </h4>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>Mengembangkan Karya Enjiniring Indonesia yang Berkualitas.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Menyediakan produk/ jasa Konsultan Enjiniring, Manajemen Proyek yang unggul dan berkesinambungan.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Memberikan manfaat dan nilai tambah untuk Masyarakat sekitar.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Memberdayakan pengetahuan, pengalaman, dan kreativitas untuk terciptanya solusi terbaik, dengan tidak lupa memegang teguh komitmen dan keper.</span></li>
+            </ul>
+
           </div>
 
         </div>
@@ -179,6 +179,124 @@
       </div>
 
     </section><!-- /About Section -->
+
+    <section id="direktur" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Direktur</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 content" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/personal/default.jfif" alt="" class="img-fluid">
+            <h5 class="mt-3">
+              DAWIN MUHAMAD YUSUF
+            </h5>
+            <p>
+              Direktur & Tenaga Ahli Struktur
+            </p>
+            <p>
+              PT Rinca Cipta Karya merupakan konsultan enjiniring yang mayoritas bergerak 
+              dibidang Arsitektural dan Sipil. PT Rinca 
+              Cipta Karya senantiasa menyempurnakan kemampuan terus menerus, untuk 
+              menyiapkan enjinir-enjinir muda dapat 
+              bersaing dalam taraf Internasional.
+            </p>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <p>
+              Dalam peningkatan dan pertumbuhan penjualan 
+              dan laba, Rinca Cipta Karya memperkuat bisnis 
+              yang ada, bidang-bidang proyek baru dan menamabah bisnis baru di bidang engineering, interior, 
+              dan perizinan bangunan gedung. Rinca Cipta 
+              Karya terus menyempurnakan produk dan layanan 
+              dengan harga kompetitif, agar seluruh masyarakat dapat mendapatkan manfaat yang adil.
+            </p>
+            <p>
+              Pengembangan dan penyempurnaan terus 
+              menerus kami lakukan, seperti teknologi informasi 
+              yang menjadikan seluruh aktivitas lebih terkelola 
+              secara terintegrasi, efisien, transparan, dan akuntable. PT Rinca Cipta Karya berkomitmen menjadi 
+              konsultan yang sustainable dibangun dengan 
+              pemahaman dan komitmen kuat di dalam peningkatan kualitas karyawan dengan peningkatan 
+              kompetensi dan kemampuan
+            </p>
+            <p>
+              Kepemimpinan menjadi sangat berperan didalam 
+              menentukan kinerja dan kerberhasilan perusahaan. Program pengembangan SDM dirumuskan 
+              dan dijalankan secara sungguh-sungguh dan 
+              berkesinambungan.
+            </p>
+            <p>
+              PT Rinca Cipta Karya merupakan konsultan yang 
+              diproyeksikan menjadi salah satu terbaik di Indonesia, PT Rinca Cipta Karya senantiasa memegang teguh filosofi untuk PASTI MEMBERIKAN 
+              JASA TERBAIK UNTUK SELURUH KLIEN, dengan 
+              penuh Amanah, Kompeten, Kolaboratif, Adaptif, 
+              dan Loyal.
+            </p>
+           
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Informasi seputar pelayanan</h2>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-speedometer2 icon"></i></div>
+                <h4><a href="" class="stretched-link">Informasi Perizinan</a></h4>
+                <p>Informasi seputar masing-masing perizinan yang ada</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-globe icon"></i></div>
+                <h4><a href="" class="stretched-link">Layanan Perizinan Berusaha</a></h4>
+                <p>Perizinan Berusaha Berbasis Risiko</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-file-text icon"></i></div>
+                <h4><a href="" class="stretched-link">Layanan Pengaduan</a></h4>
+                <p>Anda dapat melakukan pengaduan terhadap pelayanan kami</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-globe-asia-australia icon"></i></div>
+                <h4><a href="" class="stretched-link">Jadwal Konsultasi</a></h4>
+                <p>Pemesanan jadwal untuk konsultasi secara tatap muka</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Services Section -->
 
     <!-- Why Us Section -->
     <section id="why-us" class="section why-us light-background" data-builder="section">
@@ -237,112 +355,32 @@
     </section><!-- /Why Us Section -->
 
     <!-- Skills Section -->
-    <section id="skills" class="skills section">
+    <section id="skills" class="skills section" style="background-color: #e2e0e0">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Legalitas Perusahaan</h2>
+        <p>CORPORATE MEMBERSHIP</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-
-          <div class="col-lg-6 d-flex align-items-center">
-            <img src="assets/img/skills.png" class="img-fluid" alt="">
+        <div class="row justify-content=center">
+          <div class="col-lg-6 pt-4 pt-lg-0 content text-center">
+            <img src="assets/img/sertifikat/1.png" class="img-fluid" alt="">
+            <h5 class="mt-3">PERKINDO DKI JAKARTA</h5>
+            <p class="fst-italic">Keanggotaan Persatuan Konsultan IndonesiaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-
-          <div class="col-lg-6 pt-4 pt-lg-0 content">
-
-            <h3>Voluptatem dignissimos provident quasi corporis voluptas</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-
-            <div class="skills-content skills-animation">
-
-              <div class="progress">
-                <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-            </div>
-
+          <div class="col-lg-6 pt-4 pt-lg-0 content text-center">
+            <img src="assets/img/sertifikat/2.png" class="img-fluid" alt="">
+              <h5 class="mt-3">SERTIFIKAT BADAN USAHA 
+                JASA KONSTRUKSI</h5>
+              <p class="fst-italic">Kami telah legal dan tersertifikasi</p>
           </div>
         </div>
-
       </div>
 
     </section><!-- /Skills Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section light-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-              <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
@@ -370,112 +408,199 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Proyek Kami</h2>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
-
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/1.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>PT Sun Tak Indonesia</h4>
+                <p>Pengujian bangunan gedung untuk perizinan 
+                  Sertifikat Laik Fungsi dan PBG Penambahan 
+                  Bangunan Gedung</p>
+                <a href="assets/img/projects/1.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/2.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>Perumahan Grand Cimandala Residence</h4>
+                <p>Pengujian bangunan gedung untuk perizinan 
+                  Sertifikat Laik Fungsi.</p>
+                <a href="assets/img/projects/2.png" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/3.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>Royal Tulip Luxury Hotels</h4>
+                <p>Pengujian bangunan gedung untuk perizinan 
+                  Sertifikat Laik Fungsi.</p>
+                <a href="assets/img/projects/3.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/4.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>PT Ultra Sakti</h4>
+                <p>Penyusunan DED untuk perizinan Industri 
+                  PT Ultra Sakti Narogong Kab. Bogor.</p>
+                <a href="assets/img/projects/4.png" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/5.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>Asimetri Coffe</h4>
+                <p>Pengujian bangunan gedung untuk perizinan 
+                  Sertifikat Laik Fungsi.</p>
+                <a href="assets/img/projects/5.png" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/6.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>Perumahan Cikeas River Side</h4>
+                <p>Pengujian bangunan gedung untuk perizinan 
+                  Sertifikat Laik Fungsi.</p>
+                <a href="assets/img/projects/6.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/7.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>COZY CO-LIVING JELAMBAR</h4>
+                <p>Pengejaan DED dan Parizinan Mendirikan 
+                  Banguna</p>
+                <a href="assets/img/projects/7.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/8.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>Pergudangan Sigma Kartika Gunung Sindur</h4>
+                <p>Pengujian bangunan gedung untuk perizinan 
+                  Sertifikat Laik Fungsi.</p>
+                <a href="assets/img/projects/8.png" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/9.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>PT Dalya Citramandiri</h4>
+                <p>Review DED dan Pembuatan Kajian Arsitektur 
+                  untuk perencanaan Industri</p>
+                <a href="assets/img/projects/9.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/projects/10.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SDIT Kharisma Azzahra Bogor</h4>
+                <p>Pengujian Bangunan untuk proses perizinan Sertifikat Laik Fungsi dan Persetujuan Bangunan 
+                  Gedung</p>
+                <a href="assets/img/projects/10.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/projects/11.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>PT Electra Mobilitas Indonesia</h4>
+                <p>Pengujian bangunan gedung untuk keperluan 
+                  Sertifikasi Bangunan Gedung</p>
+                <a href="assets/img/projects/11.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/projects/12.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>PT SiSeSa Berkah Illahi</h4>
+                <p>Pengujian bangunan gedung untuk keperluan 
+                  Sertifikasi Bangunan Gedung dan Persetujuan 
+                  Bangunan Gedung
+                  </p>
+                <a href="assets/img/projects/12.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/projects/13.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>PT Ultra Sakti</h4>
+                <p>Review Gambar untuk Pengajuan Persetujuan 
+                  Bangunan Gedung plant Narogong
+                  </p>
+                <a href="assets/img/projects/13.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/projects/14.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SMK Muhammadiyah Cariu</h4>
+                <p>Pengujian bangunan gedung untuk perizinan 
+                  Sertifikat Laik Fungsi 
+                  </p>
+                <a href="assets/img/projects/14.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/projects/15.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Yayasan Al Ustmani</h4>
+                <p>Pengujian bangunan gedung untuk proses 
+                  perizinan Sertifikat Laik Fungi dan Persetujuan 
+                  Bangunan
+                  </p>
+                <a href="assets/img/projects/15.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/projects/16.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Puspanita Eco Spirit Center</h4>
+                <p>Pengujian bangunan gedung utnuk perizinan 
+                  Sertifikat Laik Fungsi
+                  </p>
+                <a href="assets/img/projects/16.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
 
           </div><!-- End Portfolio Container -->
 
@@ -754,13 +879,13 @@
     </section><!-- /Testimonials Section -->
 
     <!-- Faq 2 Section -->
-    <section id="faq-2" class="faq-2 section light-background">
+    <section id="regulasi" class="faq-2 section light-background">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+        <h2>Ruang Lingkup Usaha</h2>
+        <p>Dalam menjalankan kegiatan pelayanannya, PT Rinca Cipta Karya mempunyai bidang/ layanan jasa konsultasi
+          Konstruksi dan jasa Konsultansi Non Konstruksi, berikut layanan kami :</p>
+      </div>
 
       <div class="container">
 
@@ -770,50 +895,58 @@
 
             <div class="faq-container">
 
-              <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
+              {{-- <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                <h3>LAYANAN JASA KONSULTANSI KONSTRUKSI</h3>
+                <div class="faq-content d-flex">
+                  <p>
+                    1. Arsitektur <br>
+                    2. Sipil <br>
+                    3. Mekanikal <br>
+                    4. Elektrikal <br>
+                    5. Tata Lingkungan <br>
+                    6. Jasa Survey <br>
+                    7. Jasa Analisis Engineering <br>
+                    8. Jasa Inspeksi Teknis <br>
+                    9. Jasa Manajemen Proyek <br>
+                    10. Jasa Engineering Terpadu
+                  </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div><!-- End Faq item--> --}}
 
               <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                <h3>Peraturan Daerah</h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>
+                    1. perda no.1 th.2018 tentang penyelenggaraan pasar rakyat, pusat perbelanjaan & toko swalayan <a href="">Download file</a> <br>
+                    2. perda no.6 th.2018 tentang pembentukan produk hukum daerah <a href="">Download file</a> <br>
+                    3. Perda no.7 thn 2011 tentang pajak daerah <a href="">Download file</a> <br>
+                    4. perda no.8 th.2011 tentang retribusi jasa umum <a href="">Download file</a> <br>
+                    5. perda no.9 th.2011 tentang retibusi jasa usaha <a href="">Download file</a> <br>
+                    6. perda no.10 th.2017 tentang rencana detail tata ruang bagian wilayah perkotaan & peraturan zonasi kota blitar <a href="">Download file</a>
+                  </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
 
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <h3>Peraturan Kementrian</h3>
                 <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                  <p>
+                    1. peraturan menteri pariwisata no.10 th.2018 tentang pelayanan perizinan berusaha terintegrasi elektronik <a href="">Download file</a> <br>
+                    2. perda no.6 th.2018 tentang pembentukan produk hukum daerah <a href="">Download file</a> <br>
+                    3. Perda no.7 thn 2011 tentang pajak daerah <a href="">Download file</a> <br>
+                    4. perda no.8 th.2011 tentang retribusi jasa umum <a href="">Download file</a> <br>
+                    5. perda no.9 th.2011 tentang retibusi jasa usaha <a href="">Download file</a> <br>
+                    6. perda no.10 th.2017 tentang rencana detail tata ruang bagian wilayah perkotaan & peraturan zonasi kota blitar <a href="">Download file</a>
+                  </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
 
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
-                <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
 
             </div>
 
@@ -830,8 +963,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Hubungi Kami</h2>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -841,64 +973,43 @@
           <div class="col-lg-5">
 
             <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.5624528337447!2d112.16834631432412!3d-8.108395183086332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78d18c3b8df4ad%3A0x16f3916d2c7bc34a!2sJl.%20Jawa%20No.64%2C%20Sananwetan%2C%20Kec.%20Sananwetan%2C%20Kota%20Blitar%2C%20Jawa%20Timur%2066137%2C%20Indonesia!5e0!3m2!1sid!2sid!4v1595486361965!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
 
           <div class="col-lg-7">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+              <div class="row">
 
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                <div class="col-md-12">
+                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                    <div>
+                      <h3>Alamat</h3>
+                      <p>Jl Nangka (Rafika Village 2 No.B8), Kel. Pasir Putih, Kec. Sawangan, Kota Depok</p>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                <div class="col-md-12">
+                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bi bi-telephone flex-shrink-0"></i>
+                    <div>
+                      <h3>Telpon</h3>
+                      <p>+62856-1652-206</p>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-envelope flex-shrink-0"></i>
+                    <div>
+                      <h3>Email</h3>
+                      <p>info@rincakonsultan.com</p>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
                 </div>
 
               </div>
@@ -912,86 +1023,6 @@
     </section><!-- /Contact Section -->
 
   </main>
-
-  <footer id="footer" class="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">Arsha</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-          <div class="social-links d-flex">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Arsha</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
