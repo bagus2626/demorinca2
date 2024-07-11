@@ -132,6 +132,12 @@
             <div class="swiper-slide"><img src="assets/img/clients/ultra-sakti.webp" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/imcp.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/eco-spirit.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/amaldi.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/crv.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/gcr.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/jr.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/rsj.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/sandimas.png" class="img-fluid" alt=""></div>
           </div>
         </div>
 
