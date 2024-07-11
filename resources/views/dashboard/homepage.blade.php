@@ -784,8 +784,8 @@
             <div class="faq-container">
 
             <div class="faq-item faq-active">
-
-                <h3> LAYANAN JASA KONSULTANSI KONSTRUKSI</h3>
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>LAYANAN JASA KONSULTANSI KONSTRUKSI</h3>
                 <div class="faq-content">
                   <p>
                     1. Arsitektur <br>
@@ -803,30 +803,10 @@
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>LAYANAN JASA KONSULTANSI KONSTRUKSI</h3>
-                <div class="faq-content d-flex">
-                  <p>
-                    1. Arsitektur <br>
-                    2. Sipil <br>
-                    3. Mekanikal <br>
-                    4. Elektrikal <br>
-                    5. Tata Lingkungan <br>
-                    6. Jasa Survey <br>
-                    7. Jasa Analisis Engineering <br>
-                    8. Jasa Inspeksi Teknis <br>
-                    9. Jasa Manajemen Proyek <br>
-                    10. Jasa Engineering Terpadu
-                  </p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="faq-item faq-active">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>LAYANAN JASA KONSULTANSI PERIZINAN KONSTRUKSI</h3>
-                <div class="faq-content d-flex">
+                <div class="faq-content">
                   <p>
                     1. Persetujuan Bangunan Gedung (PBG/IMB) <br>
                     2. Sertifikat Laik Fungsi (SLF) <br>
@@ -842,10 +822,10 @@
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
-               <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="faq-item faq-active">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>LAYANAN JASA KONSULTANSI & KONTRAKTOR DESAIN INTERIOR</h3>
-                <div class="faq-content d-flex">
+                <div class="faq-content">
                   <p>
                     Interior Design & Contractor Services
                   </p>
@@ -853,10 +833,10 @@
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
-               <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="faq-item faq-active">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>LAYANAN PENGEMBANGAN LAHAN, KAWASAN, & PROPERTI</h3>
-                <div class="faq-content d-flex">
+                <div class="faq-content">
                   <p>
                     Land, Estate, & Property Development Services
                   </p>
@@ -864,10 +844,10 @@
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="faq-item faq-active">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>LAYANAN JASA KONSULTANSI PERIZINAN NON-KONSTRUKSI</h3>
-                <div class="faq-content d-flex">
+                <div class="faq-content">
                   <p>
                     1. Izin Ketenaga Listrikan (IUJPTL & SBUJPTL) <br>
                     2. Izin Usaha Jasa Pertambangan (IUJP) <br>
@@ -878,8 +858,7 @@
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->     
-
+              </div><!-- End Faq item-->
 
             </div>
 
