@@ -59,8 +59,8 @@
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
             <h1>PT. Rinca Karya Cipta</h1>
-            <p>konsultan perencanaan 
-              arsitek dan pengurusan perizinan bangunan gedung yang 
+            <p>konsultan perencanaan
+              arsitek dan pengurusan perizinan bangunan gedung yang
               sudah memiliki lisensi.</p>
            <form action="">
             <div class="row">
@@ -156,7 +156,7 @@
               Visi
             </h4>
             <p>
-              Menjadi Konsultan Enjiniring yang Handal, Cakap, dan Meme- gang Teguh Sustatainable Desain Untuk Keberlangsungan 
+              Menjadi Konsultan Enjiniring yang Handal, Cakap, dan Meme- gang Teguh Sustatainable Desain Untuk Keberlangsungan
               Bumi Beserta Isinya
             </p>
           </div>
@@ -200,46 +200,46 @@
               Direktur & Tenaga Ahli Struktur
             </p>
             <p>
-              PT Rinca Cipta Karya merupakan konsultan enjiniring yang mayoritas bergerak 
-              dibidang Arsitektural dan Sipil. PT Rinca 
-              Cipta Karya senantiasa menyempurnakan kemampuan terus menerus, untuk 
-              menyiapkan enjinir-enjinir muda dapat 
+              PT Rinca Cipta Karya merupakan konsultan enjiniring yang mayoritas bergerak
+              dibidang Arsitektural dan Sipil. PT Rinca
+              Cipta Karya senantiasa menyempurnakan kemampuan terus menerus, untuk
+              menyiapkan enjinir-enjinir muda dapat
               bersaing dalam taraf Internasional.
             </p>
           </div>
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
             <p>
-              Dalam peningkatan dan pertumbuhan penjualan 
-              dan laba, Rinca Cipta Karya memperkuat bisnis 
-              yang ada, bidang-bidang proyek baru dan menamabah bisnis baru di bidang engineering, interior, 
-              dan perizinan bangunan gedung. Rinca Cipta 
-              Karya terus menyempurnakan produk dan layanan 
+              Dalam peningkatan dan pertumbuhan penjualan
+              dan laba, Rinca Cipta Karya memperkuat bisnis
+              yang ada, bidang-bidang proyek baru dan menamabah bisnis baru di bidang engineering, interior,
+              dan perizinan bangunan gedung. Rinca Cipta
+              Karya terus menyempurnakan produk dan layanan
               dengan harga kompetitif, agar seluruh masyarakat dapat mendapatkan manfaat yang adil.
             </p>
             <p>
-              Pengembangan dan penyempurnaan terus 
-              menerus kami lakukan, seperti teknologi informasi 
-              yang menjadikan seluruh aktivitas lebih terkelola 
-              secara terintegrasi, efisien, transparan, dan akuntable. PT Rinca Cipta Karya berkomitmen menjadi 
-              konsultan yang sustainable dibangun dengan 
-              pemahaman dan komitmen kuat di dalam peningkatan kualitas karyawan dengan peningkatan 
+              Pengembangan dan penyempurnaan terus
+              menerus kami lakukan, seperti teknologi informasi
+              yang menjadikan seluruh aktivitas lebih terkelola
+              secara terintegrasi, efisien, transparan, dan akuntable. PT Rinca Cipta Karya berkomitmen menjadi
+              konsultan yang sustainable dibangun dengan
+              pemahaman dan komitmen kuat di dalam peningkatan kualitas karyawan dengan peningkatan
               kompetensi dan kemampuan
             </p>
             <p>
-              Kepemimpinan menjadi sangat berperan didalam 
-              menentukan kinerja dan kerberhasilan perusahaan. Program pengembangan SDM dirumuskan 
-              dan dijalankan secara sungguh-sungguh dan 
+              Kepemimpinan menjadi sangat berperan didalam
+              menentukan kinerja dan kerberhasilan perusahaan. Program pengembangan SDM dirumuskan
+              dan dijalankan secara sungguh-sungguh dan
               berkesinambungan.
             </p>
             <p>
-              PT Rinca Cipta Karya merupakan konsultan yang 
-              diproyeksikan menjadi salah satu terbaik di Indonesia, PT Rinca Cipta Karya senantiasa memegang teguh filosofi untuk PASTI MEMBERIKAN 
-              JASA TERBAIK UNTUK SELURUH KLIEN, dengan 
-              penuh Amanah, Kompeten, Kolaboratif, Adaptif, 
+              PT Rinca Cipta Karya merupakan konsultan yang
+              diproyeksikan menjadi salah satu terbaik di Indonesia, PT Rinca Cipta Karya senantiasa memegang teguh filosofi untuk PASTI MEMBERIKAN
+              JASA TERBAIK UNTUK SELURUH KLIEN, dengan
+              penuh Amanah, Kompeten, Kolaboratif, Adaptif,
               dan Loyal.
             </p>
-           
+
           </div>
 
         </div>
@@ -255,11 +255,11 @@
         <div class="container section-title" data-aos="fade-up">
           <h2>Informasi seputar pelayanan</h2>
         </div><!-- End Section Title -->
-  
+
         <div class="container">
-  
+
           <div class="row gy-4">
-  
+
             <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
               <div class="service-item position-relative">
                 <div class="icon"><i class="bi bi-speedometer2 icon"></i></div>
@@ -267,7 +267,7 @@
                 <p>Informasi seputar masing-masing perizinan yang ada</p>
               </div>
             </div><!-- End Service Item -->
-  
+
             <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
               <div class="service-item position-relative">
                 <div class="icon"><i class="bi bi-globe icon"></i></div>
@@ -275,7 +275,7 @@
                 <p>Perizinan Berusaha Berbasis Risiko</p>
               </div>
             </div><!-- End Service Item -->
-  
+
             <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
               <div class="service-item position-relative">
                 <div class="icon"><i class="bi bi-file-text icon"></i></div>
@@ -283,7 +283,7 @@
                 <p>Anda dapat melakukan pengaduan terhadap pelayanan kami</p>
               </div>
             </div><!-- End Service Item -->
-  
+
             <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
               <div class="service-item position-relative">
                 <div class="icon"><i class="bi bi-globe-asia-australia icon"></i></div>
@@ -291,11 +291,11 @@
                 <p>Pemesanan jadwal untuk konsultasi secara tatap muka</p>
               </div>
             </div><!-- End Service Item -->
-  
+
           </div>
-  
+
         </div>
-  
+
       </section><!-- /Services Section -->
 
     <!-- Why Us Section -->
@@ -371,7 +371,7 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content text-center">
             <img src="assets/img/sertifikat/2.png" class="img-fluid" alt="">
-              <h5 class="mt-3">SERTIFIKAT BADAN USAHA 
+              <h5 class="mt-3">SERTIFIKAT BADAN USAHA
                 JASA KONSTRUKSI</h5>
               <p class="fst-italic">Kami telah legal dan tersertifikasi</p>
           </div>
@@ -421,8 +421,8 @@
               <img src="assets/img/projects/1.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>PT Sun Tak Indonesia</h4>
-                <p>Pengujian bangunan gedung untuk perizinan 
-                  Sertifikat Laik Fungsi dan PBG Penambahan 
+                <p>Pengujian bangunan gedung untuk perizinan
+                  Sertifikat Laik Fungsi dan PBG Penambahan
                   Bangunan Gedung</p>
                 <a href="assets/img/projects/1.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -433,7 +433,7 @@
               <img src="assets/img/projects/2.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Perumahan Grand Cimandala Residence</h4>
-                <p>Pengujian bangunan gedung untuk perizinan 
+                <p>Pengujian bangunan gedung untuk perizinan
                   Sertifikat Laik Fungsi.</p>
                 <a href="assets/img/projects/2.png" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -444,7 +444,7 @@
               <img src="assets/img/projects/3.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Royal Tulip Luxury Hotels</h4>
-                <p>Pengujian bangunan gedung untuk perizinan 
+                <p>Pengujian bangunan gedung untuk perizinan
                   Sertifikat Laik Fungsi.</p>
                 <a href="assets/img/projects/3.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -455,7 +455,7 @@
               <img src="assets/img/projects/4.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>PT Ultra Sakti</h4>
-                <p>Penyusunan DED untuk perizinan Industri 
+                <p>Penyusunan DED untuk perizinan Industri
                   PT Ultra Sakti Narogong Kab. Bogor.</p>
                 <a href="assets/img/projects/4.png" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -466,7 +466,7 @@
               <img src="assets/img/projects/5.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Asimetri Coffe</h4>
-                <p>Pengujian bangunan gedung untuk perizinan 
+                <p>Pengujian bangunan gedung untuk perizinan
                   Sertifikat Laik Fungsi.</p>
                 <a href="assets/img/projects/5.png" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -477,7 +477,7 @@
               <img src="assets/img/projects/6.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Perumahan Cikeas River Side</h4>
-                <p>Pengujian bangunan gedung untuk perizinan 
+                <p>Pengujian bangunan gedung untuk perizinan
                   Sertifikat Laik Fungsi.</p>
                 <a href="assets/img/projects/6.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -488,7 +488,7 @@
               <img src="assets/img/projects/7.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>COZY CO-LIVING JELAMBAR</h4>
-                <p>Pengejaan DED dan Parizinan Mendirikan 
+                <p>Pengejaan DED dan Parizinan Mendirikan
                   Banguna</p>
                 <a href="assets/img/projects/7.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -499,7 +499,7 @@
               <img src="assets/img/projects/8.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Pergudangan Sigma Kartika Gunung Sindur</h4>
-                <p>Pengujian bangunan gedung untuk perizinan 
+                <p>Pengujian bangunan gedung untuk perizinan
                   Sertifikat Laik Fungsi.</p>
                 <a href="assets/img/projects/8.png" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -510,7 +510,7 @@
               <img src="assets/img/projects/9.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>PT Dalya Citramandiri</h4>
-                <p>Review DED dan Pembuatan Kajian Arsitektur 
+                <p>Review DED dan Pembuatan Kajian Arsitektur
                   untuk perencanaan Industri</p>
                 <a href="assets/img/projects/9.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -521,7 +521,7 @@
               <img src="assets/img/projects/10.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>SDIT Kharisma Azzahra Bogor</h4>
-                <p>Pengujian Bangunan untuk proses perizinan Sertifikat Laik Fungsi dan Persetujuan Bangunan 
+                <p>Pengujian Bangunan untuk proses perizinan Sertifikat Laik Fungsi dan Persetujuan Bangunan
                   Gedung</p>
                 <a href="assets/img/projects/10.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -532,7 +532,7 @@
               <img src="assets/img/projects/11.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>PT Electra Mobilitas Indonesia</h4>
-                <p>Pengujian bangunan gedung untuk keperluan 
+                <p>Pengujian bangunan gedung untuk keperluan
                   Sertifikasi Bangunan Gedung</p>
                 <a href="assets/img/projects/11.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -543,8 +543,8 @@
               <img src="assets/img/projects/12.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>PT SiSeSa Berkah Illahi</h4>
-                <p>Pengujian bangunan gedung untuk keperluan 
-                  Sertifikasi Bangunan Gedung dan Persetujuan 
+                <p>Pengujian bangunan gedung untuk keperluan
+                  Sertifikasi Bangunan Gedung dan Persetujuan
                   Bangunan Gedung
                   </p>
                 <a href="assets/img/projects/12.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
@@ -556,7 +556,7 @@
               <img src="assets/img/projects/13.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>PT Ultra Sakti</h4>
-                <p>Review Gambar untuk Pengajuan Persetujuan 
+                <p>Review Gambar untuk Pengajuan Persetujuan
                   Bangunan Gedung plant Narogong
                   </p>
                 <a href="assets/img/projects/13.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
@@ -568,8 +568,8 @@
               <img src="assets/img/projects/14.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>SMK Muhammadiyah Cariu</h4>
-                <p>Pengujian bangunan gedung untuk perizinan 
-                  Sertifikat Laik Fungsi 
+                <p>Pengujian bangunan gedung untuk perizinan
+                  Sertifikat Laik Fungsi
                   </p>
                 <a href="assets/img/projects/14.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -580,8 +580,8 @@
               <img src="assets/img/projects/15.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Yayasan Al Ustmani</h4>
-                <p>Pengujian bangunan gedung untuk proses 
-                  perizinan Sertifikat Laik Fungi dan Persetujuan 
+                <p>Pengujian bangunan gedung untuk proses
+                  perizinan Sertifikat Laik Fungi dan Persetujuan
                   Bangunan
                   </p>
                 <a href="assets/img/projects/15.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
@@ -593,7 +593,7 @@
               <img src="assets/img/projects/16.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Puspanita Eco Spirit Center</h4>
-                <p>Pengujian bangunan gedung utnuk perizinan 
+                <p>Pengujian bangunan gedung utnuk perizinan
                   Sertifikat Laik Fungsi
                   </p>
                 <a href="assets/img/projects/16.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
@@ -1011,7 +1011,7 @@
                 </div>
 
                 </div>
-
+            </form>
               </div>
             </form>
           </div><!-- End Contact Form -->
