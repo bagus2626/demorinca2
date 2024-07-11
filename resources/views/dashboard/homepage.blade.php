@@ -831,6 +831,15 @@
 
             <div class="faq-container">
 
+            <div class="faq-item faq-active">
+
+                <h3><span>01</span> Non consectetur a erat nam at lectus urna duis?</h3>
+                <div class="faq-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
               <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>LAYANAN JASA KONSULTANSI KONSTRUKSI</h3>
@@ -902,7 +911,7 @@
                     3. Jasa Pendirian Perusahaan (CV, PT, atau Yayasan) <br>
                     4. Jasa Sertifikasi Tingkat Komponan Dalam Negeri (TKDN) <br>
                     5. Jasa Pendampingan OSS Berbasis Resiko <br>
-                    6. Jasa Layanan Perpajakan (PKP & SPPKP) 
+                    6. Jasa Layanan Perpajakan (PKP & SPPKP)
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -934,7 +943,7 @@
           <div class="col-lg-5">
 
             <div class="info-wrap">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.5624528337447!2d112.16834631432412!3d-8.108395183086332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78d18c3b8df4ad%3A0x16f3916d2c7bc34a!2sJl.%20Jawa%20No.64%2C%20Sananwetan%2C%20Kec.%20Sananwetan%2C%20Kota%20Blitar%2C%20Jawa%20Timur%2066137%2C%20Indonesia!5e0!3m2!1sid!2sid!4v1595486361965!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.726493099638!2d106.78374157441282!3d-6.429172562870289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e969ec75ef31%3A0x15233b52721e5447!2sRafika%20village%202!5e0!3m2!1sid!2sid!4v1720713300480!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
 
