@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
 use App\Models\Document;
+use App\Models\LogDocument;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Date;
 
 class DocumentController extends Controller
 {
@@ -15,7 +19,8 @@ class DocumentController extends Controller
      */
     public function index()
     {
-        //
+        $data = DB::table('documents')->get();
+        return view('admin.test', compact('data'));
     }
 
     /**
@@ -36,7 +41,26 @@ class DocumentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $validatedData = $request->validate([
+                'no_registrasi_sistem_simbg' => 'required', 
+                'nama_pemohon' => 'required'
+            ]);
+            $validatedData['tanggal'] = Date::now();
+            $validatedData['token'] = 'DR' . rand(111111, 999999);
+
+            $data = Document::create($validatedData);
+            LogDocument::create([
+                'id_document' => $data->id,
+                'tanggal' => $request->date_start, 
+                'status' => 'Mulai'
+            ]);
+
+            return redirect()->route('documents.index')->with('success', 'Berhasil menambahkan data dengan token : ' . $data->token);
+        } catch (\Throwable $th) {
+            Log::error('Error creating document: ', ['error' => $th->getMessage()]);
+            return response()->json(['error' => 'Failed to create document', 'message' => $th->getMessage()], 500);
+        }
     }
 
     /**

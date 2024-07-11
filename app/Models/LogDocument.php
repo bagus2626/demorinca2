@@ -5,14 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Document extends Model
+class LogDocument extends Model
 {
     use HasFactory;
-    protected $table = 'documents';
-
+    protected $table = 'log_documents';
     protected $guarded = ['id'];
 
-    public function logDocuments() {
-        return $this->hasMany(LogDocument::class, 'id_document', 'id');
+    public function documents() {
+        return $this->belongsTo(Document::class);
     }
 }
