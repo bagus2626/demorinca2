@@ -831,7 +831,7 @@
 
             <div class="faq-container">
 
-              {{-- <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>LAYANAN JASA KONSULTANSI KONSTRUKSI</h3>
                 <div class="faq-content d-flex">
@@ -849,39 +849,64 @@
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item--> --}}
+              </div><!-- End Faq item-->
 
               <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Peraturan Daerah</h3>
-                <div class="faq-content">
+                <h3>LAYANAN JASA KONSULTANSI PERIZINAN KONSTRUKSI</h3>
+                <div class="faq-content d-flex">
                   <p>
-                    1. perda no.1 th.2018 tentang penyelenggaraan pasar rakyat, pusat perbelanjaan & toko swalayan <a href="">Download file</a> <br>
-                    2. perda no.6 th.2018 tentang pembentukan produk hukum daerah <a href="">Download file</a> <br>
-                    3. Perda no.7 thn 2011 tentang pajak daerah <a href="">Download file</a> <br>
-                    4. perda no.8 th.2011 tentang retribusi jasa umum <a href="">Download file</a> <br>
-                    5. perda no.9 th.2011 tentang retibusi jasa usaha <a href="">Download file</a> <br>
-                    6. perda no.10 th.2017 tentang rencana detail tata ruang bagian wilayah perkotaan & peraturan zonasi kota blitar <a href="">Download file</a>
+                    1. Persetujuan Bangunan Gedung (PBG/IMB) <br>
+                    2. Sertifikat Laik Fungsi (SLF) <br>
+                    3. Dokumen Lingkungan (SPPL/ UKL-UPL/ Amdal) <br>
+                    4. Analisis Dampak Lalu Lintas (Andalalin) <br>
+                    5. SLO Lingkungan (B3/ IPAL) <br>
+                    6. Siteplan <br>
+                    7. Keterangan Rencana Kota/ Kabupaten <br>
+                    8. Kesesuaian Kegiatan Pemanfaatan Ruang (KKPR) <br>
+                    9. Surat Izin Pengambilan Air Tanah (SIPA)
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
+              </div><!-- End Faq item-->
+
+               <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>LAYANAN JASA KONSULTANSI & KONTRAKTOR DESAIN INTERIOR</h3>
+                <div class="faq-content d-flex">
+                  <p>
+                    Interior Design & Contractor Services
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+               <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>LAYANAN PENGEMBANGAN LAHAN, KAWASAN, & PROPERTI</h3>
+                <div class="faq-content d-flex">
+                  <p>
+                    Land, Estate, & Property Development Services
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
               <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Peraturan Kementrian</h3>
-                <div class="faq-content">
+                <h3>LAYANAN JASA KONSULTANSI PERIZINAN NON-KONSTRUKSI</h3>
+                <div class="faq-content d-flex">
                   <p>
-                    1. peraturan menteri pariwisata no.10 th.2018 tentang pelayanan perizinan berusaha terintegrasi elektronik <a href="">Download file</a> <br>
-                    2. perda no.6 th.2018 tentang pembentukan produk hukum daerah <a href="">Download file</a> <br>
-                    3. Perda no.7 thn 2011 tentang pajak daerah <a href="">Download file</a> <br>
-                    4. perda no.8 th.2011 tentang retribusi jasa umum <a href="">Download file</a> <br>
-                    5. perda no.9 th.2011 tentang retibusi jasa usaha <a href="">Download file</a> <br>
-                    6. perda no.10 th.2017 tentang rencana detail tata ruang bagian wilayah perkotaan & peraturan zonasi kota blitar <a href="">Download file</a>
+                    1. Izin Ketenaga Listrikan (IUJPTL & SBUJPTL) <br>
+                    2. Izin Usaha Jasa Pertambangan (IUJP) <br>
+                    3. Jasa Pendirian Perusahaan (CV, PT, atau Yayasan) <br>
+                    4. Jasa Sertifikasi Tingkat Komponan Dalam Negeri (TKDN) <br>
+                    5. Jasa Pendampingan OSS Berbasis Resiko <br>
+                    6. Jasa Layanan Perpajakan (PKP & SPPKP) 
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
+              </div><!-- End Faq item-->     
 
 
             </div>
