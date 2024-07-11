@@ -255,55 +255,7 @@
     </section>
 
       <!-- Services Section -->
-      <section id="services" class="services section light-background">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Informasi seputar pelayanan</h2>
-        </div><!-- End Section Title -->
-
-        <div class="container">
-
-          <div class="row gy-4">
-
-            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item position-relative">
-                <div class="icon"><i class="bi bi-speedometer2 icon"></i></div>
-                <h4><a href="" class="stretched-link">Informasi Perizinan</a></h4>
-                <p>Informasi seputar masing-masing perizinan yang ada</p>
-              </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-item position-relative">
-                <div class="icon"><i class="bi bi-globe icon"></i></div>
-                <h4><a href="" class="stretched-link">Layanan Perizinan Berusaha</a></h4>
-                <p>Perizinan Berusaha Berbasis Risiko</p>
-              </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-item position-relative">
-                <div class="icon"><i class="bi bi-file-text icon"></i></div>
-                <h4><a href="" class="stretched-link">Layanan Pengaduan</a></h4>
-                <p>Anda dapat melakukan pengaduan terhadap pelayanan kami</p>
-              </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-              <div class="service-item position-relative">
-                <div class="icon"><i class="bi bi-globe-asia-australia icon"></i></div>
-                <h4><a href="" class="stretched-link">Jadwal Konsultasi</a></h4>
-                <p>Pemesanan jadwal untuk konsultasi secara tatap muka</p>
-              </div>
-            </div><!-- End Service Item -->
-
-          </div>
-
-        </div>
-
-      </section><!-- /Services Section -->
-
+    
     <!-- Why Us Section -->
     <section id="why-us" class="section why-us light-background" data-builder="section">
 
@@ -314,35 +266,36 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
 
             <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-              <h3><span>Eum ipsam laborum deleniti </span><strong>velit pariatur architecto aut nihil</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
+              <h3><span>KEGIATAN USAHA UTAMA</span></h3>
             </div>
 
             <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
 
               <div class="faq-item faq-active">
 
-                <h3><span>01</span> Non consectetur a erat nam at lectus urna duis?</h3>
+                <h3><span>01</span> PERENCANAAN TATARUANG, BANGUNAN, DAN INDUSTRI</h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span>02</span> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                <h3><span>02</span> PERIZINAN BANGUNAN GEDUNG DAN INDUSTRI</h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span>03</span> Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <h3><span>03</span> DESAIN INTERIOR</h3>
                 <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>04</span>NON - KONSTRUKSI</h3>
+                <div class="faq-content">
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -837,10 +790,10 @@
 
             <div class="faq-container">
 
-              {{-- <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-item faq-active">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>LAYANAN JASA KONSULTANSI KONSTRUKSI</h3>
-                <div class="faq-content d-flex">
+                <div class="faq-content">
                   <p>
                     1. Arsitektur <br>
                     2. Sipil <br>
@@ -855,40 +808,64 @@
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item--> --}}
+              </div><!-- End Faq item-->
 
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="faq-item faq-active">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Peraturan Daerah</h3>
+                <h3>LAYANAN JASA KONSULTANSI PERIZINAN KONSTRUKSI</h3>
                 <div class="faq-content">
                   <p>
-                    1. perda no.1 th.2018 tentang penyelenggaraan pasar rakyat, pusat perbelanjaan & toko swalayan <a href="">Download file</a> <br>
-                    2. perda no.6 th.2018 tentang pembentukan produk hukum daerah <a href="">Download file</a> <br>
-                    3. Perda no.7 thn 2011 tentang pajak daerah <a href="">Download file</a> <br>
-                    4. perda no.8 th.2011 tentang retribusi jasa umum <a href="">Download file</a> <br>
-                    5. perda no.9 th.2011 tentang retibusi jasa usaha <a href="">Download file</a> <br>
-                    6. perda no.10 th.2017 tentang rencana detail tata ruang bagian wilayah perkotaan & peraturan zonasi kota blitar <a href="">Download file</a>
+                    1. Persetujuan Bangunan Gedung (PBG/IMB) <br>
+                    2. Sertifikat Laik Fungsi (SLF) <br>
+                    3. Dokumen Lingkungan (SPPL/ UKL-UPL/ Amdal) <br>
+                    4. Analisis Dampak Lalu Lintas (Andalalin) <br>
+                    5. SLO Lingkungan (B3/ IPAL) <br>
+                    6. Siteplan <br>
+                    7. Keterangan Rencana Kota/ Kabupaten <br>
+                    8. Kesesuaian Kegiatan Pemanfaatan Ruang (KKPR) <br>
+                    9. Surat Izin Pengambilan Air Tanah (SIPA)
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
+              </div><!-- End Faq item-->
 
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="faq-item faq-active">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Peraturan Kementrian</h3>
+                <h3>LAYANAN JASA KONSULTANSI & KONTRAKTOR DESAIN INTERIOR</h3>
                 <div class="faq-content">
                   <p>
-                    1. peraturan menteri pariwisata no.10 th.2018 tentang pelayanan perizinan berusaha terintegrasi elektronik <a href="">Download file</a> <br>
-                    2. perda no.6 th.2018 tentang pembentukan produk hukum daerah <a href="">Download file</a> <br>
-                    3. Perda no.7 thn 2011 tentang pajak daerah <a href="">Download file</a> <br>
-                    4. perda no.8 th.2011 tentang retribusi jasa umum <a href="">Download file</a> <br>
-                    5. perda no.9 th.2011 tentang retibusi jasa usaha <a href="">Download file</a> <br>
-                    6. perda no.10 th.2017 tentang rencana detail tata ruang bagian wilayah perkotaan & peraturan zonasi kota blitar <a href="">Download file</a>
+                    Interior Design & Contractor Services
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
+              </div><!-- End Faq item-->
 
+              <div class="faq-item faq-active">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>LAYANAN PENGEMBANGAN LAHAN, KAWASAN, & PROPERTI</h3>
+                <div class="faq-content">
+                  <p>
+                    Land, Estate, & Property Development Services
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item faq-active">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>LAYANAN JASA KONSULTANSI PERIZINAN NON-KONSTRUKSI</h3>
+                <div class="faq-content">
+                  <p>
+                    1. Izin Ketenaga Listrikan (IUJPTL & SBUJPTL) <br>
+                    2. Izin Usaha Jasa Pertambangan (IUJP) <br>
+                    3. Jasa Pendirian Perusahaan (CV, PT, atau Yayasan) <br>
+                    4. Jasa Sertifikasi Tingkat Komponan Dalam Negeri (TKDN) <br>
+                    5. Jasa Pendampingan OSS Berbasis Resiko <br>
+                    6. Jasa Layanan Perpajakan (PKP & SPPKP)
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
             </div>
 
@@ -915,7 +892,7 @@
           <div class="col-lg-5">
 
             <div class="info-wrap">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.5624528337447!2d112.16834631432412!3d-8.108395183086332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78d18c3b8df4ad%3A0x16f3916d2c7bc34a!2sJl.%20Jawa%20No.64%2C%20Sananwetan%2C%20Kec.%20Sananwetan%2C%20Kota%20Blitar%2C%20Jawa%20Timur%2066137%2C%20Indonesia!5e0!3m2!1sid!2sid!4v1595486361965!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.726493099638!2d106.78374157441282!3d-6.429172562870289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e969ec75ef31%3A0x15233b52721e5447!2sRafika%20village%202!5e0!3m2!1sid!2sid!4v1720713300480!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
 
