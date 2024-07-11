@@ -785,9 +785,20 @@
 
             <div class="faq-item faq-active">
 
-                <h3><span>01</span> Non consectetur a erat nam at lectus urna duis?</h3>
+                <h3> LAYANAN JASA KONSULTANSI KONSTRUKSI</h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  <p>
+                    1. Arsitektur <br>
+                    2. Sipil <br>
+                    3. Mekanikal <br>
+                    4. Elektrikal <br>
+                    5. Tata Lingkungan <br>
+                    6. Jasa Survey <br>
+                    7. Jasa Analisis Engineering <br>
+                    8. Jasa Inspeksi Teknis <br>
+                    9. Jasa Manajemen Proyek <br>
+                    10. Jasa Engineering Terpadu
+                  </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
