@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>PT RINCA KARYA CIPTA</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="konsultan perencanaan arsitek dan pengurusan perizinan bangunan gedung yang sudah memiliki lisensi." name="description">
+  <meta content="Konsultan perizinan bangunan" name="keywords">
 
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
