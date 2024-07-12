@@ -255,7 +255,7 @@
     </section>
 
       <!-- Services Section -->
-    
+
     <!-- Why Us Section -->
     <section id="why-us" class="section why-us light-background" data-builder="section">
 
@@ -944,7 +944,7 @@
   </main>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+{{--  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>--}}
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -961,6 +961,20 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+      (function () {
+          var options = {
+              whatsapp: "628561652206", // WhatsApp number
+              call_to_action: "Live Chat", // Call to action
+              button_color: "#FF6550", // Color of button
+              position: "right", // Position may be 'right' or 'left'
+          };
+          var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+          var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+          s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+          var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      })();
+  </script>
 
 </body>
 
