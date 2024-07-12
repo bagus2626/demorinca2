@@ -42,7 +42,6 @@
                             id="name"
                             name="name"
                             value="{{ auth()->user()->name }}"
-                            required
                         />
                         </div>
                     </div>

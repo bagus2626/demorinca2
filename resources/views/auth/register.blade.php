@@ -9,7 +9,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Store - Your Best Marketplace</title>
+    <title>Halaman Registrasi</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="{{ 'admin/style/main.css' }}" rel="stylesheet" />
@@ -24,14 +24,14 @@
           <div class="row align-items-center row-login">
             <div class="col-lg-6 text-center d-sm-none d-md-block">
               <img
-                src=""
+                src="{{ '/admin/images/logo_horizontal.png' }}"
                 alt=""
-                class="w-50 mb-4 mb-lg-none"
+                class="w-100 mb-4 mb-lg-none"
               />
             </div>
             <div class="col-lg-5">
               <h2>
-                PT RINCA KARYA CIPTA
+                PT RINCA CIPTA KARYA
               </h2>
               <form class="mt-3" method="POST" action="{{ route('register') }}">
                 @csrf

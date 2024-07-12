@@ -55,6 +55,8 @@ class AuthController extends Controller
             $request->session()->regenerate();
 
             return redirect()->intended('/admin/documents');
+        }else {
+            return redirect()->back()->with('error', 'Email atau password salah');
         }
     }
 

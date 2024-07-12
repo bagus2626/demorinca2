@@ -19,7 +19,7 @@ class DocumentController extends Controller
      */
     public function index()
     {
-        $documents = DB::table('documents')->get();
+        $documents = DB::table('documents')->orderBy('id', 'DESC')->get();
         return view('admin.document.index', compact('documents'));
     }
 
@@ -44,22 +44,18 @@ class DocumentController extends Controller
         $validatedData = $request->validate([
             'no_registrasi_sistem_simbg' => 'required', 
             'nama_pemohon' => 'required',
-            'date_start' => 'required|date'
+            'tanggal' => 'required|date',
+            'tanggal_estimasi' => 'required|date'
         ], [
             'no_registrasi_sistem_simbg.required' => 'Nomor registrasi sistem SimBG wajib diisi.',
             'nama_pemohon.required' => 'Nama pemohon wajib diisi.',
-            'date_start.required' => 'Tanggal mulai wajib diisi.',
-            'date_start.date' => 'Tanggal mulai harus berupa tanggal yang valid.'
+            'tanggal.required' => 'Tanggal mulai wajib diisi.',
+            'tanggal.date' => 'Tanggal mulai harus berupa tanggal yang valid.',
+            'tanggal_estimasi.required' => 'Estimasi selesai wajib diisi.',
+            'tanggal_estimasi.date' => 'Estimasi selesai harus berupa tanggal yang valid.'
         ]);
-        $validatedData['tanggal'] = Date::now();
         $validatedData['token'] = 'DR' . rand(111111, 999999);
-
         $data = Document::create($validatedData);
-        LogDocument::create([
-            'id_document' => $data->id,
-            'tanggal' => $request->date_start, 
-            'status' => 'Mulai'
-        ]);
 
         return redirect()->route('documents.index')->with('success', 'Berhasil menambahkan data dengan token : ' . $data->token);
     }
@@ -72,7 +68,8 @@ class DocumentController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = Document::findOrFail($id);
+        return view('admin.document.show', compact('data'));
     }
 
     /**
@@ -99,18 +96,21 @@ class DocumentController extends Controller
         $validatedData = $request->validate([
             'no_registrasi_sistem_simbg' => 'required', 
             'nama_pemohon' => 'required',
-            'date_start' => 'required|date'
+            'tanggal' => 'required|date',
+            'tanggal_estimasi' => 'required|date'
         ], [
             'no_registrasi_sistem_simbg.required' => 'Nomor registrasi sistem SimBG wajib diisi.',
             'nama_pemohon.required' => 'Nama pemohon wajib diisi.',
-            'date_start.required' => 'Tanggal mulai wajib diisi.',
-            'date_start.date' => 'Tanggal mulai harus berupa tanggal yang valid.'
+            'tanggal.required' => 'Tanggal mulai wajib diisi.',
+            'tanggal.date' => 'Tanggal mulai harus berupa tanggal yang valid.',
+            'tanggal_estimasi.required' => 'Estimasi selesai wajib diisi.',
+            'tanggal_estimasi.date' => 'Estimasi selesai harus berupa tanggal yang valid.'
         ]);
 
         $data = Document::findOrFail($id);
         $data->update($validatedData);
 
-        return redirect()->route('documents.index')->with('success', 'Berhasil menambahkan data dengan token : ' . $data->token);
+        return redirect()->route('documents.index')->with('success', 'Berhasil mengubah data dengan token : ' . $data->token);
     }
 
     /**
@@ -129,19 +129,11 @@ class DocumentController extends Controller
 
     public function changeStatus($id) 
     {
-        $log = DB::table('log_documents')->orderBy('id', 'DESC')->where('id_document', $id)->first();
-        
-        $status = 'Rencana';
-        if($log->status === 'Rencana') {
-            $status = 'Selesai';
-        }
+       $data = Document::findOrFail($id);
+       $data->tanggal_selesai = Date::now();
+       $data->status = 'Selesai';
+       $data->save();
 
-        LogDocument::create([
-            'id_document' => $id,
-            'tanggal' => Date::now(),
-            'status' => $status
-        ]);
-
-        return redirect()->back()->with('success', 'Berhasil Menambahkan Status : ' . $status);
+        return redirect()->back()->with('success', 'Berhasil Menambahkan Status : ' . $data->status);
     }
 }

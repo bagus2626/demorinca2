@@ -17,22 +17,39 @@
             <div class="card">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                     <div class="form-group">
-                        <label for="date_start">Tanggal</label>
+                        <label for="tanggal">Tanggal Mulai</label>
                         <input
                             type="date"
-                            class="form-control @error('date_start') is-invalid @enderror"
-                            id="date_start"
-                            name="date_start"
+                            class="form-control @error('tanggal') is-invalid @enderror"
+                            id="tanggal"
+                            name="tanggal"
                             value="{{ $data->tanggal ?? \Illuminate\Support\Facades\Date::now()->format('Y-m-d') }}"
                         />
-                        @error('date_start')
+                        @error('tanggal')
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>
                         @enderror
                     </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="tanggal_estimasi">Estimasi Selesai</label>
+                            <input
+                                type="date"
+                                class="form-control @error('tanggal_estimasi') is-invalid @enderror"
+                                id="tanggal_estimasi"
+                                name="tanggal_estimasi"
+                                value="{{ $data->tanggal_estimasi ?? \Illuminate\Support\Facades\Date::now()->format('Y-m-d') }}"
+                            />
+                            @error('tanggal_estimasi')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">

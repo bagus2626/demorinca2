@@ -46,9 +46,6 @@
                 </thead>
                 <tbody>
                   @forelse ($documents as $doc)
-                  @php
-                      $log = DB::table('log_documents')->orderBy('id', 'DESC')->where('id_document', $doc->id)->first();
-                  @endphp
                     <tr>
                       <td style="width: 5%;">{{ $loop->iteration }}</td>
                       <td style="width: 15%;">
@@ -61,22 +58,26 @@
                         <div class="product-title">{{ $doc->nama_pemohon }}</div>
                       </td>
                       <td style="width: 15%;">
-                        <div class="product-title {{ $log->status === 'Selesai' ? 'text-success' : 'text-warning' }}">{{ $log->status }}</div>
+                        <div class="product-title {{ $doc->status === 'Selesai' ? 'text-success' : 'text-warning' }}">{{ $doc->status }}</div>
                       </td>
                       <td style="width: 15%;">
                         <div class="d-flex">
-                          @if($log->status !== 'Selesai')
-                            <a href="{{ route('documents.change-status', $doc->id) }}" class="btn btn-outline-success ms-2">
+                          @if($doc->status === 'Selesai')
+                            <a href="{{ route('documents.show', $doc->id) }}" class="btn btn-outline-primary ms-2">
+                              <i class="bi bi-info-circle"></i>
+                            </a>
+                          @else
+                            <a href="#" onclick="confirmChangeStatus({{ $doc->id }})" class="btn btn-outline-success ms-2">
                               <i class="bi bi-check2-circle"></i>
                             </a>
                           @endif
                           <a href="{{ route('documents.edit', $doc->id) }}" class="btn btn-outline-warning me-2">
                               <i class="bi bi-pencil-square"></i>
                           </a>
-                          <form action="{{ route('documents.destroy', $doc->id) }}" method="post">
+                          <form id="delete-form-{{ $doc->id }}" action="{{ route('documents.destroy', $doc->id) }}" method="post">
                             @csrf
                             @method('delete')
-                              <button type="submit" class="btn btn-outline-danger me-2"><i class="bi bi-trash"></i></button>
+                              <button type="button" onclick="confirmDeletion({{ $doc->id }})" class="btn btn-outline-danger me-2"><i class="bi bi-trash"></i></button>
                           </form>
                         </div>
                       </td>
@@ -108,5 +109,37 @@
           }, 3000);
       }
   });
+
+  function confirmDeletion(docId) {
+      Swal.fire({
+          title: 'Yakin menghapus data?',
+          text: "data akan dihapus tidak dapat dikembalikan",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Ya, hapus'
+      }).then((result) => {
+          if (result.isConfirmed) {
+              document.getElementById('delete-form-' + docId).submit();
+          }
+      })
+  }
+
+  function confirmChangeStatus(docId) {
+      Swal.fire({
+          title: 'Yakin document sudah selesai?',
+          text: "Tanggal selesai akan di update",
+          icon: 'success',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Ya, Selesai'
+      }).then((result) => {
+          if (result.isConfirmed) {
+              window.location.href = "{{ route('documents.change-status', '') }}/" + docId;
+          }
+      });
+  }
 </script>
 @endpush

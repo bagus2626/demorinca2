@@ -9,12 +9,13 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Admin - PT RINCA KARYA CIPTA</title>
+    <title>Admin - PT RINCA CIPTA KARYA</title>
 
     @stack('before-style')
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
         <link href="{{ '/admin/style/main.css' }}" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     @stack('after-style')
   </head>
 
@@ -23,12 +24,12 @@
       <div class="d-flex" id="wrapper" data-aos="fade-right"> 
         <div class="border-right" id="sidebar-wrapper">
           <div class="sidebar-heading text-center">
-            <h6>PT Rinca Karya Cipta</h6>
+            <img src="{{ '/admin/images/logo_horizontal.png' }}" alt="" width="200">
           </div>
           <div class="list-group list-group-flush">
             <a
               href="{{ route('documents.index') }}"
-              class="list-group-item list-group-item-action {{ Request::is('admin/documents/*') ? 'active' : '' }}"
+              class="list-group-item list-group-item-action {{ Request::is('admin/documents*') ? 'active' : '' }}"
               >Documents</a
             >
             <a
@@ -76,7 +77,7 @@
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    PT RINCA KARYA CIPTA
+                    PT RINCA CIPTA KARYA
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="/"
@@ -94,7 +95,7 @@
               <ul class="navbar-nav d-block d-lg-none mt-3">
                 <li class="nav-item">
                   <a class="nav-link" href="#">
-                    PT RINCA KARYA CIPTA
+                    PT RINCA CIPTA KARYA
                   </a>
                 </li>
                 <li class="nav-item">
