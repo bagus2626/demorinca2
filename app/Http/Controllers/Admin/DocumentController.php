@@ -134,6 +134,6 @@ class DocumentController extends Controller
        $data->status = 'Selesai';
        $data->save();
 
-        return redirect()->back()->with('success', 'Berhasil Menambahkan Status : ' . $data->status);
+        return redirect()->route('documents.index')->with('success', 'Berhasil Menambahkan Status : ' . $data->status);
     }
 }

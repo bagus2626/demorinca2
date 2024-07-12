@@ -90,6 +90,32 @@
                   
                 </tbody>
               </table>
+
+              {{-- MOBILE VERSION --}}
+              <div class="dashboard-mobile d-lg-none d-sm-block">
+                @forelse ($documents as $doc)
+                  <a
+                    class="card card-list d-block"
+                    href="{{ route('documents.show', $doc->id) }}"
+                  >
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-1 card-title">
+                          {{ $loop->iteration }}
+                        </div>
+                        <div class="col-5 card-title">
+                          {{ $doc->token }}
+                        </div>
+                        <div class="col-5 card-title">
+                          <div class="{{ $doc->status === 'Selesai' ? 'text-success' : 'text-warning' }}">{{ $doc->status }}</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                @empty
+                @endforelse
+                
+              </div>
             </div>
           </div>
         </div>
