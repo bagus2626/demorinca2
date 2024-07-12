@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\DocumentController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Dashboard\HomepageController;
+use App\Http\Controllers\Dashboard\TrackingpageController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -21,7 +22,9 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/',  [HomepageController::class, 'index']);
+Route::get('/',  [HomepageController::class, 'index'])->name('dashboard.homepage');
+Route::get('/tracking', [TrackingpageController::class, 'index'])->name('dashboard.tracking');
+Route::post('/tracking/search', [TrackingpageController::class, 'search']);
 // AUTH
 Route::get('/register', [AuthController::class, 'pageRegister'])->middleware('guest');
 Route::post('register', [AuthController::class, 'register'])->name('register')->middleware('guest');
