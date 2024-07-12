@@ -23,6 +23,10 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="{{ '/assets/css/main.css' }}" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   @stack('after-style')
@@ -60,20 +64,20 @@
   <main class="main">
     @yield('content')
     <section id="contact" class="contact section">
-        <div class="container section-title">
+        <div class="container section-title"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
             <h2>Hubungi Kami</h2>
         </div>
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-5">
-                    <div class="info-wrap iframe-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.726493099638!2d106.78374157441282!3d-6.429172562870289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e969ec75ef31%3A0x15233b52721e5447!2sRafika%20village%202!5e0!3m2!1sid!2sid!4v1720713300480!5m2!1sid!2sid" width="470" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="info-wrap iframe-container"  data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.726493099638!2d106.78374157441282!3d-6.429172562870289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e969ec75ef31%3A0x15233b52721e5447!2sRafika%20village%202!5e0!3m2!1sid!2sid!4v1720713300480!5m2!1sid!2sid" width="400" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             <div class="col-lg-7">
             <form action="forms/contact.php" method="post" class="php-email-form">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
                         <div class="info-item d-flex">
                             <i class="bi bi-geo-alt flex-shrink-0"></i>
                             <div>
@@ -82,7 +86,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12"  data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
                         <div class="info-item d-flex">
                             <i class="bi bi-telephone flex-shrink-0"></i>
                             <div>
@@ -91,7 +95,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12"  data-aos="fade-left" data-aos-delay="300" data-aos-duration="800">
                         <div class="info-item d-flex">
                             <i class="bi bi-envelope flex-shrink-0"></i>
                             <div>
@@ -100,7 +104,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12"  data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
                         <h4>Sosial Media</h4>
                         <div class="social-links d-flex">
                           <a target="_blank" href="https://api.whatsapp.com/send/?phone=628561652206" ><i class="bi bi-whatsapp"></i></a>

@@ -95,12 +95,12 @@
 </section>
 
 <section id="about" class="about section">
-  <div class="container section-title">
+  <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
     <h2>Tentang Kami</h2>
   </div>
   <div class="container">
     <div class="row gy-4">
-      <div class="col-lg-6 content" data-aos="fade-right">
+      <div class="col-lg-6 content" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
         <h4>
           Visi
         </h4>
@@ -109,7 +109,7 @@
           Bumi Beserta Isinya
         </p>
       </div>
-      <div class="col-lg-6" data-aos="fade-left">
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
         <h4>
           Misi
         </h4>
@@ -125,12 +125,12 @@
 </section>
 
 <section id="direktur" class="direktur section">
-  <div class="container section-title" data-aos="fade-up">
+  <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
     <h2>Direktur</h2>
   </div>
   <div class="container">
     <div class="row gy-4">
-      <div class="col-lg-4 content text-center" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-4 content text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
         <img src="assets/img/personal/direktur.png" alt="" class="img-fluid">
         <h5 class="mt-3">
           DAWIN MUHAMAD YUSUF
@@ -146,7 +146,7 @@
           bersaing dalam taraf Internasional.
         </p>
       </div>
-      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
         <p>
           Dalam peningkatan dan pertumbuhan penjualan
           dan laba, Rinca Cipta Karya memperkuat bisnis
@@ -186,29 +186,29 @@
   <div class="container-fluid">
     <div class="row gy-4">
       <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-        <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
           <h3><span>KEGIATAN USAHA UTAMA</span></h3>
         </div>
-        <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+        <div class="faq-container px-xl-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
           <div class="faq-item faq-active">
             <h3><span>01</span> PERENCANAAN TATARUANG, BANGUNAN, DAN INDUSTRI</h3>
             <div class="faq-content">
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
-          <div class="faq-item">
+          <div class="faq-item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
             <h3><span>02</span> PERIZINAN BANGUNAN GEDUNG DAN INDUSTRI</h3>
             <div class="faq-content">
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
-          <div class="faq-item">
+          <div class="faq-item" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
             <h3><span>03</span> DESAIN INTERIOR</h3>
             <div class="faq-content">
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
-          <div class="faq-item">
+          <div class="faq-item"  data-aos="fade-left" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
             <h3><span>04</span>NON - KONSTRUKSI</h3>
             <div class="faq-content">
             </div>
@@ -217,25 +217,25 @@
         </div>
       </div>
       <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-        <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
       </div>
     </div>
   </div>
 </section>
 
 <section id="skills" class="skills section" style="background-color: #e2e0e0">
-  <div class="container section-title" data-aos="fade-up">
+  <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
     <h2>Legalitas Perusahaan</h2>
     <p>CORPORATE MEMBERSHIP</p>
   </div>
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row justify-content=center">
+  <div class="container">
+    <div class="row justify-content=center"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
       <div class="col-lg-6 pt-4 pt-lg-0 content text-center">
         <img src="assets/img/sertifikat/1.png" class="img-fluid" alt="">
         <h5 class="mt-3">PERKINDO DKI JAKARTA</h5>
         <p class="fst-italic">Keanggotaan Persatuan Konsultan IndonesiaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
-      <div class="col-lg-6 pt-4 pt-lg-0 content text-center">
+      <div class="col-lg-6 pt-4 pt-lg-0 content text-center"  data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
         <img src="assets/img/sertifikat/2.png" class="img-fluid" alt="">
           <h5 class="mt-3">SERTIFIKAT BADAN USAHA
             JASA KONSTRUKSI</h5>
@@ -246,7 +246,7 @@
 </section>
 
 <section id="portfolio" class="portfolio section">
-  <div class="container section-title" data-aos="fade-up">
+  <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
     <h2>Proyek Kami</h2>
   </div>
   <div class="container">
@@ -426,7 +426,7 @@
 </section>
 
 <section id="regulasi" class="faq-2 section light-background">
-  <div class="container section-title">
+  <div class="container section-title"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
     <h2>Ruang Lingkup Usaha</h2>
     <p>Dalam menjalankan kegiatan pelayanannya, PT Rinca Cipta Karya mempunyai bidang/ layanan jasa konsultasi
       Konstruksi dan jasa Konsultansi Non Konstruksi, berikut layanan kami :</p>
@@ -435,7 +435,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-10">
         <div class="faq-container">
-        <div class="faq-item">
+        <div class="faq-item"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
             <i class="faq-icon bi bi-question-circle"></i>
             <h3>LAYANAN JASA KONSULTANSI KONSTRUKSI</h3>
             <div class="faq-content">
@@ -454,7 +454,7 @@
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
-          <div class="faq-item">
+          <div class="faq-item"  data-aos="fade-right" data-aos-delay="200" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
             <i class="faq-icon bi bi-question-circle"></i>
             <h3>LAYANAN JASA KONSULTANSI PERIZINAN KONSTRUKSI</h3>
             <div class="faq-content">
@@ -472,7 +472,7 @@
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
-          <div class="faq-item">
+          <div class="faq-item"  data-aos="fade-left" data-aos-delay="300" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
             <i class="faq-icon bi bi-question-circle"></i>
             <h3>LAYANAN JASA KONSULTANSI & KONTRAKTOR DESAIN INTERIOR</h3>
             <div class="faq-content">
@@ -482,7 +482,7 @@
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
-          <div class="faq-item">
+          <div class="faq-item"  data-aos="fade-right" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
             <i class="faq-icon bi bi-question-circle"></i>
             <h3>LAYANAN PENGEMBANGAN LAHAN, KAWASAN, & PROPERTI</h3>
             <div class="faq-content">
@@ -492,7 +492,7 @@
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
-          <div class="faq-item">
+          <div class="faq-item"  data-aos="fade-left" data-aos-delay="500" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
             <i class="faq-icon bi bi-question-circle"></i>
             <h3>LAYANAN JASA KONSULTANSI PERIZINAN NON-KONSTRUKSI</h3>
             <div class="faq-content">
