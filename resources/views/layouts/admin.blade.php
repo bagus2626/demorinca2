@@ -100,6 +100,7 @@
                 </li>
                 <li class="nav-item">
                 <form action="{{ route('logout') }}" method="post">
+                  @csrf
                     <button type="submit" class="nav-link d-inline-block border-0">Logout</button>
                 </form>
                 </li>

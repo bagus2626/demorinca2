@@ -26,18 +26,13 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   @stack('after-style')
-
 </head>
-
 <body class="index-page">
-
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <h3 class="sitename">PT Rinca Karya Cipta</h3>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="{{ route('dashboard.homepage') }}#hero" class="active">Home</a></li>
@@ -45,62 +40,75 @@
           <li><a href="{{ route('dashboard.homepage') }}#about">About</a></li>
           <li><a href="{{ route('dashboard.homepage') }}#portfolio">Project</a></li>
           <li><a href="{{ route('dashboard.homepage') }}#contact">Contact</a></li>
-          <li><a href="{{ route('login') }}">Signin</a></li>
+          @guest
+            <li><a href="{{ route('page-login') }}">Signin</a></li>
+          @endguest
+          @auth
+            <li>
+                <form action="{{ route('logout') }}" method="post">
+                @csrf
+                    <button type="submit" class="nav-link d-inline-block text-light border-0">Logout</button>
+                </form>
+            </li>
+          @endauth
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
   <main class="main">
     @yield('content')
-
-    <!-- Contact Section -->
     <section id="contact" class="contact section">
         <div class="container section-title">
-        <h2>Hubungi Kami</h2>
+            <h2>Hubungi Kami</h2>
         </div>
-    
         <div class="container">
-        <div class="row gy-4">
-            <div class="col-lg-5">
-            <div class="info-wrap iframe-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.726493099638!2d106.78374157441282!3d-6.429172562870289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e969ec75ef31%3A0x15233b52721e5447!2sRafika%20village%202!5e0!3m2!1sid!2sid!4v1720713300480!5m2!1sid!2sid" width="470" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            </div>
+            <div class="row gy-4">
+                <div class="col-lg-5">
+                    <div class="info-wrap iframe-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.726493099638!2d106.78374157441282!3d-6.429172562870289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e969ec75ef31%3A0x15233b52721e5447!2sRafika%20village%202!5e0!3m2!1sid!2sid!4v1720713300480!5m2!1sid!2sid" width="470" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             <div class="col-lg-7">
             <form action="forms/contact.php" method="post" class="php-email-form">
                 <div class="row">
-                <div class="col-md-12">
-                    <div class="info-item d-flex">
-                    <i class="bi bi-geo-alt flex-shrink-0"></i>
-                    <div>
-                        <h3>Alamat</h3>
-                        <p>Jl Nangka (Rafika Village 2 No.B8), Kel. Pasir Putih, Kec. Sawangan, Kota Depok</p>
+                    <div class="col-md-12">
+                        <div class="info-item d-flex">
+                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            <div>
+                                <h3>Alamat</h3>
+                                <p>Jl Nangka (Rafika Village 2 No.B8), Kel. Pasir Putih, Kec. Sawangan, Kota Depok</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-md-12">
+                        <div class="info-item d-flex">
+                            <i class="bi bi-telephone flex-shrink-0"></i>
+                            <div>
+                                <h3>Telpon</h3>
+                                <p>+62856-1652-206</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-md-12">
+                        <div class="info-item d-flex">
+                            <i class="bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@rincakonsultan.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <h4>Sosial Media</h4>
+                        <div class="social-links d-flex">
+                          <a target="_blank" href="https://api.whatsapp.com/send/?phone=628561652206" ><i class="bi bi-whatsapp"></i></a>
+                          <a target="_blank" href="mailto:contact@rincakonsultan.com" ><i class="bi bi-envelope ms-4"></i></a>
+                          <a target="_blank" href="https://www.instagram.com/rincaciptakonsultan/" ><i class="bi bi-instagram ms-4"></i></a>
+                        </div>
+                      </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="info-item d-flex">
-                    <i class="bi bi-telephone flex-shrink-0"></i>
-                    <div>
-                        <h3>Telpon</h3>
-                        <p>+62856-1652-206</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="info-item d-flex">
-                    <i class="bi bi-envelope flex-shrink-0"></i>
-                    <div>
-                        <h3>Email</h3>
-                        <p>info@rincakonsultan.com</p>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </form>
                 </div>
             </form>
             </div>
@@ -109,11 +117,7 @@
     </section>
   </main> 
 
-  <!-- Scroll Top -->
-{{--  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>--}}
-
 @stack('before-script')
-  <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
@@ -166,7 +170,7 @@
                             <i class="${response.data.tanggal ? `bi bi-check2-circle text-success` : `bi-dash-circle text-danger`}"></i> Mulai - ${response.data.tanggal ? formatDate(response.data.tanggal) : `Belum ada tanggal mulai`}
                         </div>
                         <div class="tracking-result">
-                            <i class="${response.data.tanggal_estimasi ? `bi bi-check2-circle text-success` : `bi-dash-circle text-danger`}"></i> Rencana Selesai - ${response.data.tanggal_estimasi ? formatDate(response.data.tanggal) : `Belum ada tanggal rencana selesai`}
+                            <i class="${response.data.tanggal_estimasi ? `bi bi-check2-circle text-success` : `bi-dash-circle text-danger`}"></i> Rencana Selesai - ${response.data.tanggal_estimasi ? formatDate(response.data.tanggal_estimasi) : `Belum ada tanggal rencana selesai`}
                         </div>
                         <div class="tracking-result ${response.tanggal_selesai ? '' : 'text-danger'}">
                             <i class="${response.data.tanggal_selesai ? `bi bi-check2-circle text-success` : `bi-dash-circle text-danger`}"></i> Selesai - ${response.data.tanggal_selesai ? formatDate(response.data.tanggal_selesai) : `Belum selesai`}
@@ -208,9 +212,6 @@
         return `${day}-${month}-${year}`;
     }
   </script>  
-
   @stack('after-script')
-
 </body>
-
 </html>

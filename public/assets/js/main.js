@@ -71,13 +71,13 @@
   /**
    * Scroll top button
    */
-  let scrollTop = document.querySelector('.scroll-top');
+  // let scrollTop = document.querySelector('.scroll-top');
 
-  function toggleScrollTop() {
-    if (scrollTop) {
-      window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
-    }
-  }
+  // function toggleScrollTop() {
+  //   if (scrollTop) {
+  //     window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+  //   }
+  // }
   // scrollTop.addEventListener('click', (e) => {
   //   e.preventDefault();
   //   window.scrollTo({
@@ -86,8 +86,8 @@
   //   });
   // });
 
-  window.addEventListener('load', toggleScrollTop);
-  document.addEventListener('scroll', toggleScrollTop);
+  // window.addEventListener('load', toggleScrollTop);
+  // document.addEventListener('scroll', toggleScrollTop);
 
   /**
    * Animation on scroll function and init
@@ -97,7 +97,8 @@
       duration: 600,
       easing: 'ease-in-out',
       once: true,
-      mirror: false
+      mirror: false,
+      offset: 10
     });
   }
   window.addEventListener('load', aosInit);
@@ -140,19 +141,19 @@
   /**
    * Animate the skills items on reveal
    */
-  let skillsAnimation = document.querySelectorAll('.skills-animation');
-  skillsAnimation.forEach((item) => {
-    new Waypoint({
-      element: item,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = item.querySelectorAll('.progress .progress-bar');
-        progress.forEach(el => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%';
-        });
-      }
-    });
-  });
+  // let skillsAnimation = document.querySelectorAll('.skills-animation');
+  // skillsAnimation.forEach((item) => {
+  //   new Waypoint({
+  //     element: item,
+  //     offset: '80%',
+  //     handler: function(direction) {
+  //       let progress = item.querySelectorAll('.progress .progress-bar');
+  //       progress.forEach(el => {
+  //         el.style.width = el.getAttribute('aria-valuenow') + '%';
+  //       });
+  //     }
+  //   });
+  // });
 
   /**
    * Init isotope layout and filters
@@ -190,20 +191,20 @@
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
-  window.addEventListener('load', function(e) {
-    if (window.location.hash) {
-      if (document.querySelector(window.location.hash)) {
-        setTimeout(() => {
-          let section = document.querySelector(window.location.hash);
-          let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
-          window.scrollTo({
-            top: section.offsetTop - parseInt(scrollMarginTop),
-            behavior: 'smooth'
-          });
-        }, 100);
-      }
-    }
-  });
+  // window.addEventListener('load', function(e) {
+  //   if (window.location.hash) {
+  //     if (document.querySelector(window.location.hash)) {
+  //       setTimeout(() => {
+  //         let section = document.querySelector(window.location.hash);
+  //         let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
+  //         window.scrollTo({
+  //           top: section.offsetTop - parseInt(scrollMarginTop),
+  //           behavior: 'smooth'
+  //         });
+  //       }, 100);
+  //     }
+  //   }
+  // });
 
   /**
    * Navmenu Scrollspy

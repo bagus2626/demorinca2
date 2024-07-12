@@ -24,23 +24,18 @@
       <div class="col-xl-9" id="tracking-result" style="display: none">
       </div>
     </div>
-
   </div>
-
 </section>
 
-<!-- Clients Section -->
 <section id="clients" class="clients section light-background">
-
   <div class="container" data-aos="zoom-in">
-
     <div class="swiper init-swiper">
       <script type="application/json" class="swiper-config">
         {
           "loop": true,
-          "speed": 600,
+          "speed": 1000,
           "autoplay": {
-            "delay": 5000
+            "delay": 1000
           },
           "slidesPerView": "auto",
           "pagination": {
@@ -86,25 +81,25 @@
         <div class="swiper-slide"><img src="assets/img/clients/jr.png" class="img-fluid" alt=""></div>
         <div class="swiper-slide"><img src="assets/img/clients/rsj.png" class="img-fluid" alt=""></div>
         <div class="swiper-slide"><img src="assets/img/clients/sandimas.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/sisesa.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/al-utsmani.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/muhammadiyah.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/al-zahra.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-9.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/saranawisesa.jfif" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/sisesa.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/suntak.png" class="img-fluid" alt=""></div>
       </div>
     </div>
-
   </div>
+</section>
 
-</section><!-- /Clients Section -->
-
-<!-- About Section -->
 <section id="about" class="about section">
-
-  <!-- Section Title -->
   <div class="container section-title">
     <h2>Tentang Kami</h2>
-  </div><!-- End Section Title -->
-
+  </div>
   <div class="container">
-
     <div class="row gy-4">
-
       <div class="col-lg-6 content" data-aos="fade-right">
         <h4>
           Visi
@@ -114,7 +109,6 @@
           Bumi Beserta Isinya
         </p>
       </div>
-
       <div class="col-lg-6" data-aos="fade-left">
         <h4>
           Misi
@@ -125,26 +119,17 @@
           <li><i class="bi bi-check2-circle"></i> <span>Memberikan manfaat dan nilai tambah untuk Masyarakat sekitar.</span></li>
           <li><i class="bi bi-check2-circle"></i> <span>Memberdayakan pengetahuan, pengalaman, dan kreativitas untuk terciptanya solusi terbaik, dengan tidak lupa memegang teguh komitmen dan keper.</span></li>
         </ul>
-
       </div>
-
     </div>
-
   </div>
-
-</section><!-- /About Section -->
+</section>
 
 <section id="direktur" class="direktur section">
-
-  <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Direktur</h2>
-  </div><!-- End Section Title -->
-
+  </div>
   <div class="container">
-
     <div class="row gy-4">
-
       <div class="col-lg-4 content text-center" data-aos="fade-up" data-aos-delay="100">
         <img src="assets/img/personal/direktur.png" alt="" class="img-fluid">
         <h5 class="mt-3">
@@ -161,7 +146,6 @@
           bersaing dalam taraf Internasional.
         </p>
       </div>
-
       <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
         <p>
           Dalam peningkatan dan pertumbuhan penjualan
@@ -193,82 +177,57 @@
           penuh Amanah, Kompeten, Kolaboratif, Adaptif,
           dan Loyal.
         </p>
-
       </div>
-
     </div>
-
   </div>
-
 </section>
 
-  <!-- Services Section -->
-
-<!-- Why Us Section -->
 <section id="why-us" class="section why-us light-background" data-builder="section">
-
   <div class="container-fluid">
-
     <div class="row gy-4">
-
       <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-
         <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
           <h3><span>KEGIATAN USAHA UTAMA</span></h3>
         </div>
-
         <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
-
           <div class="faq-item faq-active">
-
             <h3><span>01</span> PERENCANAAN TATARUANG, BANGUNAN, DAN INDUSTRI</h3>
             <div class="faq-content">
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
-          </div><!-- End Faq item-->
-
+          </div>
           <div class="faq-item">
             <h3><span>02</span> PERIZINAN BANGUNAN GEDUNG DAN INDUSTRI</h3>
             <div class="faq-content">
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
-          </div><!-- End Faq item-->
-
+          </div>
           <div class="faq-item">
             <h3><span>03</span> DESAIN INTERIOR</h3>
             <div class="faq-content">
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
-          </div><!-- End Faq item-->
-
+          </div>
           <div class="faq-item">
             <h3><span>04</span>NON - KONSTRUKSI</h3>
             <div class="faq-content">
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
-          </div><!-- End Faq item-->
-
+          </div>
         </div>
-
       </div>
-
       <div class="col-lg-5 order-1 order-lg-2 why-us-img">
         <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
       </div>
     </div>
-
   </div>
+</section>
 
-</section><!-- /Why Us Section -->
-
-<!-- Skills Section -->
 <section id="skills" class="skills section" style="background-color: #e2e0e0">
-
   <div class="container section-title" data-aos="fade-up">
     <h2>Legalitas Perusahaan</h2>
     <p>CORPORATE MEMBERSHIP</p>
   </div>
-
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="row justify-content=center">
       <div class="col-lg-6 pt-4 pt-lg-0 content text-center">
@@ -284,46 +243,15 @@
       </div>
     </div>
   </div>
+</section>
 
-</section><!-- /Skills Section -->
-
-
-
-{{-- <!-- Call To Action Section -->
-<section id="call-to-action" class="call-to-action section dark-background">
-
-  <img src="assets/img/cta-bg.jpg" alt="">
-
-  <div class="container">
-
-    <div class="row" data-aos="zoom-in" data-aos-delay="100">
-      <div class="col-xl-9 text-center text-xl-start">
-        <h3>Call To Action</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="col-xl-3 cta-btn-container text-center">
-        <a class="cta-btn align-middle" href="#">Call To Action</a>
-      </div>
-    </div>
-
-  </div>
-
-</section><!-- /Call To Action Section --> --}}
-
-<!-- Portfolio Section -->
 <section id="portfolio" class="portfolio section">
-
-  <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Proyek Kami</h2>
-  </div><!-- End Section Title -->
-
+  </div>
   <div class="container">
-
     <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
       <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
           <img src="assets/img/projects/1.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -334,8 +262,7 @@
             <a href="assets/img/projects/1.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
           <img src="assets/img/projects/2.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -345,8 +272,7 @@
             <a href="assets/img/projects/2.png" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <img src="assets/img/projects/3.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -356,8 +282,7 @@
             <a href="assets/img/projects/3.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
           <img src="assets/img/projects/4.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -367,8 +292,7 @@
             <a href="assets/img/projects/4.png" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
           <img src="assets/img/projects/5.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -378,8 +302,7 @@
             <a href="assets/img/projects/5.png" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <img src="assets/img/projects/6.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -389,8 +312,7 @@
             <a href="assets/img/projects/6.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
           <img src="assets/img/projects/7.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -400,8 +322,7 @@
             <a href="assets/img/projects/7.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
           <img src="assets/img/projects/8.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -411,8 +332,7 @@
             <a href="assets/img/projects/8.png" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <img src="assets/img/projects/9.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -422,8 +342,7 @@
             <a href="assets/img/projects/9.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <img src="assets/img/projects/10.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -433,8 +352,7 @@
             <a href="assets/img/projects/10.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <img src="assets/img/projects/11.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -444,8 +362,7 @@
             <a href="assets/img/projects/11.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <img src="assets/img/projects/12.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -457,8 +374,7 @@
             <a href="assets/img/projects/12.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <img src="assets/img/projects/13.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -469,8 +385,7 @@
             <a href="assets/img/projects/13.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <img src="assets/img/projects/14.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -481,8 +396,7 @@
             <a href="assets/img/projects/14.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <img src="assets/img/projects/15.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -494,8 +408,7 @@
             <a href="assets/img/projects/15.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
           <img src="assets/img/projects/16.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -506,238 +419,22 @@
             <a href="assets/img/projects/16.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div><!-- End Portfolio Item -->
-
-
-      </div><!-- End Portfolio Container -->
-
-    </div>
-
-  </div>
-
-</section><!-- /Portfolio Section -->
-
-<!-- Team Section -->
-{{-- <section id="team" class="team section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Team</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-  </div><!-- End Section Title -->
-
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="team-member d-flex align-items-start">
-          <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-          <div class="member-info">
-            <h4>Walter White</h4>
-            <span>Chief Executive Officer</span>
-            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""> <i class="bi bi-linkedin"></i> </a>
-            </div>
-          </div>
         </div>
-      </div><!-- End Team Member -->
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="team-member d-flex align-items-start">
-          <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-          <div class="member-info">
-            <h4>Sarah Jhonson</h4>
-            <span>Product Manager</span>
-            <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""> <i class="bi bi-linkedin"></i> </a>
-            </div>
-          </div>
-        </div>
-      </div><!-- End Team Member -->
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="team-member d-flex align-items-start">
-          <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-          <div class="member-info">
-            <h4>William Anderson</h4>
-            <span>CTO</span>
-            <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""> <i class="bi bi-linkedin"></i> </a>
-            </div>
-          </div>
-        </div>
-      </div><!-- End Team Member -->
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-        <div class="team-member d-flex align-items-start">
-          <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-          <div class="member-info">
-            <h4>Amanda Jepson</h4>
-            <span>Accountant</span>
-            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""> <i class="bi bi-linkedin"></i> </a>
-            </div>
-          </div>
-        </div>
-      </div><!-- End Team Member -->
-
-    </div>
-
-  </div>
-
-</section><!-- /Team Section --> --}}
-
-<!-- Testimonials Section -->
-{{-- <section id="testimonials" class="testimonials section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Testimonials</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="swiper init-swiper">
-      <script type="application/json" class="swiper-config">
-        {
-          "loop": true,
-          "speed": 600,
-          "autoplay": {
-            "delay": 5000
-          },
-          "slidesPerView": "auto",
-          "pagination": {
-            "el": ".swiper-pagination",
-            "type": "bullets",
-            "clickable": true
-          }
-        }
-      </script>
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div><!-- End testimonial item -->
-
       </div>
-      <div class="swiper-pagination"></div>
     </div>
-
   </div>
+</section>
 
-</section><!-- /Testimonials Section --> --}}
-
-<!-- Faq 2 Section -->
 <section id="regulasi" class="faq-2 section light-background">
-
   <div class="container section-title">
     <h2>Ruang Lingkup Usaha</h2>
     <p>Dalam menjalankan kegiatan pelayanannya, PT Rinca Cipta Karya mempunyai bidang/ layanan jasa konsultasi
       Konstruksi dan jasa Konsultansi Non Konstruksi, berikut layanan kami :</p>
   </div>
-
   <div class="container">
-
     <div class="row justify-content-center">
-
       <div class="col-lg-10">
-
         <div class="faq-container">
-
         <div class="faq-item">
             <i class="faq-icon bi bi-question-circle"></i>
             <h3>LAYANAN JASA KONSULTANSI KONSTRUKSI</h3>
@@ -756,8 +453,7 @@
               </p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
-          </div><!-- End Faq item-->
-
+          </div>
           <div class="faq-item">
             <i class="faq-icon bi bi-question-circle"></i>
             <h3>LAYANAN JASA KONSULTANSI PERIZINAN KONSTRUKSI</h3>
@@ -775,8 +471,7 @@
               </p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
-          </div><!-- End Faq item-->
-
+          </div>
           <div class="faq-item">
             <i class="faq-icon bi bi-question-circle"></i>
             <h3>LAYANAN JASA KONSULTANSI & KONTRAKTOR DESAIN INTERIOR</h3>
@@ -786,8 +481,7 @@
               </p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
-          </div><!-- End Faq item-->
-
+          </div>
           <div class="faq-item">
             <i class="faq-icon bi bi-question-circle"></i>
             <h3>LAYANAN PENGEMBANGAN LAHAN, KAWASAN, & PROPERTI</h3>
@@ -797,8 +491,7 @@
               </p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
-          </div><!-- End Faq item-->
-
+          </div>
           <div class="faq-item">
             <i class="faq-icon bi bi-question-circle"></i>
             <h3>LAYANAN JASA KONSULTANSI PERIZINAN NON-KONSTRUKSI</h3>
@@ -813,16 +506,10 @@
               </p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
-          </div><!-- End Faq item-->
-
+          </div>
         </div>
-
       </div>
-
     </div>
-
   </div>
-
-</section><!-- /Faq 2 Section -->
-
+</section>
 @endsection
