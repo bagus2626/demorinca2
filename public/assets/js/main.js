@@ -78,6 +78,18 @@
         });
     }
 
+    // OUSH DATA AOS SETTING
+    document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+            offset: 120,
+            delay: 0,
+            duration: 400,
+            easing: "ease-in-out",
+            once: false,
+            mirror: true,
+        });
+    });
+
     /**
      * Scroll top button
      */
@@ -112,16 +124,6 @@
     //     });
     // }
     // window.addEventListener("load", aosInit);
-    document.addEventListener("DOMContentLoaded", function () {
-        AOS.init({
-            offset: 120,
-            delay: 0,
-            duration: 400,
-            easing: "ease-in-out",
-            once: false,
-            mirror: true,
-        });
-    });
 
     /**
      * Initiate glightbox

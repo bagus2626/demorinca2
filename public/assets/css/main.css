@@ -271,6 +271,7 @@ h6 {
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
+    /* PUSH COLOR NAVBAR */
     --background-color: #3cb371;
 }
 
