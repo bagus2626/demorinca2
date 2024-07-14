@@ -1,5 +1,85 @@
 @extends('layouts.dashboard')
 
+@push('after-style')
+<style>
+  .slider-container {
+      position: relative;
+      max-width: 1200px;
+      margin: auto;
+      overflow: hidden;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 300%;
+  }
+
+  .slide {
+      min-width: 33.33%;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 10px;
+  }
+
+  img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+  }
+
+  .description {
+      margin-top: 10px;
+  }
+
+  .description h3 {
+      font-size: 18px;
+      margin: 10px 0;
+  }
+
+  .description p {
+      font-size: 16px;
+      color: #666;
+  }
+
+  .discounted-price {
+      color: red;
+      text-decoration: line-through;
+  }
+
+  button {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border: none;
+      background-color: rgba(0,0,0,0.5);
+      user-select: none;
+  }
+
+  button:hover {
+      background-color: rgba(0,0,0,0.8);
+  }
+
+  .prev {
+      left: 0;
+  }
+
+  .next {
+      right: 0;
+  }
+</style>
+@endpush
 @section('content')
 <section id="hero" class="call-to-action section dark-background">
   <img src="assets/img/cta-bg.jpg" alt="">
@@ -249,7 +329,7 @@
   <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
     <h2>Proyek Kami</h2>
   </div>
-  <div class="container">
+  <div class="container projects-desktop">
     <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
       <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
@@ -423,6 +503,148 @@
       </div>
     </div>
   </div>
+   <div class="slider-container projects-mobile">
+        <div class="slider">
+            <div class="slide">
+                <img src="assets/img/projects/1.png" alt="">
+                <div class="description">
+                    <h3>PT Sun Tak Indonesia</h3>
+                    <p>Pengujian bangunan gedung untuk perizinan
+                       Sertifikat Laik Fungsi dan PBG Penambahan
+                       Bangunan Gedung</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="assets/img/projects/2.png" alt="">
+                <div class="description">
+                    <h3>Perumahan Grand Cimandala Residence</h3>
+                    <p>
+                      Pengujian bangunan gedung untuk perizinan Sertifikat Laik Fungsi.
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="assets/img/projects/3.png" alt="">
+                <div class="description">
+                    <h3>Royal Tulip Luxury Hotels</h3>
+                    <p>Pengujian bangunan gedung untuk perizinan
+                       Sertifikat Laik Fungsi.</p>
+                </div>
+            </div>
+             <div class="slide">
+                <img src="assets/img/projects/4.png" alt="">
+                <div class="description">
+                    <h3>PT Ultra Sakti</h3>
+                     <p>Penyusunan DED untuk perizinan Industri
+                        PT Ultra Sakti Narogong Kab. Bogor.</p>
+                </div>
+            </div>
+             <div class="slide">
+                <img src="assets/img/projects/5.png" alt="">
+                <div class="description">
+                    <h3>Asimetri Coffe</h3>
+                     <p>Pengujian bangunan gedung untuk perizinan
+                        Sertifikat Laik Fungsi.</p>
+                </div>
+            </div>
+             <div class="slide">
+                <img src="assets/img/projects/6.png" alt="">
+                <div class="description">
+                    <h3>Perumahan Cikeas River Side</h3>
+                     <p>Pengujian bangunan gedung untuk perizinan
+                        Sertifikat Laik Fungsi.</p>
+                </div>
+            </div>
+             <div class="slide">
+                <img src="assets/img/projects/7.png" alt="">
+                <div class="description">
+                    <h3>COZY CO-LIVING JELAMBAR</h3>
+                     <p>Pengejaan DED dan Parizinan Mendirikan Banguna</p>
+                </div>
+            </div>
+             <div class="slide">
+                <img src="assets/img/projects/8.png" alt="">
+                <div class="description">
+                    <h3>Pergudangan Sigma Kartika Gunung Sindur</h3>
+                    <p>Pengujian bangunan gedung untuk perizinan
+                       Sertifikat Laik Fungsi.</p>
+                </div>
+            </div>
+             <div class="slide">
+                <img src="assets/img/projects/9.png" alt="">
+                <div class="description">
+                    <h3>PT Dalya Citramandiri</h3>
+                    <p>Review DED dan Pembuatan Kajian Arsitektur
+                       untuk perencanaan Industri</p>
+                </div>
+            </div>
+             <div class="slide">
+                <img src="assets/img/projects/10.png" alt="">
+                <div class="description">
+                    <h3>SDIT Kharisma Azzahra Bogor</h3>
+                    <p>Pengujian Bangunan untuk proses perizinan Sertifikat Laik Fungsi dan Persetujuan Bangunan
+                       Gedung</p>
+                </div>
+            </div>
+             <div class="slide">
+                <img src="assets/img/projects/11.png" alt="">
+                <div class="description">
+                    <h3>PT Electra Mobilitas Indonesia</h3>
+                    <p>Pengujian bangunan gedung untuk keperluan
+                       Sertifikasi Bangunan Gedung</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="assets/img/projects/12.png" alt="">
+                <div class="description">
+                    <h3>PT SiSeSa Berkah Illahi</h3>
+                    <p>Pengujian bangunan gedung untuk keperluan
+                      Sertifikasi Bangunan Gedung dan Persetujuan
+                      Bangunan Gedung
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="assets/img/projects/13.png" alt="">
+                <div class="description">
+                    <h3>PT Ultra Sakti</h3>
+                    <p>Review Gambar untuk Pengajuan Persetujuan
+                      Bangunan Gedung plant Narogong
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="assets/img/projects/14.png" alt="">
+                <div class="description">
+                    <h3>SMK Muhammadiyah Cariu</h3>
+                    <p>Pengujian bangunan gedung untuk perizinan
+                       Sertifikat Laik Fungsi
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="assets/img/projects/15.png" alt="">
+                <div class="description">
+                    <h3>Yayasan Al Ustmani</h3>
+                    <p>Pengujian bangunan gedung untuk proses
+                      perizinan Sertifikat Laik Fungi dan Persetujuan
+                      Bangunan
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="assets/img/projects/16.png" alt="">
+                <div class="description">
+                    <h3>Puspanita Eco Spirit Center</h3>
+                    <p>Pengujian bangunan gedung utnuk perizinan
+                       Sertifikat Laik Fungsi
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
 </section>
 
 <section id="regulasi" class="faq-2 section light-background">
@@ -513,3 +735,39 @@
   </div>
 </section>
 @endsection
+
+@push('after-script')
+    <script>
+      let slideIndex = 0;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
+      const slidesToShow = 3;
+
+      function showSlides() {
+          const slider = document.querySelector('.slider');
+          const slideWidth = slider.clientWidth / slidesToShow;
+          slider.style.transform = `translateX(${-slideWidth * slideIndex}px)`;
+      }
+
+      function changeSlide(n) {
+          slideIndex += n;
+          if (slideIndex >= totalSlides) {
+              slideIndex = 0;
+          }
+          if (slideIndex < 0) {
+              slideIndex = totalSlides - 1;
+          }
+          showSlides();
+      }
+
+      function autoSlide() {
+          changeSlide(1);
+          setTimeout(autoSlide, 3000);
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+          showSlides();
+          autoSlide();
+      });
+    </script>
+@endpush

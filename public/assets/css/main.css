@@ -106,6 +106,15 @@
     .tracking-input {
         width: 300px;
     }
+    .projects-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .projects-mobile {
+        display: none;
+    }
 }
 
 /* Smooth scroll */
