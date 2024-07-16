@@ -272,30 +272,27 @@
           <h3><span>KEGIATAN USAHA UTAMA</span></h3>
         </div>
         <div class="faq-container px-xl-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-          <div class="faq-item faq-active">
-            <h3><span>01</span> PERENCANAAN TATARUANG, BANGUNAN, DAN INDUSTRI</h3>
-            <div class="faq-content">
+          <a href="{{ route('dashboard.about') }}#perencanaan">
+            <div class="faq-item mt-3">
+              <h3><span>01</span> PERENCANAAN TATARUANG, BANGUNAN, DAN INDUSTRI</h3>
             </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
-          <div class="faq-item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-            <h3><span>02</span> PERIZINAN BANGUNAN GEDUNG DAN INDUSTRI</h3>
-            <div class="faq-content">
+          </a>
+          <a href="{{ route('dashboard.about') }}#perizinan">
+            <div class="faq-item mt-3" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+              <h3><span>02</span> PERIZINAN BANGUNAN GEDUNG DAN INDUSTRI</h3>
             </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
-          <div class="faq-item" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-            <h3><span>03</span> DESAIN INTERIOR</h3>
-            <div class="faq-content">
+          </a>
+          <a href="{{ route('dashboard.about') }}#design">
+            <div class="faq-item mt-3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+              <h3><span>03</span> DESAIN INTERIOR</h3>
             </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
+          </a>
+          <a href="{{ route('dashboard.about') }}#non_kontruksi">
+            <div class="faq-item mt-3"  data-aos="fade-left" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+              <h3><span>04</span>NON - KONSTRUKSI</h3>
           </div>
-          <div class="faq-item"  data-aos="fade-left" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-            <h3><span>04</span>NON - KONSTRUKSI</h3>
-            <div class="faq-content">
-            </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
+          </a>
+          
         </div>
       </div>
       <div class="col-lg-5 order-1 order-lg-2 why-us-img">

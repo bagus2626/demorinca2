@@ -38,11 +38,17 @@
 <body class="index-page">
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="/" class="logo d-flex align-items-center me-auto">
         <h3 class="sitename">PT Rinca Cipta Karya</h3>
       </a>
-      <nav id="navmenu" class="navmenu">
+       <nav id="navmenu" class="navmenu">
         <ul>
+          <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="{{ url('locale/en') }}">English</a></li>
+              <li><a href="{{ url('locale/id') }}">Indonesian</a></li>
+            </ul>
+          </li>
           <li><a href="{{ route('dashboard.homepage') }}#hero" class="active">Home</a></li>
           <li><a href="{{ route('dashboard.tracking') }}">Tracking</a></li>
           <li><a href="{{ route('dashboard.about') }}">About</a></li>
@@ -55,11 +61,12 @@
             <li>
                 <form action="{{ route('logout') }}" method="post">
                 @csrf
-                    <button type="submit" class="nav-link d-inline-block text-light border-0">Logout</button>
+                    <button type="submit" class="nav-link d-inline-block text-light border-0" style="margin-top: -13px">Logout</button>
                 </form>
             </li>
           @endauth
-            <div class="dropdown">
+         
+            {{-- <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                     Language
                 </button>
@@ -67,7 +74,7 @@
                     <li><a class="dropdown-item" href="{{ url('locale/en') }}">English</a></li>
                     <li><a class="dropdown-item" href="{{ url('locale/id') }}">Indonesian</a></li>
                 </ul>
-            </div>
+            </div> --}}
 
         </ul>
 
@@ -80,36 +87,31 @@
   <main class="main">
     @yield('content')
    <section id="contact" class="contact section">
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-title">
           <h2>Kontak Kami</h2>
         </div>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
           <div class="row gy-4">
             <div class="col-lg-5">
               <div class="info-wrap">
-                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div class="info-item d-flex">
                   <div>
-                    
-                    <h3>Address</h3>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <h2>Dapatkan Penawaran</h2>
+                    <h5>Terbaik dari kami</h5>
                   </div>
                 </div>
-                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bi bi-telephone flex-shrink-0"></i>
+                <div class="info-item d-flex">
                   <div>
-                    <h3>Call Us</h3>
-                    <p>+1 5589 55488 55</p>
+                    <p>Biaya pengurusan SLF untuk bangunan dan disetiap wilayah berbeda-beda, Berikut beberapa faktor dalam penentuan harga pengurusan SLF</p>
                   </div>
                 </div>
-                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                  <i class="bi bi-envelope flex-shrink-0"></i>
-                  <div>
-                    <h3>Email Us</h3>
-                    <p>info@example.com</p>
-                  </div>
+                <div class="info-item d-flex">
+                  <ul>
+                    <li>Bangunan rendah murah, bangunan tinggi mahal</li>
+                    <li>Bangunan luasan kecil murah, bangunan luasan besar mahal</li>
+                    <li>Bangunan baru murah, bangunan lama atau sudah tua mahal</li>
+                  </ul>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
             <div class="col-lg-7">
@@ -123,27 +125,27 @@
                 <div class="row gy-4 " id="form-contact">
                   <div class="col-md-6">
                     <label for="nama_pemohon" class="pb-2">Nama Pemohon</label>
-                    <input type="text" name="nama_pemohon" id="nama_pemohon" class="form-control">
+                    <input type="text" name="nama_pemohon" id="nama_pemohon" class="form-control" placeholder="Masukkan nama lengkap">
                   </div>
                   <div class="col-md-6">
                     <label for="nama_perusahaan" class="pb-2">Nama Perusahaan</label>
-                    <input type="text" class="form-control" name="nama_perusahaan" id="nama_perusahaan">
+                    <input type="text" class="form-control" name="nama_perusahaan" id="nama_perusahaan" placeholder="cth: PT RINCA CIPTA KARYA">
                   </div>
                   <div class="col-md-6">
                     <label for="nomor_handphone" class="pb-2">Nomor Telpon</label>
-                    <input type="text" name="nomor_handphone" id="nomor_handphone" class="form-control">
+                    <input type="text" name="nomor_handphone" id="nomor_handphone" class="form-control" placeholder="cth: 08xxxxxxx">
                   </div>
                   <div class="col-md-6">
                     <label for="email" class="pb-2">Email</label>
-                    <input type="text" class="form-control" name="email" id="email">
+                    <input type="text" class="form-control" name="email" id="email" placeholder="cth: xxxx@gmail.com">
                   </div>
                   <div class="col-md-6">
                     <label for="luas_area" class="pb-2">Luas Area</label>
-                    <input type="text" class="form-control" name="luas_area" id="luas_area">
+                    <input type="text" class="form-control" name="luas_area" id="luas_area" placeholder="cth: 40.000 M²">
                   </div>
                   <div class="col-md-6">
                     <label for="lokasi_perusahaan" class="pb-2">Lokasi Perusahaan</label>
-                    <input type="text" class="form-control" name="lokasi_perusahaan" id="lokasi_perusahaan">
+                    <input type="text" class="form-control" name="lokasi_perusahaan" id="lokasi_perusahaan" placeholder="Masukkan alamat perusahaan">
                   </div>
                   <div class="col-md-12">
                     <label for="keterangan" class="pb-2">Keterangan <span style="font-size: 11px; color: red">( opsional )</span></label>
@@ -151,7 +153,7 @@
                   </div>
                   <a href="#contact" onclick="submitOffer()" class="btn-send-message">
                     <div class="col-md-12 text-center ">
-                        Kirim Pesan
+                        Kirim Penawaran
                     </div>
                   </a>
                 </div>
@@ -160,7 +162,7 @@
                   <h3>PT RINCA CIPTA KARYA</h3>
                  </div>
                  <div class="col-12 text-center">
-                  <h6>Terima kasih telah menghubungi kami. Silahkan menunggu untuk balasan dari kami</h6>
+                  <h6>Terima kasih telah mengirim penawaran. Silahkan menunggu untuk balasan dari kami</h6>
                  </div>
                 </div>
             </div>
