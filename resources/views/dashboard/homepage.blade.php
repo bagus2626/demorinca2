@@ -713,7 +713,7 @@
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
-          <div class="faq-item"  data-aos="fade-left" data-aos-delay="500" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+         <!--  <div class="faq-item"  data-aos="fade-left" data-aos-delay="500" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
             <i class="faq-icon bi bi-question-circle"></i>
             <h3>LAYANAN JASA KONSULTANSI PERIZINAN NON-KONSTRUKSI</h3>
             <div class="faq-content">
@@ -727,7 +727,7 @@
               </p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
+          </div> -->
         </div>
       </div>
 
