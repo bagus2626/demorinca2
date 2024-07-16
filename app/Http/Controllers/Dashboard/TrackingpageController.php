@@ -8,15 +8,16 @@ use App\Http\Controllers\Controller;
 
 class TrackingpageController extends Controller
 {
-    public function index() 
+    public function index()
     {
         return view('dashboard.trackingpage');
     }
 
-    public function search(Request $request) 
+    public function search(Request $request)
     {
         $val = $request->data;
         $data = DB::table('documents')->where('token', $val)->first();
+
 
         return response()->json([
             'data' => $data

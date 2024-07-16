@@ -83,7 +83,9 @@
 @section('content')
 <section id="hero" class="call-to-action section dark-background">
   <img src="assets/img/cta-bg.jpg" alt="">
+
   <div class="container">
+
     <div class="row" data-aos="zoom-in" data-aos-delay="100">
       <div class="col-xl-8 text-center text-xl-start mt-3">
         <h1>Selamat Datang di PT Rinca Cipta Karya</h1>

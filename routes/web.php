@@ -24,6 +24,7 @@ use App\Http\Middleware\TrackVisitor;
 //     return view('welcome');
 // });
 Route::get('/',  [HomepageController::class, 'index'])->name('dashboard.homepage');
+//Route::get('/',  [HomepageController::class, 'index'])->name('dashboard_en.homepage');
 Route::get('/tracking', [TrackingpageController::class, 'index'])->name('dashboard.tracking');
 Route::post('/tracking/search', [TrackingpageController::class, 'search']);
 // AUTH
