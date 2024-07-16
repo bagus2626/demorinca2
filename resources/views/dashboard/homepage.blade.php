@@ -287,11 +287,11 @@
               <h3><span>03</span> DESAIN INTERIOR</h3>
             </div>
           </a>
-          <a href="{{ route('dashboard.about') }}#non_kontruksi">
+         <!--  <a href="{{ route('dashboard.about') }}#non_kontruksi">
             <div class="faq-item mt-3"  data-aos="fade-left" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
               <h3><span>04</span>NON - KONSTRUKSI</h3>
           </div>
-          </a>
+          </a> -->
           
         </div>
       </div>
