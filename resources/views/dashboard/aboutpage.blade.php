@@ -188,7 +188,7 @@
       </div>
     </section>
 
-     <section id="non_kontruksi" class="section why-us light-background" data-builder="section">
+    <!--  <section id="non_kontruksi" class="section why-us light-background" data-builder="section">
       <div class="container-fluid">
         <div class="row gy-4">
            <div class="col-lg-5 order-1 order-lg-1">
@@ -234,6 +234,6 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 @endsection
