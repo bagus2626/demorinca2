@@ -3,10 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>PT RINCA CIPTA KARYA</title>
+  <title>PT RINCA CIPTA KARYA - Konsultan perizinan bangunan berlisensi</title>
+  <meta name="author" content="https://rincakonsultan.com/" />
+	<meta name="website" content="https://rincakonsultan.com/" />
+  <meta content="Konsultan perizinan bangunan berlisensi" name="keywords">
+  <meta content="Konsultan perizinan bangunan berlisensi" name="tagline">
   <meta content="konsultan perencanaan arsitek dan pengurusan perizinan bangunan gedung yang sudah memiliki lisensi." name="description">
-  <meta content="Konsultan perizinan bangunan" name="keywords">
-
+   
   <meta name="csrf-token" content="{{ csrf_token() }}">
   @stack('before-style')
   <link href="assets/img/favicon.png" rel="icon">
