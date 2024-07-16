@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\DocumentController;
+use App\Http\Controllers\Admin\OfferController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Dashboard\HomepageController;
@@ -26,6 +27,7 @@ use App\Http\Controllers\Dashboard\AboutpageController;
 //     return view('welcome');
 // });
 Route::get('/',  [HomepageController::class, 'index'])->name('dashboard.homepage');
+Route::post('/send-offer', [HomepageController::class, 'sendOffer']);
 Route::get('/about', [AboutpageController::class, 'index'])->name('dashboard.about');
 //Route::get('/',  [HomepageController::class, 'index'])->name('dashboard_en.homepage');
 Route::get('/tracking', [TrackingpageController::class, 'index'])->name('dashboard.tracking');
@@ -40,6 +42,7 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::prefix('admin')->middleware('auth')->group(function () {
     Route::resource('/documents', DocumentController::class);
     Route::get('/documents/change-status/{id}', [DocumentController::class, 'changeStatus'])->name('documents.change-status');
+    Route::resource('/offers', OfferController::class);
     Route::get('/settings', [SettingController::class, 'index'])->name('settings.index');
     Route::put('/settings', [SettingController::class, 'update'])->name('settings.update');
 });

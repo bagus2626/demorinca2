@@ -33,6 +33,11 @@
               >Documents</a
             >
             <a
+              href="{{ route('offers.index') }}"
+              class="list-group-item list-group-item-action {{ Request::is('admin/offers*') ? 'active' : '' }}"
+              >Penawaran</a
+            >
+            <a
               href="{{ route('settings.index') }}"
               class="list-group-item list-group-item-action {{ Request::is('admin/settings') ? 'active' : '' }}"
               >Setting</a

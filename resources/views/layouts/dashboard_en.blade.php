@@ -79,10 +79,9 @@
 
   <main class="main">
     @yield('content')
-    <section id="contact" class="contact section">
+   <section id="contact" class="contact section">
         <div class="container section-title" data-aos="fade-up">
-          <h2>Contact</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          <h2>Kontak Kami</h2>
         </div>
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4">
@@ -114,28 +113,55 @@
               </div>
             </div>
             <div class="col-lg-7">
-                <div class="row gy-4">
+              <div class="row">
+                <div class="col-12">
+                  <div id="alertForm" class="alert alert-success alert-dismissible fade show mt-2" role="alert" style="display: none">
+                    Silahkan lengkapi semua data terlebih dahulu
+                  </div>
+                </div>
+              </div>
+                <div class="row gy-4 " id="form-contact">
                   <div class="col-md-6">
                     <label for="nama_pemohon" class="pb-2">Nama Pemohon</label>
-                    <input type="text" name="name" id="nama_pemohon" class="form-control" required>
+                    <input type="text" name="nama_pemohon" id="nama_pemohon" class="form-control">
                   </div>
                   <div class="col-md-6">
                     <label for="nama_perusahaan" class="pb-2">Nama Perusahaan</label>
-                    <input type="text" class="form-control" name="nama_perusahaan" id="nama_perusahaan" required>
+                    <input type="text" class="form-control" name="nama_perusahaan" id="nama_perusahaan">
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-md-6">
+                    <label for="nomor_handphone" class="pb-2">Nomor Telpon</label>
+                    <input type="text" name="nomor_handphone" id="nomor_handphone" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="pb-2">Email</label>
+                    <input type="text" class="form-control" name="email" id="email">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="luas_area" class="pb-2">Luas Area</label>
+                    <input type="text" class="form-control" name="luas_area" id="luas_area">
+                  </div>
+                  <div class="col-md-6">
                     <label for="lokasi_perusahaan" class="pb-2">Lokasi Perusahaan</label>
-                    <input type="text" class="form-control" name="lokasi_perusahaan" id="lokasi_perusahaan" required>
+                    <input type="text" class="form-control" name="lokasi_perusahaan" id="lokasi_perusahaan">
                   </div>
                   <div class="col-md-12">
-                    <label for="keterangan" class="pb-2">Keterangan</label>
-                    <textarea class="form-control" name="keterangan" rows="10" id="keterangan" required></textarea>
+                    <label for="keterangan" class="pb-2">Keterangan <span style="font-size: 11px; color: red">( opsional )</span></label>
+                    <textarea class="form-control" name="keterangan" rows="10" id="keterangan"></textarea>
                   </div>
-                  <a href="" class="btn-send-message">
+                  <a href="#contact" onclick="submitOffer()" class="btn-send-message">
                     <div class="col-md-12 text-center ">
                         Kirim Pesan
                     </div>
                   </a>
+                </div>
+                <div class="row gy-4 " id="form-success-contact" style="display: none">
+                 <div class="col-12 text-center">
+                  <h3>PT RINCA CIPTA KARYA</h3>
+                 </div>
+                 <div class="col-12 text-center">
+                  <h6>Terima kasih telah menghubungi kami. Silahkan menunggu untuk balasan dari kami</h6>
+                 </div>
                 </div>
             </div>
           </div>
@@ -379,6 +405,69 @@
         const year = date.getFullYear();
 
         return `${day}-${month}-${year}`;
+    }
+
+     // send offer
+    function submitOffer() 
+    {
+      let csrfToken = $('meta[name="csrf-token"]').attr('content');
+      let nama_pemohon = $("#nama_pemohon").val();
+      let nama_perusahaan = $("#nama_perusahaan").val();
+      let nomor_handphone = $("#nomor_handphone").val();
+      let email = $("#email").val();
+      let luas_area = $("#luas_area").val();
+      let lokasi_perusahaan = $("#lokasi_perusahaan").val();
+      let keterangan = $("#keterangan").val();
+      if(
+        !nama_pemohon ||
+        !nama_perusahaan ||
+        !nomor_handphone ||
+        !email ||
+        !luas_area ||
+        !lokasi_perusahaan
+      ) 
+      {
+        $("#alertForm").show();
+        setTimeout(() => {
+                    $("#tracking-result").fadeOut(300, () => {
+                        $(this).empty().hide();
+                    });
+                }, 3000);
+        setTimeout(() => {
+          $("#alertForm").fadeOut(300, () => {
+              $(this).empty().hide();
+          });
+        }, 3000);
+
+        return;
+      }
+
+      $.ajax({
+        url: "/send-offer", 
+        method: "POST", 
+        dataType: "JSON", 
+        headers: {
+          'X-CSRF-TOKEN': csrfToken
+        },
+        data: {
+          nama_pemohon,
+          nama_perusahaan,
+          nomor_handphone,
+          email,
+          luas_area,
+          lokasi_perusahaan,
+          keterangan
+        }, 
+        success: (response) => {
+          console.log(response)
+          $("#form-contact").hide();
+          $("#form-success-contact").show();
+        }, 
+        error: (err) => {
+          console.log(err)
+        }
+      })
+
     }
   </script>
   @stack('after-script')

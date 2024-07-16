@@ -3,9 +3,10 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\Models\Penawaran;
 use App\Models\Visitor;
 use Illuminate\Support\Carbon;
-// use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 
 class HomepageController extends Controller
 {
@@ -18,5 +19,25 @@ class HomepageController extends Controller
 
         $visitors = Visitor::all();
         return view('dashboard.homepage', compact('visitorsToday', 'visitorsLast30Days', 'viewsToday', 'viewsLast30Days', 'totalViews', 'visitors'));
+    }
+
+    public function sendOffer(Request $request)
+    {
+        $data = [
+            'tanggal' => Carbon::now(),
+            'nama_pemohon' => $request->nama_pemohon,
+            'nama_perusahaan' => $request->nama_perusahaan,
+            'nomor_handphone' => $request->nomor_handphone,
+            'email' => $request->email,
+            'luas_area' => $request->luas_area,
+            'lokasi_perusahaan' => $request->lokasi_perusahaan,
+            'keterangan' => $request->keterangan,
+        ];
+        $result = Penawaran::create($data);
+
+        return response()->json([
+            'status' => 200, 
+            'data' => $result
+        ]);
     }
 }
