@@ -51,64 +51,6 @@
   </div>
 </section>
 
-<section id="direktur" class="direktur section">
-  <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-    <h2>Direktur</h2>
-  </div>
-  <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-4 content text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-        <img src="assets/img/personal/direktur.png" alt="" class="img-fluid">
-        <h5 class="mt-3">
-          DAWIN MUHAMAD YUSUF
-        </h5>
-        <p class="fw-bold">
-          Direktur & Tenaga Ahli Struktur
-        </p>
-        <p>
-          PT Rinca Cipta Karya merupakan konsultan enjiniring yang mayoritas bergerak
-          dibidang Arsitektural dan Sipil. PT Rinca
-          Cipta Karya senantiasa menyempurnakan kemampuan terus menerus, untuk
-          menyiapkan enjinir-enjinir muda dapat
-          bersaing dalam taraf Internasional.
-        </p>
-      </div>
-      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-        <p>
-          Dalam peningkatan dan pertumbuhan penjualan
-          dan laba, Rinca Cipta Karya memperkuat bisnis
-          yang ada, bidang-bidang proyek baru dan menamabah bisnis baru di bidang engineering, interior,
-          dan perizinan bangunan gedung. Rinca Cipta
-          Karya terus menyempurnakan produk dan layanan
-          dengan harga kompetitif, agar seluruh masyarakat dapat mendapatkan manfaat yang adil.
-        </p>
-        <p>
-          Pengembangan dan penyempurnaan terus
-          menerus kami lakukan, seperti teknologi informasi
-          yang menjadikan seluruh aktivitas lebih terkelola
-          secara terintegrasi, efisien, transparan, dan akuntable. PT Rinca Cipta Karya berkomitmen menjadi
-          konsultan yang sustainable dibangun dengan
-          pemahaman dan komitmen kuat di dalam peningkatan kualitas karyawan dengan peningkatan
-          kompetensi dan kemampuan
-        </p>
-        <p>
-          Kepemimpinan menjadi sangat berperan didalam
-          menentukan kinerja dan kerberhasilan perusahaan. Program pengembangan SDM dirumuskan
-          dan dijalankan secara sungguh-sungguh dan
-          berkesinambungan.
-        </p>
-        <p>
-          PT Rinca Cipta Karya merupakan konsultan yang
-          diproyeksikan menjadi salah satu terbaik di Indonesia, PT Rinca Cipta Karya senantiasa memegang teguh filosofi untuk PASTI MEMBERIKAN
-          JASA TERBAIK UNTUK SELURUH KLIEN, dengan
-          penuh Amanah, Kompeten, Kolaboratif, Adaptif,
-          dan Loyal.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="why-us" class="section why-us light-background" data-builder="section">
   <div class="container-fluid">
     <div class="row gy-4">

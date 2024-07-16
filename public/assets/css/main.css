@@ -96,6 +96,24 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.btn-send-message {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #059652;
+    border-radius: 20px;
+    border: 1px solid #059652;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.btn-send-message:hover {
+    background-color: #059652;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
 @media (max-width: 576px) {
     .iframe-container iframe {
         width: 300px;
