@@ -219,10 +219,10 @@
                 if(response.data) {
                     html = `
                         <div class="tracking-result">
-                            <i class="${response.data.tanggal ? `bi bi-check2-circle text-success` : `bi-dash-circle text-danger`}"></i> Mulai - ${response.data.tanggal ? formatDate(response.data.tanggal) : `Belum ada tanggal mulai`}
+                            <i class="${response.data.tanggal ? `bi bi-check2-circle text-success` : `bi-dash-circle text-danger`}"></i> Mulai ( ${response.data.tanggal ? formatDate(response.data.tanggal) : `Belum ada tanggal mulai`})  -  <i class="${response.data.tanggal_estimasi }"></i> Rencana Selesai (${response.data.tanggal_estimasi ? formatDate(response.data.tanggal_estimasi) : `Belum ada tanggal rencana selesai`})
                         </div>
                         <div class="tracking-result">
-                            <i class="${response.data.tanggal_estimasi ? `bi bi-check2-circle text-success` : `bi-dash-circle text-danger`}"></i> Rencana Selesai - ${response.data.tanggal_estimasi ? formatDate(response.data.tanggal_estimasi) : `Belum ada tanggal rencana selesai`}
+                            <i class="${response.data.no_registrasi_sistem_simbg }"></i> Nomor Registrasi : ${response.data.no_registrasi_sistem_simbg}
                         </div>
                         <div class="tracking-result ${response.tanggal_selesai ? '' : 'text-danger'}">
                             <i class="${response.data.tanggal_selesai ? `bi bi-check2-circle text-success` : `bi-dash-circle text-danger`}"></i> Selesai - ${response.data.tanggal_selesai ? formatDate(response.data.tanggal_selesai) : `Belum selesai`}
