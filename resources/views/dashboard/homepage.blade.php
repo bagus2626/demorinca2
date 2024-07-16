@@ -176,35 +176,35 @@
   </div>
 </section>
 
-<section id="about" class="about section">
-  <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-    <h2>Tentang Kami</h2>
-  </div>
-  <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-6 content" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-        <h4>
-          Visi
-        </h4>
-        <p>
-          Menjadi Konsultan Enjiniring yang Handal, Cakap, dan Memegang Teguh Sustatainable Desain Untuk Keberlangsungan
-          Bumi Beserta Isinya
-        </p>
-      </div>
-      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-        <h4>
-          Misi
-        </h4>
-        <ul>
-          <li><i class="bi bi-check2-circle"></i> <span>Mengembangkan Karya Enjiniring Indonesia yang Berkualitas.</span></li>
-          <li><i class="bi bi-check2-circle"></i> <span>Menyediakan produk/ jasa Konsultan Enjiniring, Manajemen Proyek yang unggul dan berkesinambungan.</span></li>
-          <li><i class="bi bi-check2-circle"></i> <span>Memberikan manfaat dan nilai tambah untuk Masyarakat sekitar.</span></li>
-          <li><i class="bi bi-check2-circle"></i> <span>Memberdayakan pengetahuan, pengalaman, dan kreativitas untuk terciptanya solusi terbaik, dengan tidak lupa memegang teguh komitmen dan keper.</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+{{--<section id="about" class="about section">--}}
+{{--  <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">--}}
+{{--    <h2>Tentang Kami</h2>--}}
+{{--  </div>--}}
+{{--  <div class="container">--}}
+{{--    <div class="row gy-4">--}}
+{{--      <div class="col-lg-6 content" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">--}}
+{{--        <h4>--}}
+{{--          Visi--}}
+{{--        </h4>--}}
+{{--        <p>--}}
+{{--          Menjadi Konsultan Enjiniring yang Handal, Cakap, dan Memegang Teguh Sustatainable Desain Untuk Keberlangsungan--}}
+{{--          Bumi Beserta Isinya--}}
+{{--        </p>--}}
+{{--      </div>--}}
+{{--      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">--}}
+{{--        <h4>--}}
+{{--          Misi--}}
+{{--        </h4>--}}
+{{--        <ul>--}}
+{{--          <li><i class="bi bi-check2-circle"></i> <span>Mengembangkan Karya Enjiniring Indonesia yang Berkualitas.</span></li>--}}
+{{--          <li><i class="bi bi-check2-circle"></i> <span>Menyediakan produk/ jasa Konsultan Enjiniring, Manajemen Proyek yang unggul dan berkesinambungan.</span></li>--}}
+{{--          <li><i class="bi bi-check2-circle"></i> <span>Memberikan manfaat dan nilai tambah untuk Masyarakat sekitar.</span></li>--}}
+{{--          <li><i class="bi bi-check2-circle"></i> <span>Memberdayakan pengetahuan, pengalaman, dan kreativitas untuk terciptanya solusi terbaik, dengan tidak lupa memegang teguh komitmen dan keper.</span></li>--}}
+{{--        </ul>--}}
+{{--      </div>--}}
+{{--    </div>--}}
+{{--  </div>--}}
+{{--</section>--}}
 
 <section id="direktur" class="direktur section">
   <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
