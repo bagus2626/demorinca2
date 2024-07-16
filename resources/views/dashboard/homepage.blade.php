@@ -78,6 +78,45 @@
   .next {
       right: 0;
   }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+  .card {
+    background-color: #3cb371; /* Box color */
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    max-width: 50px;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+.header {
+      background-color: #5db54d;
+    heading-color: #ffffff;
+     color: var(--default-color);
+}
+</style>
+<style type="text/css">
+  
+
 </style>
 @endpush
 @section('content')
@@ -323,6 +362,30 @@
 {{--    </div>--}}
 {{--  </div>--}}
 {{--</section>--}}
+
+<body>
+    <div class="container">
+        <h1>Mengapa Memilih Kami?</h1>
+        <div class="grid">
+            <div class="header">
+                <img src="path/to/icon1.png" alt="">
+                <h2>Tim Yang Professional.</h2>
+                <p>Tim kami siap untuk mengakomodasi seluruh kebutuhan anda. Kami berkomitmen, terampil, dan menjunung tinggi profesionalisme dan efisiensi , agar pekerjaan anda selesai lebih cepat dengan hasil sesuai.</p>
+            </div>
+            <div class="header">
+                <img src="path/to/icon2.png" alt="">
+                <h2>Memberikan Solusi Terbaik.</h2>
+                <p>Kami sadar KONSULTAN memang tempatnya bertanya dan konsultasi, maka misi kami memberikan SOLUSI TERBAIK untuk masalah PERIZINAN PERUSAHAAN anda.</p>
+            </div>
+            <div class="header">
+                <img src="path/to/icon3.png" alt="">
+                <h2>Hasil yang Memuaskan.</h2>
+                <p>Kami PT RINCA CIPTA KARYA memberikan hasil terbaik, dengan harga relatif murah dibanding pesaing kami.</p>
+            </div>
+            <!-- Repeat similar blocks for other cards -->
+        </div>
+    </div>
+</body>
 
 <section id="portfolio" class="portfolio section">
   <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
