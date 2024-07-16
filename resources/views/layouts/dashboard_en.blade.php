@@ -41,7 +41,7 @@
         <ul>
           <li><a href="{{ route('dashboard.homepage') }}#hero" class="active">Home</a></li>
           <li><a href="{{ route('dashboard.tracking') }}">Tracking</a></li>
-          <li><a href="{{ route('dashboard.homepage') }}#about">About</a></li>
+          <li><a href="{{ route('dashboard.about') }}">About</a></li>
           <li><a href="{{ route('dashboard.homepage') }}#portfolio">Project</a></li>
           <li><a href="{{ route('dashboard.homepage') }}#contact">Contact</a></li>
           @guest

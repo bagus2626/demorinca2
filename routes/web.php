@@ -5,8 +5,10 @@ use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Dashboard\HomepageController;
 use App\Http\Controllers\Dashboard\TrackingpageController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\TrackVisitor;
+use App\Models\Visitor;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Dashboard\AboutpageController;
 
 
 /*
@@ -24,6 +26,7 @@ use App\Http\Middleware\TrackVisitor;
 //     return view('welcome');
 // });
 Route::get('/',  [HomepageController::class, 'index'])->name('dashboard.homepage');
+Route::get('/about', [AboutpageController::class, 'index'])->name('dashboard.about');
 //Route::get('/',  [HomepageController::class, 'index'])->name('dashboard_en.homepage');
 Route::get('/tracking', [TrackingpageController::class, 'index'])->name('dashboard.tracking');
 Route::post('/tracking/search', [TrackingpageController::class, 'search']);
