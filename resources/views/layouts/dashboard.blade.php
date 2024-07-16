@@ -113,13 +113,61 @@
                         </div>
                       </div>
                 </div>
-                </div>
-            </form>
+                </form>
             </div>
+                <head>
+                    <title>Visitor Statistics</title>
+                    <style>
+                        .statistics-box {
+                            background-color: #3cb371;
+                            color: white;
+                            padding: 20px;
+                            border-radius: 10px;
+                            width: 250px;
+                        }
+                        .statistics-box .stat-item {
+                            margin-bottom: 10px;
+                        }
+                        .statistics-box .stat-item span {
+                            display: block;
+                            font-size: 20px;
+                        }
+                        table {
+                            width: 100%;
+                            border-collapse: collapse;
+                        }
+                        th, td {
+                            border: 1px solid #ddd;
+                            padding: 8px;
+                        }
+                        th {
+                            background-color: #f2f2f2;
+                        }
+                    </style>
+                </head>
+                <div class="statistics-box">
+                    <div class="stat-item">
+                        <span>👤 Users Today :</span> {{ $visitorsToday }}
+                    </div>
+                    <div class="stat-item">
+                        <span>👥 Users Last 30 days :</span> {{ $visitorsLast30Days }}
+                    </div>
+                    <div class="stat-item">
+                        <span>📅 Views Today :</span> {{ $viewsToday }}
+                    </div>
+                    <div class="stat-item">
+                        <span>👁️ Views Last 30 days :</span> {{ $viewsLast30Days }}
+                    </div>
+                    <div class="stat-item">
+                        <span>📊 Total views :</span> {{ $totalViews }}
+                    </div>
+                </div>
         </div>
         </div>
     </section>
-  </main> 
+  </main>
+
+
 
 @stack('before-script')
   <div id="preloader"></div>
@@ -157,9 +205,9 @@
         let csrfToken = $('meta[name="csrf-token"]').attr('content');
 
         $.ajax({
-            url: '/tracking/search', 
-            method: 'POST', 
-            dataType: 'JSON', 
+            url: '/tracking/search',
+            method: 'POST',
+            dataType: 'JSON',
             data: {
                 data: val
             },
@@ -194,8 +242,8 @@
                 }
                 $("#tracking-result").fadeIn(300).empty().show().html(html);
 
-                
-            }, 
+
+            },
             error: (err) => {
                 console.log(err)
             }
@@ -215,7 +263,7 @@
 
         return `${day}-${month}-${year}`;
     }
-  </script>  
+  </script>
   @stack('after-script')
 </body>
 </html>

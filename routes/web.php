@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Dashboard\HomepageController;
 use App\Http\Controllers\Dashboard\TrackingpageController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\TrackVisitor;
 
 
 /*
@@ -38,3 +39,15 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('/settings', [SettingController::class, 'index'])->name('settings.index');
     Route::put('/settings', [SettingController::class, 'update'])->name('settings.update');
 });
+Route::get('/dashboard/homepage', function () {
+    $visitors = Visitor::all();
+    return view('dashboard.homepage', compact('visitors'));
+});
+//Route::get('/', function () {
+//    return view('welcome');
+//})->middleware(TrackVisitor::class);
+//Route::get('/admin/visitors', function () {
+//    $visitors = \App\Models\Visitor::all();
+//    return view('admin.visitors', compact('visitors'));
+//});
+//

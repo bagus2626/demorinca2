@@ -87,10 +87,10 @@
     <div class="row" data-aos="zoom-in" data-aos-delay="100">
       <div class="col-xl-8 text-center text-xl-start mt-3">
         <h1>Selamat Datang di PT Rinca Cipta Karya</h1>
-        <p>PT Rinca Cipta Karya merupakan konsultan perencanaan 
-          arsitek dan pengurusan perizinan bangunan gedung yang 
-          sudah memiliki lisensi. Memiliki target market semua 
-          pemilik bangunan gedung, atau semua yang ingin 
+        <p>PT Rinca Cipta Karya merupakan konsultan perencanaan
+          arsitek dan pengurusan perizinan bangunan gedung yang
+          sudah memiliki lisensi. Memiliki target market semua
+          pemilik bangunan gedung, atau semua yang ingin
           membangun bangunan.</p>
           <div class="d-flex mt-4">
             <input type="text" class="tracking-input" style="margin-top: 10px" placeholder="Cari nomor document, cth: DC12345" id="valueTracking">
@@ -303,27 +303,27 @@
   </div>
 </section>
 
-<section id="skills" class="skills section" style="background-color: #e2e0e0">
-  <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-    <h2>Legalitas Perusahaan</h2>
-    <p>CORPORATE MEMBERSHIP</p>
-  </div>
-  <div class="container">
-    <div class="row justify-content=center"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-      <div class="col-lg-6 pt-4 pt-lg-0 content text-center">
-        <img src="assets/img/sertifikat/1.png" class="img-fluid" alt="">
-        <h5 class="mt-3">PERKINDO DKI JAKARTA</h5>
-        <p class="fst-italic">Keanggotaan Persatuan Konsultan IndonesiaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="col-lg-6 pt-4 pt-lg-0 content text-center"  data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-        <img src="assets/img/sertifikat/2.png" class="img-fluid" alt="">
-          <h5 class="mt-3">SERTIFIKAT BADAN USAHA
-            JASA KONSTRUKSI</h5>
-          <p class="fst-italic">Kami telah legal dan tersertifikasi</p>
-      </div>
-    </div>
-  </div>
-</section>
+{{--<section id="skills" class="skills section" style="background-color: #e2e0e0">--}}
+{{--  <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">--}}
+{{--    <h2>Legalitas Perusahaan</h2>--}}
+{{--    <p>CORPORATE MEMBERSHIP</p>--}}
+{{--  </div>--}}
+{{--  <div class="container">--}}
+{{--    <div class="row justify-content=center"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">--}}
+{{--      <div class="col-lg-6 pt-4 pt-lg-0 content text-center">--}}
+{{--        <img src="assets/img/sertifikat/1.png" class="img-fluid" alt="">--}}
+{{--        <h5 class="mt-3">PERKINDO DKI JAKARTA</h5>--}}
+{{--        <p class="fst-italic">Keanggotaan Persatuan Konsultan IndonesiaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>--}}
+{{--      </div>--}}
+{{--      <div class="col-lg-6 pt-4 pt-lg-0 content text-center"  data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">--}}
+{{--        <img src="assets/img/sertifikat/2.png" class="img-fluid" alt="">--}}
+{{--          <h5 class="mt-3">SERTIFIKAT BADAN USAHA--}}
+{{--            JASA KONSTRUKSI</h5>--}}
+{{--          <p class="fst-italic">Kami telah legal dan tersertifikasi</p>--}}
+{{--      </div>--}}
+{{--    </div>--}}
+{{--  </div>--}}
+{{--</section>--}}
 
 <section id="portfolio" class="portfolio section">
   <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
@@ -731,8 +731,12 @@
           </div>
         </div>
       </div>
+
     </div>
+
   </div>
+
+
 </section>
 @endsection
 
