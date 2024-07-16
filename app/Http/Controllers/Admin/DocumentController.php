@@ -45,7 +45,8 @@ class DocumentController extends Controller
             'no_registrasi_sistem_simbg' => 'required', 
             'nama_pemohon' => 'required',
             'tanggal' => 'required|date',
-            'tanggal_estimasi' => 'required|date'
+            'tanggal_estimasi' => 'required|date',
+            'keterangan' => 'nullable'
         ], [
             'no_registrasi_sistem_simbg.required' => 'Nomor registrasi sistem SimBG wajib diisi.',
             'nama_pemohon.required' => 'Nama pemohon wajib diisi.',
@@ -97,7 +98,9 @@ class DocumentController extends Controller
             'no_registrasi_sistem_simbg' => 'required', 
             'nama_pemohon' => 'required',
             'tanggal' => 'required|date',
-            'tanggal_estimasi' => 'required|date'
+            'tanggal_estimasi' => 'required|date',
+            'keterangan' => 'nullable', 
+            'link' => 'nullable'
         ], [
             'no_registrasi_sistem_simbg.required' => 'Nomor registrasi sistem SimBG wajib diisi.',
             'nama_pemohon.required' => 'Nama pemohon wajib diisi.',

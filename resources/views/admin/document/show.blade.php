@@ -3,9 +3,9 @@
 @section('content')
  <div class="container-fluid">
     <div class="dashboard-heading">
-    <h2 class="dashboard-title">Edit Document</h2>
+    <h2 class="dashboard-title">Detail Document</h2>
     <p class="dashboard-subtitle">
-        Mengubah document
+        Detail document
     </p>
     </div>
     <div class="dashboard-content">
@@ -101,6 +101,38 @@
                         value="{{ $data->nama_pemohon ?? old('nama_pemohon') }}"
                         readonly
                     />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                    <label for="link">Link</label>
+                    @if ($data->link)
+                        <a target="_blank" href="{{ $data->link }}">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="link"
+                                name="link"
+                                value="{{ $data->link ?? old('link') }}"
+                                readonly
+                            />
+                        </a>
+                    @else
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="link"
+                            name="link"
+                            value="-"
+                            readonly
+                        />
+                    @endif
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                    <label for="keterangan">Keterangan</label>
+                    <textarea name="keterangan" id="keterangan" class="form-control" readonly>{{ $data->keterangan ?? old('keterangan') }}</textarea>
                     </div>
                 </div>
             

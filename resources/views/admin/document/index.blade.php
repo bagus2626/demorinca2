@@ -40,6 +40,7 @@
                     <th scope="col">Token</th>
                     <th scope="col">No sistem simbg</th>
                     <th scope="col">Pemohon</th>
+                    <th scope="col">Keterangan</th>
                     <th scope="col">Status</th>
                     <th scope="col">Action</th>
                   </tr>
@@ -56,6 +57,9 @@
                       </td>
                       <td style="width: 15%;">
                         <div class="product-title">{{ $doc->nama_pemohon }}</div>
+                      </td>
+                      <td style="width: 15%;">
+                        <div class="product-title">{{ $doc->keterangan ?? '-' }}</div>
                       </td>
                       <td style="width: 15%;">
                         <div class="product-title {{ $doc->status === 'Selesai' ? 'text-success' : 'text-warning' }}">{{ $doc->status }}</div>

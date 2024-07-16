@@ -513,6 +513,7 @@ class ComposerStaticInitc61ff82cbf0142a401a48a8161e1595a
         'App\\Http\\Controllers\\Admin\\SettingController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/SettingController.php',
         'App\\Http\\Controllers\\Auth\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AuthController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\Dashboard\\AboutpageController' => __DIR__ . '/../..' . '/app/Http/Controllers/Dashboard/AboutpageController.php',
         'App\\Http\\Controllers\\Dashboard\\HomepageController' => __DIR__ . '/../..' . '/app/Http/Controllers/Dashboard/HomepageController.php',
         'App\\Http\\Controllers\\Dashboard\\TrackingpageController' => __DIR__ . '/../..' . '/app/Http/Controllers/Dashboard/TrackingpageController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',

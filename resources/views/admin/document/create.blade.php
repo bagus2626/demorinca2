@@ -86,6 +86,12 @@
                         @enderror
                         </div>
                     </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                        <label for="keterangan">Keterangan</label>
+                        <textarea class="form-control" name="keterangan" id="keterangan">{{ old('keterangan') }}</textarea>
+                        </div>
+                    </div>
                 
                 </div>
             </div>

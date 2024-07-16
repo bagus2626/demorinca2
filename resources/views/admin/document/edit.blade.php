@@ -87,6 +87,32 @@
                         @enderror
                         </div>
                     </div>
+                    @if ($data->status == 'Selesai')
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            <label for="link">Link</label>
+                            <input
+                                type="text"
+                                class="form-control @error('link') is-invalid @enderror"
+                                id="link"
+                                name="link"
+                                placeholder="Masukkan link google drive"
+                                value="{{ $data->link ?? old('link') }}"
+                            />
+                            @error('link')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                            </div>
+                        </div>
+                    @endif
+                    <div class="col-md-6">
+                        <div class="form-group">
+                        <label for="keterangan">Keterangan</label>
+                        <textarea name="keterangan" id="keterangan" class="form-control">{{ $data->keterangan ?? old('keterangan') }}</textarea>
+                        </div>
+                    </div>
                 
                 </div>
             </div>
