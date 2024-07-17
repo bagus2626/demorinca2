@@ -13,7 +13,7 @@
 <section id="call-to-action" class="call-to-action section dark-background">
     <img src="assets/img/cta-bg.jpg" alt="">
     <div class="container">
-      <div class="row" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
         <div class="col-xl-12 text-start mt-3">
           <h1 class="title-about" style="font-weight: bold">{{ __('about') }}</h1>
         </div>
@@ -22,12 +22,9 @@
   </section>
 
 <section id="about" class="about section">
-  {{-- <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-    <h2>Tentang Kami</h2>
-  </div> --}}
   <div class="container">
     <div class="row gy-4">
-      <div class="col-lg-6 content" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+      <div class="col-lg-6 content" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
         <h4>
           Visi
         </h4>
@@ -35,7 +32,7 @@
           {{ __('visi') }}
         </p>
       </div>
-      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
         <h4>
           Misi
         </h4>
@@ -54,13 +51,13 @@
       <div class="container-fluid">
         <div class="row gy-4">
           <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
               <h3><strong>01. {{ __('bussines_activities_1') }}</strong></h3>
               <p>
                 {{ __('bussines_1_1') }}
               </p>
             </div>
-            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-container px-xl-5">
               <div class="faq-item">
                 <h3>{{ __('bussines_1_2') }}</h3>
                 <div class="faq-content">
@@ -85,7 +82,7 @@
             </div>
           </div>
           <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-            <img src="assets/img/icon-modern-1.webp" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/icon-modern-1.webp" class="img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -95,16 +92,16 @@
       <div class="container-fluid">
         <div class="row gy-4">
            <div class="col-lg-5 order-1 order-lg-1">
-            <img src="assets/img/icon-modern-2.webp" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/icon-modern-2.webp" class="img-fluid" alt="">
           </div>
           <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-2">
-            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
               <h3><strong>02. {{ __('bussines_activities_2') }}</strong></h3>
               <p>
                 {{ __('description_bussines') }}
               </p>
             </div>
-            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-container px-xl-5">
               <div class="faq-item">
                 <h3>{{ __('imb_title') }}</h3>
                 <div class="faq-content">
@@ -143,13 +140,13 @@
       <div class="container-fluid">
         <div class="row gy-4">
           <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
               <h3><strong>03. {{ __('bussines_activities_3') }}</strong></h3>
               <p>
                 {{ __('interior_services_description') }}
               </p>
             </div>
-            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-container px-xl-5">
               <div class="faq-item">
                 <h3>{{ __('concept_design_title') }}</h3>
                 <div class="faq-content">
@@ -181,7 +178,7 @@
             </div>
           </div>
            <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-            <img src="assets/img/icon-modern-3.webp" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/icon-modern-3.webp" class="img-fluid" alt="">
           </div>
         </div>
       </div>

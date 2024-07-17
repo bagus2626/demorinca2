@@ -88,7 +88,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: #5ba577;">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <a href="/" class="logo d-flex align-items-center me-auto">
-       <img src="assets/img/favicon2.png" alt="" style="width: 140px; height: 90px;">
+       <img src="assets/img/favicon2.webp" alt="" style="width: 140px; height: 90px;">
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>

@@ -140,7 +140,7 @@
 </section>
 
 <section id="clients" class="clients section light-background">
-  <div class="container" data-aos="zoom-in">
+  <div class="container">
     <div class="swiper init-swiper">
       <script type="application/json" class="swiper-config">
         {
@@ -226,18 +226,17 @@
       right: 0;
       height: 100%;
       background:  rgba(255, 255, 255, 0.7);
-      /* background:  rgba(167, 167, 167, 0.7); */
       z-index: 1;
   }
 </style>
 
 <section id="direktur" class="direktur modern-building-1 section">
-  <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+  <div class="container section-title">
     <h2>Direktur</h2>
   </div>
   <div class="container">
     <div class="row gy-4">
-      <div class="col-lg-4 content text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+      <div class="col-lg-4 content text-center">
         <img src="assets/img/personal/direktur.png" alt="" class="img-fluid">
         <h5 class="mt-3">
           DAWIN MUHAMAD YUSUF
@@ -249,7 +248,7 @@
           {{ __('direktur_description_1') }}
         </p>
       </div>
-      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+      <div class="col-lg-8">
         <p class="text-dark fw-semibold fst-italic">
           {{ __('direktur_description_2') }}
         </p>
@@ -271,36 +270,36 @@
   <div class="container-fluid">
     <div class="row gy-4">
       <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-        <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+        <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
           <h3><span>{{ __('bussines_activities') }}</span></h3>
         </div>
-        <div class="faq-container px-xl-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+        <div class="faq-container px-xl-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
           <a href="{{ route('dashboard.about') }}#perencanaan">
             <div class="faq-item mt-3">
               <h3><span>01</span> {{ __('bussines_activities_1') }}</h3>
             </div>
           </a>
           <a href="{{ route('dashboard.about') }}#perizinan">
-            <div class="faq-item mt-3" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+            <div class="faq-item mt-3" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
               <h3><span>02</span> {{ __('bussines_activities_2') }}</h3>
             </div>
           </a>
           <a href="{{ route('dashboard.about') }}#design">
-            <div class="faq-item mt-3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+            <div class="faq-item mt-3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800">
               <h3><span>03</span> {{ __('bussines_activities_3') }}</h3>
             </div>
           </a>
         </div>
       </div>
       <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-        <img src="assets/img/icon-modern-1.webp" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+        <img src="assets/img/icon-modern-1.webp" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800">
       </div>
     </div>
   </div>
 </section>
 
 <section id="services" class="services modern-building-1 section light-background">
-  <div class="container section-title" data-aos="fade-up">
+  <div class="container section-title">
     <h2>{{ __('why_choose_us') }}</h2>
   </div>
   <div class="container">
@@ -331,12 +330,12 @@
 </section>
 
 <section id="portfolio" class="portfolio section modern-building-1">
-  <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+  <div class="container section-title">
     <h2>{{ __('project') }}</h2>
   </div>
   <div class="container projects-desktop">
     <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+      <div class="row gy-4 isotope-container">
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
           <img src="assets/img/projects/1.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -607,7 +606,7 @@
 </section>
 
 <section id="regulasi" class="faq-2 section light-background">
-  <div class="container section-title"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+  <div class="container section-title"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
     <h2>{{ __('bussines_scope') }}</h2>
     <p>{{ __('bussines_scope_description') }}</p>
   </div>
@@ -615,7 +614,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-10">
         <div class="faq-container">
-        <div class="faq-item"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+        <div class="faq-item"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
             <i class="faq-icon bi bi-question-circle"></i>
             <h3>{{ __('bussines_scope_1') }}</h3>
             <div class="faq-content">
@@ -625,7 +624,7 @@
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
-          <div class="faq-item"  data-aos="fade-right" data-aos-delay="200" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+          <div class="faq-item"  data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
             <i class="faq-icon bi bi-question-circle"></i>
             <h3>{{ __('bussines_scope_2') }}</h3>
             <div class="faq-content">
@@ -635,7 +634,7 @@
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
-          <div class="faq-item"  data-aos="fade-left" data-aos-delay="300" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+          <div class="faq-item"  data-aos="fade-left" data-aos-delay="300" data-aos-duration="800">
             <i class="faq-icon bi bi-question-circle"></i>
             <h3>{{ __('bussines_scope_3') }}</h3>
             <div class="faq-content">
@@ -645,7 +644,7 @@
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
-          <div class="faq-item"  data-aos="fade-right" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+          <div class="faq-item"  data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
             <i class="faq-icon bi bi-question-circle"></i>
             <h3>{{ __('bussines_scope_4') }}</h3>
             <div class="faq-content">
