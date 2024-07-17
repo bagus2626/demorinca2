@@ -8,9 +8,9 @@
   <div class="container">
     <div class="row" data-aos="zoom-in" data-aos-delay="100">
       <div class="col-xl-8 text-center text-xl-start mt-3">
-        <h2 class="tracking-title">Hasil pelacakan</h2>
-        <input type="text" class="tracking-input" placeholder="Cari nomor document, cth: DC12345" id="valueTracking">
-        <a class="cta-btn align-middle" href="#" onclick="searchTracking()">Cari</a>
+        <h2 class="tracking-title">{{ __('tracking') }}</h2>
+        <input type="text" class="tracking-input" placeholder="{{ __('search') }} nomor document, ex: DC12345" id="valueTracking">
+        <a class="cta-btn align-middle" href="#" onclick="searchTracking()">{{ __('search') }}</a>
       </div>
     </div>
     <div class="row">

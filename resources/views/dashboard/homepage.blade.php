@@ -113,49 +113,7 @@
      color: var(--default-color);
 }
 
-  .modern-building-3 { 
-    position: relative; 
-    background: url("assets/img/background/modern-building-3.jpg") no-repeat 
-        bottom; 
-    background-size: cover; 
-    padding: 60px 0; 
-  } 
-  .modern-building-3 .container { 
-      position: relative; 
-      z-index: 2; 
-  } 
-  .modern-building-3::before { 
-      content: ""; 
-      position: absolute; 
-      bottom: 0; 
-      left: 0; 
-      right: 0; 
-      height: 100%; 
-      background:  rgba(255, 255, 255, 0.7); 
-      z-index: 1; 
-  } 
 
-  .modern-building-1 { 
-    position: relative; 
-    background: url("assets/img/background/modern-building-1.jpg") no-repeat 
-        bottom; 
-    background-size: cover; 
-    padding: 60px 0; 
-  } 
-  .modern-building-1 .container { 
-      position: relative; 
-      z-index: 2; 
-  } 
-  .modern-building-1::before { 
-      content: ""; 
-      position: absolute; 
-      bottom: 0; 
-      left: 0; 
-      right: 0; 
-      height: 100%; 
-      background:  rgba(255, 255, 255, 0.7); 
-      z-index: 1; 
-  } 
 </style>
 @endpush
 @section('content')
@@ -305,9 +263,7 @@
 </style>
 
 <section id="direktur" class="direktur section">
-=======
 <section id="direktur" class="direktur modern-building-1 section">
->>>>>>> 7c57d5c51cacc136ce687f6f8e04bb234d0b8ed1
   <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
     <h2>Direktur</h2>
   </div>

@@ -35,6 +35,52 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   /> --}}
 
+  <style>
+    .modern-building-3 { 
+      position: relative; 
+      background: url("assets/img/background/modern-building-3.jpg") no-repeat 
+          bottom; 
+      background-size: cover; 
+      padding: 60px 0; 
+    } 
+    .modern-building-3 .container { 
+        position: relative; 
+        z-index: 2; 
+    } 
+    .modern-building-3::before { 
+        content: ""; 
+        position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        right: 0; 
+        height: 100%; 
+        background:  rgba(255, 255, 255, 0.7); 
+        z-index: 1; 
+    } 
+
+    .modern-building-1 { 
+      position: relative; 
+      background: url("assets/img/background/modern-building-1.jpg") no-repeat 
+          bottom; 
+      background-size: cover; 
+      padding: 60px 0; 
+    } 
+    .modern-building-1 .container { 
+        position: relative; 
+        z-index: 2; 
+    } 
+    .modern-building-1::before { 
+        content: ""; 
+        position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        right: 0; 
+        height: 100%; 
+        background:  rgba(255, 255, 255, 0.7); 
+        z-index: 1; 
+    } 
+  </style>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   @stack('after-style')
 </head>
@@ -283,14 +329,14 @@
                     html = `
                         ${response.data.status !== 'Selesai' ? `
                             <div class="tracking-result text-warning">
-                                <i class="bx bx-loader bx-spin text-warning"></i> Prosess
+                                <i class="bx bx-loader bx-spin text-warning"></i> {{ __('procces') }}
                             </div>
                         ` : ''}
                         <div class="tracking-result">
-                            <i class="${response.data.tanggal ? `bi bi-check2-circle text-success` : `bi-dash-circle text-danger`}"></i> Mulai ( ${response.data.tanggal ? formatDate(response.data.tanggal) : `Belum ada tanggal mulai`})  -  <i class="${response.data.tanggal_estimasi }"></i> Rencana Selesai (${response.data.tanggal_estimasi ? formatDate(response.data.tanggal_estimasi) : `Belum ada tanggal rencana selesai`})
+                            <i class="${response.data.tanggal ? `bi bi-check2-circle text-success` : `bi-dash-circle text-danger`}"></i> {{ __('start') }} ( ${response.data.tanggal ? formatDate(response.data.tanggal) : ` - `})  -  <i class="${response.data.tanggal_estimasi }"></i> {{ __('plan_completed') }} (${response.data.tanggal_estimasi ? formatDate(response.data.tanggal_estimasi) : ` - `})
                         </div>
                         <div class="tracking-result">
-                            <i class="bi bi-check2-circle"></i> Nomor Registrasi : ${response.data.no_registrasi_sistem_simbg ?? '-'}
+                            <i class="bi bi-check2-circle"></i> {{ __('no_register') }} : ${response.data.no_registrasi_sistem_simbg ?? '-'}
                         </div>
                         ${response.data.status !== 'Selesai' ? `
                             <div class="tracking-result text-success">
@@ -298,14 +344,14 @@
                             </div>
                         ` : `
                             <div class="tracking-result">
-                                <i class="bi bi-check2-circle text-success"></i> Selesai - ${response.data.tanggal_selesai ? formatDate(response.data.tanggal_selesai) : ``}
+                                <i class="bi bi-check2-circle text-success"></i> {{ __('completed') }} - ${response.data.tanggal_selesai ? formatDate(response.data.tanggal_selesai) : ``}
                             </div>
                         `}
                     `;
                 }else {
                     html = `
                         <div class="tracking-result text-center text-danger">
-                            <i class="bi bi-dash-circle"></i> Tidak ditemukan. Pastikan nomor dokumen sudah benar
+                            <i class="bi bi-dash-circle"></i> {{ __('not_found_document') }}
                         </div>
                     `;
                     setTimeout(() => {
@@ -390,7 +436,6 @@
           keterangan
         }, 
         success: (response) => {
-          console.log(response)
           $("#form-contact").hide();
           $("#form-success-contact").show();
         }, 
