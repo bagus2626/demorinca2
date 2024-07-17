@@ -39,7 +39,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <a href="/" class="logo d-flex align-items-center me-auto">
-       <img src="assets/img/favicon.png" alt="" style="width: 200px; height: 150px;">
+       <img src="assets/img/favicon2.png" alt="" style="width: 200px; height: 150px;">
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
