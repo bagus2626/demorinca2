@@ -180,27 +180,27 @@
         }
       </script>
       <div class="swiper-wrapper align-items-center">
-        <div class="swiper-slide"><img src="assets/img/clients/rosalia-indah.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/cozy-coliving.jpeg" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/flimty.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/alva.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/ultra-sakti.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/imcp.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/eco-spirit.jpg" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/amaldi.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/crv.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/gcr.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/jr.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/rsj.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/sandimas.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/sisesa.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/al-utsmani.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/muhammadiyah.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/al-zahra.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/client-9.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/saranawisesa.jfif" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/sisesa.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/clients/suntak.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/rosalia-indah.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/cozy-coliving.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/flimty.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/alva.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/ultra-sakti.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/imcp.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/eco-spirit.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/amaldi.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/crv.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/gcr.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/jr.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/rsj.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/sandimas.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/sisesa.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/al-utsmani.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/muhammadiyah.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/al-zahra.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/client-9.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/saranawisesa.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/sisesa.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/suntak.webp" class="img-fluid" alt=""></div>
       </div>
     </div>
   </div>
@@ -293,7 +293,7 @@
         </div>
       </div>
       <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-        <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+        <img src="assets/img/icon-modern-1.webp" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
       </div>
     </div>
   </div>

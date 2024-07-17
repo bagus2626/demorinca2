@@ -85,7 +85,7 @@
             </div>
           </div>
           <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-            <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/icon-modern-1.webp" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
           </div>
         </div>
       </div>
@@ -95,7 +95,7 @@
       <div class="container-fluid">
         <div class="row gy-4">
            <div class="col-lg-5 order-1 order-lg-1">
-            <img src="assets/img/skills.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/icon-modern-2.webp" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
           </div>
           <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-2">
             <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
@@ -181,7 +181,7 @@
             </div>
           </div>
            <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-            <img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/icon-modern-3.webp" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
           </div>
         </div>
       </div>
