@@ -1,4 +1,25 @@
 {
     "welcome": "Selamat Datang",
-    "goodbye": "Selamat Tinggal"
+    "goodbye": "Selamat Tinggal",
+    "title": "Konsultan perizinan bangunan berlisensi", 
+    "contact": "Kontak Kami",
+    "get_a_quote": "Dapatkan Penawaran",
+    "our_best": "Terbaik dari kami",
+    "costs_slf": "Biaya pengurusan SLF untuk bangunan dan disetiap wilayah berbeda-beda, Berikut beberapa faktor dalam penentuan harga pengurusan SLF",
+    "costs_1": "Bangunan rendah murah, bangunan tinggi mahal",
+    "costs_2": "Bangunan luasan kecil murah, bangunan luasan besar mahal",
+    "costs_3": "Bangunan baru murah, bangunan lama atau sudah tua mahal",
+    "complete_data": "Silahkan lengkapi semua data terlebih dahulu",
+    "name": "Nama Pemohon",
+    "company": "Nama Perusahaan",
+    "phone_number": "Nomor Telepon",
+    "company_location": "Lokasi Perusahaan", 
+    "description": "Keterangan", 
+    "send_offer": "Kirim Penawaran", 
+    "feedback_offer": "Terima kasih telah mengirim penawaran. Silahkan menunggu untuk balasan dari kami",
+    "bussines_activities": "Kegiatan Utama Usaha",
+    "bussines_activities_1": "Perencanaan Tata Ruang, Bangunan, dan Industri",
+    "bussines_activities_2": "Perizinan Bangunan Gedung dan Industri",
+    "bussines_activities_3": "Desain Interior", 
+    "address": "Jl. Nangka (Rafika Village 2 No. B8), Kel. Pasir Putih, Kecamatan Sawangan, Kota Depok, Jawa Barat"
 }

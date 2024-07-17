@@ -1,4 +1,25 @@
 {
     "welcome": "Welcome",
-    "goodbye": "Goodbye"
+    "goodbye": "Goodbye", 
+    "title": "Licensed building permit consultant",
+    "contact": "About us",
+    "get_a_quote": "Get a Quote",
+    "our_best": "Our best",
+    "costs_slf": "The cost of arranging SLF for buildings and in each region is different. Following are several factors in determining the price of arranging SLF",
+    "costs_1": "Low buildings are cheap, high buildings are expensive",
+    "costs_2": "Small buildings are cheap, large buildings are expensive",
+    "costs_3": "New buildings are cheap, old or outdated buildings are expensive",
+    "complete_data": "Please complete all data first", 
+    "name": "Applicant's Name",
+    "company": "Company name",
+    "phone_number": "Phone number",
+    "company_location": "Company Location",
+    "description": "Description", 
+    "send_offer": "Send Offer",
+    "feedback_offer": "Thank you for sending an offer. Please wait for our reply",
+    "bussines_activities": "Main Business Activities",
+    "bussines_activities_1": "Spatial, Building and Industrial Planning",
+    "bussines_activities_2": "Building and Industrial Building Licensing",
+    "bussines_activities_3": "Design Interior",
+    "address": "Jl. Nangka (Rafika Village 2 No. B8), Kel. Pasir Putih, Sawangan District, Depok City, West Java"
 }

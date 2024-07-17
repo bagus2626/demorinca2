@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>PT RINCA CIPTA KARYA - Konsultan perizinan bangunan berlisensi</title>
+  <title>PT RINCA CIPTA KARYA - {{ __('title') }}</title>
   <meta name="author" content="https://rincakonsultan.com/" />
 	<meta name="website" content="https://rincakonsultan.com/" />
   <meta content="Konsultan perizinan bangunan berlisensi" name="keywords">
@@ -92,7 +92,7 @@
 
     <section id="contact" class="contact section">
         <div class="container section-title">
-          <h2>Kontak Kami</h2>
+          <h2>{{ __('contact') }}</h2>
         </div>
         <div class="container">
           <div class="row gy-4">
@@ -100,20 +100,20 @@
               <div class="info-wrap">
                 <div class="info-item d-flex">
                   <div>
-                    <h2>Dapatkan Penawaran</h2>
-                    <h5>Terbaik dari kami</h5>
+                    <h2>{{ __('get_a_quote') }}</h2>
+                    <h5>{{ __('our_best') }}</h5>
                   </div>
                 </div>
                 <div class="info-item d-flex">
                   <div>
-                    <p>Biaya pengurusan SLF untuk bangunan dan disetiap wilayah berbeda-beda, Berikut beberapa faktor dalam penentuan harga pengurusan SLF</p>
+                    <p>{{ __('costs_slf') }}</p>
                   </div>
                 </div>
                 <div class="info-item d-flex">
                   <ul>
-                    <li>Bangunan rendah murah, bangunan tinggi mahal</li>
-                    <li>Bangunan luasan kecil murah, bangunan luasan besar mahal</li>
-                    <li>Bangunan baru murah, bangunan lama atau sudah tua mahal</li>
+                    <li>{{ __('costs_1') }}</li>
+                    <li>{{ __('costs_2') }}</li>
+                    <li>{{ __('costs_3') }}</li>
                   </ul>
                 </div>
               </div>
@@ -122,42 +122,42 @@
               <div class="row">
                 <div class="col-12">
                   <div id="alertForm" class="alert alert-success alert-dismissible fade show mt-2" role="alert" style="display: none">
-                    Silahkan lengkapi semua data terlebih dahulu
+                    {{ __('complete_data') }}
                   </div>
                 </div>
               </div>
                 <div class="row gy-4 " id="form-contact">
                   <div class="col-md-6">
-                    <label for="nama_pemohon" class="pb-2">Nama Pemohon</label>
-                    <input type="text" name="nama_pemohon" id="nama_pemohon" class="form-control" placeholder="Masukkan nama lengkap">
+                    <label for="nama_pemohon" class="pb-2">{{ __('name') }}</label>
+                    <input type="text" name="nama_pemohon" id="nama_pemohon" class="form-control">
                   </div>
                   <div class="col-md-6">
-                    <label for="nama_perusahaan" class="pb-2">Nama Perusahaan</label>
-                    <input type="text" class="form-control" name="nama_perusahaan" id="nama_perusahaan" placeholder="cth: PT RINCA CIPTA KARYA">
+                    <label for="nama_perusahaan" class="pb-2">{{ __('company') }}</label>
+                    <input type="text" class="form-control" name="nama_perusahaan" id="nama_perusahaan">
                   </div>
                   <div class="col-md-6">
-                    <label for="nomor_handphone" class="pb-2">Nomor Telpon</label>
-                    <input type="text" name="nomor_handphone" id="nomor_handphone" class="form-control" placeholder="cth: 08xxxxxxx">
+                    <label for="nomor_handphone" class="pb-2">{{ __('phone_number') }}</label>
+                    <input type="text" name="nomor_handphone" id="nomor_handphone" class="form-control">
                   </div>
                   <div class="col-md-6">
                     <label for="email" class="pb-2">Email</label>
-                    <input type="text" class="form-control" name="email" id="email" placeholder="cth: xxxx@gmail.com">
+                    <input type="text" class="form-control" name="email" id="email">
                   </div>
                   <div class="col-md-6">
-                    <label for="luas_area" class="pb-2">Luas Area</label>
-                    <input type="text" class="form-control" name="luas_area" id="luas_area" placeholder="cth: 40.000 M²">
+                    <label for="luas_area" class="pb-2">Area</label>
+                    <input type="text" class="form-control" name="luas_area" id="luas_area">
                   </div>
                   <div class="col-md-6">
-                    <label for="lokasi_perusahaan" class="pb-2">Lokasi Perusahaan</label>
-                    <input type="text" class="form-control" name="lokasi_perusahaan" id="lokasi_perusahaan" placeholder="Masukkan alamat perusahaan">
+                    <label for="lokasi_perusahaan" class="pb-2">{{ __('company_location') }}</label>
+                    <input type="text" class="form-control" name="lokasi_perusahaan" id="lokasi_perusahaan">
                   </div>
                   <div class="col-md-12">
-                    <label for="keterangan" class="pb-2">Keterangan <span style="font-size: 11px; color: red">( opsional )</span></label>
+                    <label for="keterangan" class="pb-2">{{ __('description') }} <span style="font-size: 11px; color: red">( optional )</span></label>
                     <textarea class="form-control" name="keterangan" rows="10" id="keterangan"></textarea>
                   </div>
                   <a href="#contact" onclick="submitOffer()" class="btn-send-message">
                     <div class="col-md-12 text-center ">
-                        Kirim Penawaran
+                        {{ __('send_offer') }}
                     </div>
                   </a>
                 </div>
@@ -166,7 +166,7 @@
                   <h3>PT RINCA CIPTA KARYA</h3>
                  </div>
                  <div class="col-12 text-center">
-                  <h6>Terima kasih telah mengirim penawaran. Silahkan menunggu untuk balasan dari kami</h6>
+                  <h6>{{ __('feedback_offer') }}</h6>
                  </div>
                 </div>
             </div>
@@ -278,17 +278,16 @@
               </ul>
             </div>
             <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Kegiatan Utama Usaha</h4>
+              <h4>{{ __('bussines_activities') }}</h4>
               <ul>
-                <li><i class="bi bi-chevron-right"></i><a href="{{ route('dashboard.about') }}#perencanaan">Perencanaan Tata Ruang, Bangunan, dan Industri</a></li>
-                <li><i class="bi bi-chevron-right"></i><a href="{{ route('dashboard.about') }}#perizinan">Perizinan Bangunan Gedung dan Industri</a></li>
-                <li><i class="bi bi-chevron-right"></i><a href="{{ route('dashboard.about') }}#design">Desain Interior</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="{{ route('dashboard.about') }}#perencanaan">{{ __('bussines_activities_1') }}</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="{{ route('dashboard.about') }}#perizinan">{{ __('bussines_activities_2') }}</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="{{ route('dashboard.about') }}#design">{{ __('bussines_activities_3') }}</a></li>
               </ul>
             </div>
             <div class="col-lg-4 col-md-12">
-              <h4>Kontak</h4>
-              <a target="_blank" href="https://maps.app.goo.gl/xKgfHjDEnMaLwiFD7" class="text-black">Jl. Nangka (Rafika Village 2 No. B8), Kel. Pasir 
-                Putih, Kec. Sawangan, Kota Depok, Jawa Barat</a>
+              <h4>{{ __('contact') }}</h4>
+              <a target="_blank" href="https://maps.app.goo.gl/xKgfHjDEnMaLwiFD7" class="text-black">{{ __('address') }}</a>
               <div class="social-links d-flex mt-4">
                 <a target="_blank" href="mailto:contact@rincakonsultan.com"><i class="bi bi-envelope"></i></a>
                 <a target="_blank" href="https://www.instagram.com/rincaciptakonsultan/"><i class="bi bi-instagram"></i></a>
