@@ -173,7 +173,7 @@
 
     <div class="row" data-aos="zoom-in" data-aos-delay="100">
       <div class="col-xl-8 text-center text-xl-start mt-3">
-        <h1>Selamat Datang di PT Rinca Cipta Karya</h1>
+        <h1>{{ __('welcome') }} di PT Rinca Cipta Karya</h1>
         <p>PT Rinca Cipta Karya merupakan konsultan perencanaan
           arsitek dan pengurusan perizinan bangunan gedung yang
           sudah memiliki lisensi. Memiliki target market semua

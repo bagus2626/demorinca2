@@ -4,12 +4,14 @@ use App\Http\Controllers\Admin\DocumentController;
 use App\Http\Controllers\Admin\OfferController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\Dashboard\AboutpageController;
 use App\Http\Controllers\Dashboard\HomepageController;
 use App\Http\Controllers\Dashboard\TrackingpageController;
 use App\Http\Middleware\TrackVisitor;
 use App\Models\Visitor;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Dashboard\AboutpageController;
+use Illuminate\Support\Facades\Session;
+
 
 
 /*
@@ -50,6 +52,11 @@ Route::get('/dashboard/homepage', function () {
     $visitors = Visitor::all();
     return view('dashboard.homepage', compact('visitors'));
 });
+
+Route::get('change-language/{lang}', function ($lang) {
+    Session::put('locale', $lang);
+    return redirect()->back();
+})->name('change.language');
 //Route::get('/', function () {
 //    return view('welcome');
 //})->middleware(TrackVisitor::class);

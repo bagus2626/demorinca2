@@ -48,8 +48,8 @@
         <ul>
           <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="{{ url('locale/en') }}">English</a></li>
-              <li><a href="{{ url('locale/id') }}">Indonesian</a></li>
+              <li><a href="{{ url('change-language/en') }}">English</a></li>
+              <li><a href="{{ url('change-language/id') }}">Indonesian</a></li>
             </ul>
           </li>
           <li><a href="{{ route('dashboard.homepage') }}#hero" class="active">Home</a></li>
