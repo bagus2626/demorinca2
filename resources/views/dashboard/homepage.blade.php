@@ -645,7 +645,7 @@
       </div>
     </div>
   </div>
-   <div class="slider-container projects-mobile">
+   <div class="slider-container projects-mobile" style="z-index: 1">
         <div class="slider">
             <div class="slide">
                 <img src="assets/img/projects/1.png" alt="">

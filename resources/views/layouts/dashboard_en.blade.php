@@ -36,10 +36,10 @@
   @stack('after-style')
 </head>
 <body class="index-page">
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: #5ba577;">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <a href="/" class="logo d-flex align-items-center me-auto">
-        <h3 class="sitename">PT Rinca Cipta Karya</h3>
+        <img src="assets/img/favicon2.png" alt="" style="width: 140px; height: 90px;">
       </a>
        <nav id="navmenu" class="navmenu">
         <ul>
