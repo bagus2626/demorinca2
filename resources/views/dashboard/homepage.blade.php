@@ -113,6 +113,52 @@
     heading-color: #ffffff;
      color: var(--default-color);
 }
+
+  .modern-building-3 { 
+    position: relative; 
+    background: url("assets/img/background/modern-building-3.jpg") no-repeat 
+        bottom; 
+    background-size: cover; 
+    padding: 60px 0; 
+  } 
+  .modern-building-3 .container { 
+      position: relative; 
+      z-index: 2; 
+  } 
+  .modern-building-3::before { 
+      content: ""; 
+      position: absolute; 
+      bottom: 0; 
+      left: 0; 
+      right: 0; 
+      height: 100%; 
+      background:  rgba(255, 255, 255, 0.7); 
+      /* background:  rgba(167, 167, 167, 0.7); */ 
+      z-index: 1; 
+  } 
+
+  .modern-building-1 { 
+    position: relative; 
+    background: url("assets/img/background/modern-building-1.jpg") no-repeat 
+        bottom; 
+    background-size: cover; 
+    padding: 60px 0; 
+  } 
+  .modern-building-1 .container { 
+      position: relative; 
+      z-index: 2; 
+  } 
+  .modern-building-1::before { 
+      content: ""; 
+      position: absolute; 
+      bottom: 0; 
+      left: 0; 
+      right: 0; 
+      height: 100%; 
+      background:  rgba(255, 255, 255, 0.7); 
+      /* background:  rgba(167, 167, 167, 0.7); */ 
+      z-index: 1; 
+  } 
 </style>
 <style type="text/css">
   
@@ -245,7 +291,7 @@
 {{--  </div>--}}
 {{--</section>--}}
 
-<section id="direktur" class="direktur section">
+<section id="direktur" class="direktur modern-building-3 section">
   <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
     <h2>Direktur</h2>
   </div>
@@ -256,10 +302,10 @@
         <h5 class="mt-3">
           DAWIN MUHAMAD YUSUF
         </h5>
-        <p class="fw-bold">
+        <p class="text-dark fw-semibold fst-italic">
           Direktur & Tenaga Ahli Struktur
         </p>
-        <p>
+        <p class="text-dark fw-semibold fst-italic">
           PT Rinca Cipta Karya merupakan konsultan enjiniring yang mayoritas bergerak
           dibidang Arsitektural dan Sipil. PT Rinca
           Cipta Karya senantiasa menyempurnakan kemampuan terus menerus, untuk
@@ -268,7 +314,7 @@
         </p>
       </div>
       <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-        <p>
+        <p class="text-dark fw-semibold fst-italic">
           Dalam peningkatan dan pertumbuhan penjualan
           dan laba, Rinca Cipta Karya memperkuat bisnis
           yang ada, bidang-bidang proyek baru dan menamabah bisnis baru di bidang engineering, interior,
@@ -276,7 +322,7 @@
           Karya terus menyempurnakan produk dan layanan
           dengan harga kompetitif, agar seluruh masyarakat dapat mendapatkan manfaat yang adil.
         </p>
-        <p>
+        <p class="text-dark fw-semibold fst-italic">
           Pengembangan dan penyempurnaan terus
           menerus kami lakukan, seperti teknologi informasi
           yang menjadikan seluruh aktivitas lebih terkelola
@@ -285,13 +331,13 @@
           pemahaman dan komitmen kuat di dalam peningkatan kualitas karyawan dengan peningkatan
           kompetensi dan kemampuan
         </p>
-        <p>
+        <p class="text-dark fw-semibold fst-italic">
           Kepemimpinan menjadi sangat berperan didalam
           menentukan kinerja dan kerberhasilan perusahaan. Program pengembangan SDM dirumuskan
           dan dijalankan secara sungguh-sungguh dan
           berkesinambungan.
         </p>
-        <p>
+        <p class="text-dark fw-semibold fst-italic">
           PT Rinca Cipta Karya merupakan konsultan yang
           diproyeksikan menjadi salah satu terbaik di Indonesia, PT Rinca Cipta Karya senantiasa memegang teguh filosofi untuk PASTI MEMBERIKAN
           JASA TERBAIK UNTUK SELURUH KLIEN, dengan
@@ -363,7 +409,7 @@
 {{--  </div>--}}
 {{--</section>--}}
 
-<body>
+{{-- <body>
     <div class="container">
         <h1>Mengapa Memilih Kami?</h1>
         <div class="grid">
@@ -385,9 +431,43 @@
             <!-- Repeat similar blocks for other cards -->
         </div>
     </div>
-</body>
+</body> --}}
 
-<section id="portfolio" class="portfolio section">
+<!-- Services Section -->
+<section id="services" class="services modern-building-1 section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Mengapa Memilih Kami?</h2>
+  </div>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-person-video3 icon"></i></div>
+          <h4><a href="" class="stretched-link">Tim Yang Professional.</a></h4>
+          <p>Tim kami siap untuk mengakomodasi seluruh kebutuhan anda. Kami berkomitmen, terampil, dan menjunung tinggi profesionalisme dan efisiensi , agar pekerjaan anda selesai lebih cepat dengan hasil sesuai.</p>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-activity icon"></i></div>
+          <h4><a href="" class="stretched-link">Memberikan Solusi Terbaik.</a></h4>
+          <p>Kami sadar KONSULTAN memang tempatnya bertanya dan konsultasi, maka misi kami memberikan SOLUSI TERBAIK untuk masalah PERIZINAN PERUSAHAAN anda.</p>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-bar-chart-line icon"></i></div>
+          <h4><a href="" class="stretched-link">Hasil yang Memuaskan.</a></h4>
+          <p>Kami PT RINCA CIPTA KARYA memberikan hasil terbaik, dengan harga relatif murah dibanding pesaing kami.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="portfolio section modern-building-1">
   <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
     <h2>Proyek Kami</h2>
   </div>

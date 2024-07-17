@@ -276,10 +276,9 @@
             <div class="col-lg-2 col-md-3 footer-links">
               <h4>Layanan Kami</h4>
               <ul>
-                <li><i class="bi bi-chevron-right"></i>Perizinan Perusahaan</li>
-                <li><i class="bi bi-chevron-right"></i>Perizinan Bangunan Gedung</li>
-                <li><i class="bi bi-chevron-right"></i>Perencanaan Arsitek Bangunan</li>
-                <li><i class="bi bi-chevron-right"></i>Gedung</li>
+                <li><i class="bi bi-chevron-right"></i><a href="{{ route('dashboard.about') }}#perencanaan">Perencanaan Tata Ruang, Bangunan, dan Industri</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="{{ route('dashboard.about') }}#perizinan">Perizinan Bangunan Gedung dan Industri</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="{{ route('dashboard.about') }}#design">Desain Interior</a></li>
               </ul>
             </div>
             <div class="col-lg-4 col-md-12">
