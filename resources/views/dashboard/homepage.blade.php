@@ -206,37 +206,6 @@
   </div>
 </section>
 
-
-{{--<section id="about" class="about section">--}}
-{{--  <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">--}}
-{{--    <h2>Tentang Kami</h2>--}}
-{{--  </div>--}}
-{{--  <div class="container">--}}
-{{--    <div class="row gy-4">--}}
-{{--      <div class="col-lg-6 content" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">--}}
-{{--        <h4>--}}
-{{--          Visi--}}
-{{--        </h4>--}}
-{{--        <p>--}}
-{{--          Menjadi Konsultan Enjiniring yang Handal, Cakap, dan Memegang Teguh Sustatainable Desain Untuk Keberlangsungan--}}
-{{--          Bumi Beserta Isinya--}}
-{{--        </p>--}}
-{{--      </div>--}}
-{{--      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">--}}
-{{--        <h4>--}}
-{{--          Misi--}}
-{{--        </h4>--}}
-{{--        <ul>--}}
-{{--          <li><i class="bi bi-check2-circle"></i> <span>Mengembangkan Karya Enjiniring Indonesia yang Berkualitas.</span></li>--}}
-{{--          <li><i class="bi bi-check2-circle"></i> <span>Menyediakan produk/ jasa Konsultan Enjiniring, Manajemen Proyek yang unggul dan berkesinambungan.</span></li>--}}
-{{--          <li><i class="bi bi-check2-circle"></i> <span>Memberikan manfaat dan nilai tambah untuk Masyarakat sekitar.</span></li>--}}
-{{--          <li><i class="bi bi-check2-circle"></i> <span>Memberdayakan pengetahuan, pengalaman, dan kreativitas untuk terciptanya solusi terbaik, dengan tidak lupa memegang teguh komitmen dan keper.</span></li>--}}
-{{--        </ul>--}}
-{{--      </div>--}}
-{{--    </div>--}}
-{{--  </div>--}}
-{{--</section>--}}
-
 <style>
   .direktur {
     position: relative;
@@ -262,7 +231,6 @@
   }
 </style>
 
-<section id="direktur" class="direktur section">
 <section id="direktur" class="direktur modern-building-1 section">
   <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
     <h2>Direktur</h2>
@@ -275,55 +243,14 @@
           DAWIN MUHAMAD YUSUF
         </h5>
         <p class="text-dark fw-semibold fst-italic">
-
-          Direktur & Tenaga Ahli Struktur
-        </p>
-        <p class="text-dark fw-semibold fst-italic">
-          PT Rinca Cipta Karya merupakan konsultan enjiniring yang mayoritas bergerak
-          dibidang Arsitektural dan Sipil. PT Rinca
-          Cipta Karya senantiasa menyempurnakan kemampuan terus menerus, untuk
-          menyiapkan enjinir-enjinir muda dapat
-          bersaing dalam taraf Internasional.
-
           {{ __('divisi') }}
         </p>
         <p class="text-dark fw-semibold fst-italic">
           {{ __('direktur_description_1') }}
-
         </p>
       </div>
       <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
         <p class="text-dark fw-semibold fst-italic">
-
-          Dalam peningkatan dan pertumbuhan penjualan
-          dan laba, Rinca Cipta Karya memperkuat bisnis
-          yang ada, bidang-bidang proyek baru dan menamabah bisnis baru di bidang engineering, interior,
-          dan perizinan bangunan gedung. Rinca Cipta
-          Karya terus menyempurnakan produk dan layanan
-          dengan harga kompetitif, agar seluruh masyarakat dapat mendapatkan manfaat yang adil.
-        </p>
-        <p class="text-dark fw-semibold fst-italic">
-          Pengembangan dan penyempurnaan terus
-          menerus kami lakukan, seperti teknologi informasi
-          yang menjadikan seluruh aktivitas lebih terkelola
-          secara terintegrasi, efisien, transparan, dan akuntable. PT Rinca Cipta Karya berkomitmen menjadi
-          konsultan yang sustainable dibangun dengan
-          pemahaman dan komitmen kuat di dalam peningkatan kualitas karyawan dengan peningkatan
-          kompetensi dan kemampuan
-        </p>
-        <p class="text-dark fw-semibold fst-italic">
-          Kepemimpinan menjadi sangat berperan didalam
-          menentukan kinerja dan kerberhasilan perusahaan. Program pengembangan SDM dirumuskan
-          dan dijalankan secara sungguh-sungguh dan
-          berkesinambungan.
-        </p>
-        <p class="text-dark fw-semibold fst-italic">
-          PT Rinca Cipta Karya merupakan konsultan yang
-          diproyeksikan menjadi salah satu terbaik di Indonesia, PT Rinca Cipta Karya senantiasa memegang teguh filosofi untuk PASTI MEMBERIKAN
-          JASA TERBAIK UNTUK SELURUH KLIEN, dengan
-          penuh Amanah, Kompeten, Kolaboratif, Adaptif,
-          dan Loyal.
-
           {{ __('direktur_description_2') }}
         </p>
         <p class="text-dark fw-semibold fst-italic">
@@ -334,7 +261,6 @@
         </p>
         <p class="text-dark fw-semibold fst-italic">
           {{ __('direktur_description_5') }}
-
         </p>
       </div>
     </div>

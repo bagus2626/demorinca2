@@ -15,7 +15,7 @@
     <div class="container">
       <div class="row" data-aos="zoom-in" data-aos-delay="100">
         <div class="col-xl-12 text-start mt-3">
-          <h1 class="title-about" style="font-weight: bold">Tentang Kami</h1>
+          <h1 class="title-about" style="font-weight: bold">{{ __('about') }}</h1>
         </div>
       </div>
     </div>
@@ -32,8 +32,7 @@
           Visi
         </h4>
         <p>
-          Menjadi Konsultan Enjiniring yang Handal, Cakap, dan Memegang Teguh Sustatainable Desain Untuk Keberlangsungan
-          Bumi Beserta Isinya
+          {{ __('visi') }}
         </p>
       </div>
       <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
@@ -41,10 +40,10 @@
           Misi
         </h4>
         <ul>
-          <li><i class="bi bi-check2-circle"></i> <span>Mengembangkan Karya Enjiniring Indonesia yang Berkualitas.</span></li>
-          <li><i class="bi bi-check2-circle"></i> <span>Menyediakan produk/ jasa Konsultan Enjiniring, Manajemen Proyek yang unggul dan berkesinambungan.</span></li>
-          <li><i class="bi bi-check2-circle"></i> <span>Memberikan manfaat dan nilai tambah untuk Masyarakat sekitar.</span></li>
-          <li><i class="bi bi-check2-circle"></i> <span>Memberdayakan pengetahuan, pengalaman, dan kreativitas untuk terciptanya solusi terbaik, dengan tidak lupa memegang teguh komitmen dan keper.</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>{{ __('misi_1') }}</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>{{ __('misi_2') }}</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>{{ __('misi_3') }}</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>{{ __('misi_4') }}</span></li>
         </ul>
       </div>
     </div>
@@ -56,30 +55,30 @@
         <div class="row gy-4">
           <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
             <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-              <h3><strong>01. Perencanaan Tata Ruang, Bangunan, dan Industri</strong></h3>
+              <h3><strong>01. {{ __('bussines_activities_1') }}</strong></h3>
               <p>
-                PT Rinca Cipta Karya menawarkan layanan perencanaan untuk tata ruang, bangunan, dan industri. Layanan ini meliputi:
+                {{ __('bussines_1_1') }}
               </p>
             </div>
             <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
               <div class="faq-item">
-                <h3>Perencanaan Tata Ruang</h3>
+                <h3>{{ __('bussines_1_2') }}</h3>
                 <div class="faq-content">
-                  <p>Melakukan analisis dan perencanaan tata ruang yang mencakup aspek lingkungan, sosial, dan ekonomi untuk memastikan pembangunan yang berkelanjutan dan terintegrasi.</p>
+                  <p>{{ __('bussines_1_3') }}</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
               <div class="faq-item">
-                <h3>Perencanaan Bangunan</h3>
+                <h3>{{ __('bussines_1_4') }}</h3>
                 <div class="faq-content">
-                  <p>Membuat rencana arsitektural dan struktur bangunan yang sesuai dengan kebutuhan dan regulasi yang berlaku.</p>
+                  <p>{{ __('bussines_1_5') }}</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
               <div class="faq-item">
-                <h3>Perencanaan Industri:</h3>
+                <h3>{{ __('bussines_1_6') }}</h3>
                 <div class="faq-content">
-                  <p>Merancang tata letak dan struktur industri untuk efisiensi operasional dan kepatuhan terhadap standar keamanan dan lingkungan.</p>
+                  <p>{{ __('bussines_1_7') }}</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
@@ -100,37 +99,37 @@
           </div>
           <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-2">
             <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-              <h3><strong>02. Perizinan Bangunan Gedung dan Industri</strong></h3>
+              <h3><strong>02. {{ __('bussines_activities_2') }}</strong></h3>
               <p>
-                PT Rinca Cipta Karya membantu klien dalam mendapatkan berbagai jenis izin yang diperlukan untuk pembangunan gedung dan operasional industri. Layanan ini mencakup:
+                {{ __('description_bussines') }}
               </p>
             </div>
             <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
               <div class="faq-item">
-                <h3>Izin Mendirikan Bangunan (IMB)</h3>
+                <h3>{{ __('imb_title') }}</h3>
                 <div class="faq-content">
-                  <p>Proses mendapatkan izin untuk mendirikan bangunan baru atau melakukan perubahan pada bangunan yang ada.</p>
+                  <p>{{ __('imb_content') }}</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
               <div class="faq-item">
-                <h3>Sertifikat Laik Fungsi (SLF)</h3>
+                <h3>{{ __('slf_title') }}</h3>
                 <div class="faq-content">
-                  <p>Sertifikasi yang menyatakan bahwa bangunan telah memenuhi persyaratan teknis dan laik digunakan.</p>
+                  <p>{{ __('slf_content') }}</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
               <div class="faq-item">
-                <h3>Izin Lingkungan</h3>
+                <h3>{{ __('environmental_permit_title') }}</h3>
                 <div class="faq-content">
-                  <p>Mendapatkan izin yang diperlukan untuk memastikan bahwa proyek pembangunan atau industri tidak merusak lingkungan sekitar.</p>
+                  <p>{{ __('environmental_permit_content') }}</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
               <div class="faq-item">
-                <h3>Izin Operasional Industri</h3>
+                <h3>{{ __('industrial_permit_title') }}</h3>
                 <div class="faq-content">
-                  <p>Mengurus semua dokumen yang diperlukan untuk memulai dan menjalankan operasi industri sesuai dengan peraturan yang berlaku.</p>
+                  <p>{{ __('industrial_permit_content') }}</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
@@ -145,37 +144,37 @@
         <div class="row gy-4">
           <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
             <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-              <h3><strong>03. Desain Interior</strong></h3>
+              <h3><strong>03. {{ __('bussines_activities_3') }}</strong></h3>
               <p>
-                Layanan desain interior oleh PT Rinca Cipta Karya meliputi:
+                {{ __('interior_services_description') }}
               </p>
             </div>
             <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
               <div class="faq-item">
-                <h3>Desain Konsep</h3>
+                <h3>{{ __('concept_design_title') }}</h3>
                 <div class="faq-content">
-                  <p>Merancang konsep desain interior yang sesuai dengan keinginan klien dan fungsi ruang.</p>
+                  <p>{{ __('concept_design_content') }}</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
               <div class="faq-item">
-                <h3>Pemilihan Material</h3>
+                <h3>{{ __('material_selection_title') }}</h3>
                 <div class="faq-content">
-                  <p>Membantu dalam pemilihan material yang berkualitas dan sesuai dengan tema desain.</p>
+                  <p>{{ __('material_selection_content') }}</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
               <div class="faq-item">
-                <h3>Pengawasan Pelaksanaan</h3>
+                <h3>{{ __('implementation_supervision_title') }}</h3>
                 <div class="faq-content">
-                  <p>Memastikan bahwa proses pelaksanaan desain interior berjalan sesuai dengan rencana dan spesifikasi yang telah disepakati.</p>
+                  <p>{{ __('implementation_supervision_content') }}</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
               <div class="faq-item">
-                <h3>Furnishing</h3>
+                <h3>{{ __('furnishing_title') }}</h3>
                 <div class="faq-content">
-                  <p>Menyediakan pilihan furnitur dan dekorasi yang melengkapi desain interior dan memberikan kenyamanan serta estetika yang diinginkan.</p>
+                  <p>{{ __('furnishing_content') }}</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
@@ -187,53 +186,4 @@
         </div>
       </div>
     </section>
-
-    <!--  <section id="non_kontruksi" class="section why-us light-background" data-builder="section">
-      <div class="container-fluid">
-        <div class="row gy-4">
-           <div class="col-lg-5 order-1 order-lg-1">
-            <img src="assets/img/consultation.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-          </div>
-          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-2">
-            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-              <h3><strong>04. Non-Konstruksi</strong></h3>
-              <p>
-                Layanan non-konstruksi yang disediakan PT Rinca Cipta Karya meliputi berbagai jasa konsultasi dan pengurusan dokumen, termasuk:
-              </p>
-            </div>
-            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
-              <div class="faq-item">
-                <h3>Konsultasi Pajak</h3>
-                <div class="faq-content">
-                  <p>Menyediakan layanan konsultasi dan pengurusan pajak untuk membantu klien mematuhi peraturan perpajakan dan mengoptimalkan kewajiban pajak mereka.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <div class="faq-item">
-                <h3>Konsultasi Bisnis</h3>
-                <div class="faq-content">
-                  <p>Memberikan saran dan strategi bisnis untuk membantu klien dalam pengambilan keputusan yang tepat dan meningkatkan kinerja bisnis mereka.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <div class="faq-item">
-                <h3>Pengurusan Dokumen Legalitas</h3>
-                <div class="faq-content">
-                  <p>Membantu dalam pengurusan berbagai dokumen legalitas yang diperlukan untuk operasional bisnis, seperti akta pendirian, izin usaha, dan sertifikasi lainnya.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <div class="faq-item">
-                <h3>Sertifikasi ISO</h3>
-                <div class="faq-content">
-                  <p>Membantu klien dalam mendapatkan berbagai sertifikasi ISO yang penting untuk standardisasi dan peningkatan kualitas operasional bisnis.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
 @endsection
