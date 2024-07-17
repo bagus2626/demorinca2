@@ -173,15 +173,11 @@
 
     <div class="row" data-aos="zoom-in" data-aos-delay="100">
       <div class="col-xl-8 text-center text-xl-start mt-3">
-        <h1>{{ __('welcome') }} di PT Rinca Cipta Karya</h1>
-        <p>PT Rinca Cipta Karya merupakan konsultan perencanaan
-          arsitek dan pengurusan perizinan bangunan gedung yang
-          sudah memiliki lisensi. Memiliki target market semua
-          pemilik bangunan gedung, atau semua yang ingin
-          membangun bangunan.</p>
+        <h1>{{ __('welcome') }} PT Rinca Cipta Karya</h1>
+        <p>{{ __('description_rinca') }}</p>
           <div class="d-flex mt-4">
-            <input type="text" class="tracking-input" style="margin-top: 10px" placeholder="Cari nomor document, cth: DC12345" id="valueTracking">
-            <a class="cta-btn align-middle" href="#" onclick="searchTracking()">Cari</a>
+            <input type="text" class="tracking-input" style="margin-top: 10px" placeholder="{{ __('search') }} nomor document, ex: DC12345" id="valueTracking">
+            <a class="cta-btn align-middle" href="#" onclick="searchTracking()">{{ __('search') }}</a>
           </div>
       </div>
       <div class="col-xl-3 cta-btn-container text-center">
@@ -303,46 +299,24 @@
           DAWIN MUHAMAD YUSUF
         </h5>
         <p class="text-dark fw-semibold fst-italic">
-          Direktur & Tenaga Ahli Struktur
+          {{ __('divisi') }}
         </p>
         <p class="text-dark fw-semibold fst-italic">
-          PT Rinca Cipta Karya merupakan konsultan enjiniring yang mayoritas bergerak
-          dibidang Arsitektural dan Sipil. PT Rinca
-          Cipta Karya senantiasa menyempurnakan kemampuan terus menerus, untuk
-          menyiapkan enjinir-enjinir muda dapat
-          bersaing dalam taraf Internasional.
+          {{ __('direktur_description_1') }}
         </p>
       </div>
       <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
         <p class="text-dark fw-semibold fst-italic">
-          Dalam peningkatan dan pertumbuhan penjualan
-          dan laba, Rinca Cipta Karya memperkuat bisnis
-          yang ada, bidang-bidang proyek baru dan menamabah bisnis baru di bidang engineering, interior,
-          dan perizinan bangunan gedung. Rinca Cipta
-          Karya terus menyempurnakan produk dan layanan
-          dengan harga kompetitif, agar seluruh masyarakat dapat mendapatkan manfaat yang adil.
+          {{ __('direktur_description_2') }}
         </p>
         <p class="text-dark fw-semibold fst-italic">
-          Pengembangan dan penyempurnaan terus
-          menerus kami lakukan, seperti teknologi informasi
-          yang menjadikan seluruh aktivitas lebih terkelola
-          secara terintegrasi, efisien, transparan, dan akuntable. PT Rinca Cipta Karya berkomitmen menjadi
-          konsultan yang sustainable dibangun dengan
-          pemahaman dan komitmen kuat di dalam peningkatan kualitas karyawan dengan peningkatan
-          kompetensi dan kemampuan
+          {{ __('direktur_description_3') }}
         </p>
         <p class="text-dark fw-semibold fst-italic">
-          Kepemimpinan menjadi sangat berperan didalam
-          menentukan kinerja dan kerberhasilan perusahaan. Program pengembangan SDM dirumuskan
-          dan dijalankan secara sungguh-sungguh dan
-          berkesinambungan.
+          {{ __('direktur_description_4') }}
         </p>
         <p class="text-dark fw-semibold fst-italic">
-          PT Rinca Cipta Karya merupakan konsultan yang
-          diproyeksikan menjadi salah satu terbaik di Indonesia, PT Rinca Cipta Karya senantiasa memegang teguh filosofi untuk PASTI MEMBERIKAN
-          JASA TERBAIK UNTUK SELURUH KLIEN, dengan
-          penuh Amanah, Kompeten, Kolaboratif, Adaptif,
-          dan Loyal.
+          {{ __('direktur_description_5') }}
         </p>
       </div>
     </div>
@@ -354,22 +328,22 @@
     <div class="row gy-4">
       <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
         <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-          <h3><span>KEGIATAN USAHA UTAMA</span></h3>
+          <h3><span>{{ __('bussines_activities') }}</span></h3>
         </div>
         <div class="faq-container px-xl-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
           <a href="{{ route('dashboard.about') }}#perencanaan">
             <div class="faq-item mt-3">
-              <h3><span>01</span> PERENCANAAN TATARUANG, BANGUNAN, DAN INDUSTRI</h3>
+              <h3><span>01</span> {{ __('bussines_activities_1') }}</h3>
             </div>
           </a>
           <a href="{{ route('dashboard.about') }}#perizinan">
             <div class="faq-item mt-3" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-              <h3><span>02</span> PERIZINAN BANGUNAN GEDUNG DAN INDUSTRI</h3>
+              <h3><span>02</span> {{ __('bussines_activities_2') }}</h3>
             </div>
           </a>
           <a href="{{ route('dashboard.about') }}#design">
             <div class="faq-item mt-3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-              <h3><span>03</span> DESAIN INTERIOR</h3>
+              <h3><span>03</span> {{ __('bussines_activities_3') }}</h3>
             </div>
           </a>
          <!--  <a href="{{ route('dashboard.about') }}#non_kontruksi">
@@ -438,29 +412,29 @@
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Mengapa Memilih Kami?</h2>
+    <h2>{{ __('why_choose_us') }}</h2>
   </div>
   <div class="container">
     <div class="row gy-4">
       <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
         <div class="service-item position-relative">
           <div class="icon"><i class="bi bi-person-video3 icon"></i></div>
-          <h4><a href="" class="stretched-link">Tim Yang Professional.</a></h4>
-          <p>Tim kami siap untuk mengakomodasi seluruh kebutuhan anda. Kami berkomitmen, terampil, dan menjunung tinggi profesionalisme dan efisiensi , agar pekerjaan anda selesai lebih cepat dengan hasil sesuai.</p>
+          <h4><a href="" class="stretched-link">{{ __('profesional_team') }}</a></h4>
+          <p>{{ __('profesional_team_description') }}</p>
         </div>
       </div>
       <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
         <div class="service-item position-relative">
           <div class="icon"><i class="bi bi-activity icon"></i></div>
-          <h4><a href="" class="stretched-link">Memberikan Solusi Terbaik.</a></h4>
-          <p>Kami sadar KONSULTAN memang tempatnya bertanya dan konsultasi, maka misi kami memberikan SOLUSI TERBAIK untuk masalah PERIZINAN PERUSAHAAN anda.</p>
+          <h4><a href="" class="stretched-link">{{ __('solution') }}</a></h4>
+          <p>{{ __('solution_description') }}</p>
         </div>
       </div>
       <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
         <div class="service-item position-relative">
           <div class="icon"><i class="bi bi-bar-chart-line icon"></i></div>
-          <h4><a href="" class="stretched-link">Hasil yang Memuaskan.</a></h4>
-          <p>Kami PT RINCA CIPTA KARYA memberikan hasil terbaik, dengan harga relatif murah dibanding pesaing kami.</p>
+          <h4><a href="" class="stretched-link">{{ __('result') }}</a></h4>
+          <p>{{ __('result_description') }}</p>
         </div>
       </div>
     </div>
@@ -469,7 +443,7 @@
 
 <section id="portfolio" class="portfolio section modern-building-1">
   <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-    <h2>Proyek Kami</h2>
+    <h2>{{ __('project') }}</h2>
   </div>
   <div class="container projects-desktop">
     <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
@@ -478,9 +452,7 @@
           <img src="assets/img/projects/1.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>PT Sun Tak Indonesia</h4>
-            <p>Pengujian bangunan gedung untuk perizinan
-              Sertifikat Laik Fungsi dan PBG Penambahan
-              Bangunan Gedung</p>
+            <p>{{ __('project_1') }}</p>
             <a href="assets/img/projects/1.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -489,8 +461,7 @@
           <img src="assets/img/projects/2.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>Perumahan Grand Cimandala Residence</h4>
-            <p>Pengujian bangunan gedung untuk perizinan
-              Sertifikat Laik Fungsi.</p>
+            <p>{{ __('project_2') }}</p>
             <a href="assets/img/projects/2.png" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -499,8 +470,7 @@
           <img src="assets/img/projects/3.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>Royal Tulip Luxury Hotels</h4>
-            <p>Pengujian bangunan gedung untuk perizinan
-              Sertifikat Laik Fungsi.</p>
+            <p>{{ __('project_2') }}</p>
             <a href="assets/img/projects/3.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -509,8 +479,7 @@
           <img src="assets/img/projects/4.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>PT Ultra Sakti</h4>
-            <p>Penyusunan DED untuk perizinan Industri
-              PT Ultra Sakti Narogong Kab. Bogor.</p>
+            <p>{{ __('project_3') }}.</p>
             <a href="assets/img/projects/4.png" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -519,8 +488,7 @@
           <img src="assets/img/projects/5.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>Asimetri Coffe</h4>
-            <p>Pengujian bangunan gedung untuk perizinan
-              Sertifikat Laik Fungsi.</p>
+            <p>{{ __('project_2') }}</p>
             <a href="assets/img/projects/5.png" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -529,8 +497,7 @@
           <img src="assets/img/projects/6.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>Perumahan Cikeas River Side</h4>
-            <p>Pengujian bangunan gedung untuk perizinan
-              Sertifikat Laik Fungsi.</p>
+            <p>{{ __('project_2') }}</p>
             <a href="assets/img/projects/6.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -539,8 +506,7 @@
           <img src="assets/img/projects/7.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>COZY CO-LIVING JELAMBAR</h4>
-            <p>Pengejaan DED dan Parizinan Mendirikan
-              Banguna</p>
+            <p>{{ __('project_4') }}</p>
             <a href="assets/img/projects/7.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -549,8 +515,7 @@
           <img src="assets/img/projects/8.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>Pergudangan Sigma Kartika Gunung Sindur</h4>
-            <p>Pengujian bangunan gedung untuk perizinan
-              Sertifikat Laik Fungsi.</p>
+            <p>{{ __('project_2') }}</p>
             <a href="assets/img/projects/8.png" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -559,8 +524,7 @@
           <img src="assets/img/projects/9.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>PT Dalya Citramandiri</h4>
-            <p>Review DED dan Pembuatan Kajian Arsitektur
-              untuk perencanaan Industri</p>
+            <p>{{ __('project_5') }}</p>
             <a href="assets/img/projects/9.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -569,8 +533,7 @@
           <img src="assets/img/projects/10.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>SDIT Kharisma Azzahra Bogor</h4>
-            <p>Pengujian Bangunan untuk proses perizinan Sertifikat Laik Fungsi dan Persetujuan Bangunan
-              Gedung</p>
+            <p>{{ __('project_6') }}</p>
             <a href="assets/img/projects/10.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -579,8 +542,7 @@
           <img src="assets/img/projects/11.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>PT Electra Mobilitas Indonesia</h4>
-            <p>Pengujian bangunan gedung untuk keperluan
-              Sertifikasi Bangunan Gedung</p>
+            <p>{{ __('project_6') }}</p>
             <a href="assets/img/projects/11.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -589,10 +551,7 @@
           <img src="assets/img/projects/12.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>PT SiSeSa Berkah Illahi</h4>
-            <p>Pengujian bangunan gedung untuk keperluan
-              Sertifikasi Bangunan Gedung dan Persetujuan
-              Bangunan Gedung
-              </p>
+            <p>{{ __('project_6') }}</p>
             <a href="assets/img/projects/12.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -601,9 +560,7 @@
           <img src="assets/img/projects/13.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>PT Ultra Sakti</h4>
-            <p>Review Gambar untuk Pengajuan Persetujuan
-              Bangunan Gedung plant Narogong
-              </p>
+            <p>{{ __('project_7') }}</p>
             <a href="assets/img/projects/13.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -612,9 +569,7 @@
           <img src="assets/img/projects/14.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>SMK Muhammadiyah Cariu</h4>
-            <p>Pengujian bangunan gedung untuk perizinan
-              Sertifikat Laik Fungsi
-              </p>
+            <p>{{ __('project_2') }}</p>
             <a href="assets/img/projects/14.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -623,10 +578,7 @@
           <img src="assets/img/projects/15.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>Yayasan Al Ustmani</h4>
-            <p>Pengujian bangunan gedung untuk proses
-              perizinan Sertifikat Laik Fungi dan Persetujuan
-              Bangunan
-              </p>
+            <p>{{ __('project_6') }}</p>
             <a href="assets/img/projects/15.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -635,9 +587,7 @@
           <img src="assets/img/projects/16.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>Puspanita Eco Spirit Center</h4>
-            <p>Pengujian bangunan gedung utnuk perizinan
-              Sertifikat Laik Fungsi
-              </p>
+            <p>{{ __('project_2') }}</p>
             <a href="assets/img/projects/16.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
@@ -651,9 +601,7 @@
                 <img src="assets/img/projects/1.png" alt="">
                 <div class="description">
                     <h3>PT Sun Tak Indonesia</h3>
-                    <p>Pengujian bangunan gedung untuk perizinan
-                       Sertifikat Laik Fungsi dan PBG Penambahan
-                       Bangunan Gedung</p>
+                    <p>{{ __('project_1') }}</p>
                 </div>
             </div>
             <div class="slide">
@@ -661,7 +609,7 @@
                 <div class="description">
                     <h3>Perumahan Grand Cimandala Residence</h3>
                     <p>
-                      Pengujian bangunan gedung untuk perizinan Sertifikat Laik Fungsi.
+                      {{ __('project_2') }}
                     </p>
                 </div>
             </div>
@@ -669,118 +617,98 @@
                 <img src="assets/img/projects/3.png" alt="">
                 <div class="description">
                     <h3>Royal Tulip Luxury Hotels</h3>
-                    <p>Pengujian bangunan gedung untuk perizinan
-                       Sertifikat Laik Fungsi.</p>
+                    <p>{{ __('project_2') }}</p>
                 </div>
             </div>
              <div class="slide">
                 <img src="assets/img/projects/4.png" alt="">
                 <div class="description">
                     <h3>PT Ultra Sakti</h3>
-                     <p>Penyusunan DED untuk perizinan Industri
-                        PT Ultra Sakti Narogong Kab. Bogor.</p>
+                     <p>{{ __('project_3') }}</p>
                 </div>
             </div>
              <div class="slide">
                 <img src="assets/img/projects/5.png" alt="">
                 <div class="description">
                     <h3>Asimetri Coffe</h3>
-                     <p>Pengujian bangunan gedung untuk perizinan
-                        Sertifikat Laik Fungsi.</p>
+                     <p>{{ __('project_2') }}</p>
                 </div>
             </div>
              <div class="slide">
                 <img src="assets/img/projects/6.png" alt="">
                 <div class="description">
                     <h3>Perumahan Cikeas River Side</h3>
-                     <p>Pengujian bangunan gedung untuk perizinan
-                        Sertifikat Laik Fungsi.</p>
+                     <p>{{ __('project_2') }}</p>
                 </div>
             </div>
              <div class="slide">
                 <img src="assets/img/projects/7.png" alt="">
                 <div class="description">
                     <h3>COZY CO-LIVING JELAMBAR</h3>
-                     <p>Pengejaan DED dan Parizinan Mendirikan Banguna</p>
+                     <p>{{ __('project_4') }}</p>
                 </div>
             </div>
              <div class="slide">
                 <img src="assets/img/projects/8.png" alt="">
                 <div class="description">
                     <h3>Pergudangan Sigma Kartika Gunung Sindur</h3>
-                    <p>Pengujian bangunan gedung untuk perizinan
-                       Sertifikat Laik Fungsi.</p>
+                    <p>{{ __('project_2') }}</p>
                 </div>
             </div>
              <div class="slide">
                 <img src="assets/img/projects/9.png" alt="">
                 <div class="description">
                     <h3>PT Dalya Citramandiri</h3>
-                    <p>Review DED dan Pembuatan Kajian Arsitektur
-                       untuk perencanaan Industri</p>
+                    <p>{{ __('project_5') }}</p>
                 </div>
             </div>
              <div class="slide">
                 <img src="assets/img/projects/10.png" alt="">
                 <div class="description">
                     <h3>SDIT Kharisma Azzahra Bogor</h3>
-                    <p>Pengujian Bangunan untuk proses perizinan Sertifikat Laik Fungsi dan Persetujuan Bangunan
-                       Gedung</p>
+                    <p>{{ __('project_6') }}</p>
                 </div>
             </div>
              <div class="slide">
                 <img src="assets/img/projects/11.png" alt="">
                 <div class="description">
                     <h3>PT Electra Mobilitas Indonesia</h3>
-                    <p>Pengujian bangunan gedung untuk keperluan
-                       Sertifikasi Bangunan Gedung</p>
+                    <p>{{ __('project_6') }}</p>
                 </div>
             </div>
             <div class="slide">
                 <img src="assets/img/projects/12.png" alt="">
                 <div class="description">
                     <h3>PT SiSeSa Berkah Illahi</h3>
-                    <p>Pengujian bangunan gedung untuk keperluan
-                      Sertifikasi Bangunan Gedung dan Persetujuan
-                      Bangunan Gedung
-                    </p>
+                    <p>{{ __('project_6') }}</p>
                 </div>
             </div>
             <div class="slide">
                 <img src="assets/img/projects/13.png" alt="">
                 <div class="description">
                     <h3>PT Ultra Sakti</h3>
-                    <p>Review Gambar untuk Pengajuan Persetujuan
-                      Bangunan Gedung plant Narogong
-                    </p>
+                    <p>{{ __('project_7') }}</p>
                 </div>
             </div>
             <div class="slide">
                 <img src="assets/img/projects/14.png" alt="">
                 <div class="description">
                     <h3>SMK Muhammadiyah Cariu</h3>
-                    <p>Pengujian bangunan gedung untuk perizinan
-                       Sertifikat Laik Fungsi
-                    </p>
+                    <p>{{ __('project_2') }}</p>
                 </div>
             </div>
             <div class="slide">
                 <img src="assets/img/projects/15.png" alt="">
                 <div class="description">
                     <h3>Yayasan Al Ustmani</h3>
-                    <p>Pengujian bangunan gedung untuk proses
-                      perizinan Sertifikat Laik Fungi dan Persetujuan
-                      Bangunan
-                    </p>
+                    <p>{{ __('project_6') }}</p>
                 </div>
             </div>
             <div class="slide">
                 <img src="assets/img/projects/16.png" alt="">
                 <div class="description">
                     <h3>Puspanita Eco Spirit Center</h3>
-                    <p>Pengujian bangunan gedung utnuk perizinan
-                       Sertifikat Laik Fungsi
-                    </p>
+                    <p>{{ __('project_2') }}</p>
                 </div>
             </div>
         </div>
@@ -791,9 +719,8 @@
 
 <section id="regulasi" class="faq-2 section light-background">
   <div class="container section-title"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-    <h2>Ruang Lingkup Usaha</h2>
-    <p>Dalam menjalankan kegiatan pelayanannya, PT Rinca Cipta Karya mempunyai bidang/ layanan jasa konsultasi
-      Konstruksi dan jasa Konsultansi Non Konstruksi, berikut layanan kami :</p>
+    <h2>{{ __('bussines_scope') }}</h2>
+    <p>{{ __('bussines_scope_description') }}</p>
   </div>
   <div class="container">
     <div class="row justify-content-center">
@@ -801,57 +728,40 @@
         <div class="faq-container">
         <div class="faq-item"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
             <i class="faq-icon bi bi-question-circle"></i>
-            <h3>LAYANAN JASA KONSULTANSI KONSTRUKSI</h3>
+            <h3>{{ __('bussines_scope_1') }}</h3>
             <div class="faq-content">
               <p>
-                1. Arsitektur <br>
-                2. Sipil <br>
-                3. Mekanikal <br>
-                4. Elektrikal <br>
-                5. Tata Lingkungan <br>
-                6. Jasa Survey <br>
-                7. Jasa Analisis Engineering <br>
-                8. Jasa Inspeksi Teknis <br>
-                9. Jasa Manajemen Proyek <br>
-                10. Jasa Engineering Terpadu
+                {!! __('bussines_scope_1_description') !!}
               </p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
           <div class="faq-item"  data-aos="fade-right" data-aos-delay="200" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
             <i class="faq-icon bi bi-question-circle"></i>
-            <h3>LAYANAN JASA KONSULTANSI PERIZINAN KONSTRUKSI</h3>
+            <h3>{{ __('bussines_scope_2') }}</h3>
             <div class="faq-content">
               <p>
-                1. Persetujuan Bangunan Gedung (PBG/IMB) <br>
-                2. Sertifikat Laik Fungsi (SLF) <br>
-                3. Dokumen Lingkungan (SPPL/ UKL-UPL/ Amdal) <br>
-                4. Analisis Dampak Lalu Lintas (Andalalin) <br>
-                5. SLO Lingkungan (B3/ IPAL) <br>
-                6. Siteplan <br>
-                7. Keterangan Rencana Kota/ Kabupaten <br>
-                8. Kesesuaian Kegiatan Pemanfaatan Ruang (KKPR) <br>
-                9. Surat Izin Pengambilan Air Tanah (SIPA)
+                {!! __('bussines_scope_2_description') !!}
               </p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
           <div class="faq-item"  data-aos="fade-left" data-aos-delay="300" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
             <i class="faq-icon bi bi-question-circle"></i>
-            <h3>LAYANAN JASA KONSULTANSI & KONTRAKTOR DESAIN INTERIOR</h3>
+            <h3>{{ __('bussines_scope_3') }}</h3>
             <div class="faq-content">
               <p>
-                Interior Design & Contractor Services
+                {!! __('bussines_scope_3_description') !!}
               </p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
           <div class="faq-item"  data-aos="fade-right" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
             <i class="faq-icon bi bi-question-circle"></i>
-            <h3>LAYANAN PENGEMBANGAN LAHAN, KAWASAN, & PROPERTI</h3>
+            <h3>{{ __('bussines_scope_4') }}</h3>
             <div class="faq-content">
               <p>
-                Land, Estate, & Property Development Services
+                {!! __('bussines_scope_4_description') !!}
               </p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
