@@ -30,10 +30,10 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="{{ '/assets/css/main.css' }}" rel="stylesheet">
-  <link
+  {{-- <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  /> --}}
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   @stack('after-style')
@@ -68,21 +68,8 @@
                 </form>
             </li>
           @endauth
-         
-            {{-- <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    Language
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                    <li><a class="dropdown-item" href="{{ url('locale/en') }}">English</a></li>
-                    <li><a class="dropdown-item" href="{{ url('locale/id') }}">Indonesian</a></li>
-                </ul>
-            </div> --}}
-
         </ul>
-
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-
       </nav>
     </div>
   </header>
@@ -126,7 +113,7 @@
                   </div>
                 </div>
               </div>
-                <div class="row gy-4 " id="form-contact">
+                <div class="row gy-4 info-wrap" id="form-contact" style="background-color: #f3f4f6;">
                   <div class="col-md-6">
                     <label for="nama_pemohon" class="pb-2 fw-medium fst-italic text-black">{{ __('name') }}</label>
                     <input type="text" name="nama_pemohon" id="nama_pemohon" class="form-control">
@@ -174,61 +161,6 @@
         </div>
       </section>
     <footer id="footer" class="footer">
-        {{-- <div class="footer-newsletter">
-          <div class="container">
-            <div class="row justify-content-center text-center">
-              <div class="col-lg-6">
-                <head>
-                    <title>Visitor Statistics</title>
-                    <style>
-                        .statistics-box {
-                            background-color: #3cb371;
-                            color: white;
-                            padding: 20px;
-                            border-radius: 10px;
-                            /* width: 250px; */
-                        }
-                        .statistics-box .stat-item {
-                            margin-bottom: 10px;
-                        }
-                        .statistics-box .stat-item span {
-                            display: block;
-                            font-size: 20px;
-                        }
-                        table {
-                            width: 100%;
-                            border-collapse: collapse;
-                        }
-                        th, td {
-                            border: 1px solid #ddd;
-                            padding: 8px;
-                        }
-                        th {
-                            background-color: #f2f2f2;
-                        }
-                    </style>
-                </head>
-                <div class="statistics-box">
-                    <div class="stat-item">
-                        <span>👤 Users Today :</span> {{ $visitorsToday }}
-                    </div>
-                    <div class="stat-item">
-                        <span>👥 Users Last 30 days :</span> {{ $visitorsLast30Days }}
-                    </div>
-                    <div class="stat-item">
-                        <span>📅 Views Today :</span> {{ $viewsToday }}
-                    </div>
-                    <div class="stat-item">
-                        <span>👁️ Views Last 30 days :</span> {{ $viewsLast30Days }}
-                    </div>
-                    <div class="stat-item">
-                        <span>📊 Total views :</span> {{ $totalViews }}
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> --}}
         <div class="container footer-top">
           <div class="row gy-4">
             <div class="col-lg-4 col-md-6 footer-about">
@@ -300,121 +232,17 @@
           <p><span>Copyright</span> © 2024 <strong class="px-1 sitename">PT Rinca Cipta Karya</strong></p>
         </div>
       </footer>
-    {{-- <section id="contact" class="contact section">
-        <div class="container section-title"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-            <h2>Hubungi Kami</h2>
-        </div>
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-lg-5">
-                    <div class="info-wrap iframe-container"  data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.726493099638!2d106.78374157441282!3d-6.429172562870289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e969ec75ef31%3A0x15233b52721e5447!2sRafika%20village%202!5e0!3m2!1sid!2sid!4v1720713300480!5m2!1sid!2sid" width="400" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row">
-                    <div class="col-md-12"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
-                        <div class="info-item d-flex">
-                            <i class="bi bi-geo-alt flex-shrink-0"></i>
-                            <div>
-                                <h3>Alamat</h3>
-                                <p>Jl Nangka (Rafika Village 2 No.B8), Kel. Pasir Putih, Kec. Sawangan, Kota Depok</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12"  data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
-                        <div class="info-item d-flex">
-                            <i class="bi bi-telephone flex-shrink-0"></i>
-                            <div>
-                                <h3>Telpon</h3>
-                                <p>+62856-1652-206</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12"  data-aos="fade-left" data-aos-delay="300" data-aos-duration="800">
-                        <div class="info-item d-flex">
-                            <i class="bi bi-envelope flex-shrink-0"></i>
-                            <div>
-                                <h3>Email</h3>
-                                <p>info@rincakonsultan.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12"  data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
-                        <h4>Sosial Media</h4>
-                        <div class="social-links d-flex">
-                          <a target="_blank" href="https://api.whatsapp.com/send/?phone=628561652206" ><i class="bi bi-whatsapp"></i></a>
-                          <a target="_blank" href="mailto:contact@rincakonsultan.com" ><i class="bi bi-envelope ms-4"></i></a>
-                          <a target="_blank" href="https://www.instagram.com/rincaciptakonsultan/" ><i class="bi bi-instagram ms-4"></i></a>
-                        </div>
-                      </div>
-                </div>
-                </form>
-            </div>
-                <head>
-                    <title>Visitor Statistics</title>
-                    <style>
-                        .statistics-box {
-                            background-color: #3cb371;
-                            color: white;
-                            padding: 20px;
-                            border-radius: 10px;
-                            width: 250px;
-                        }
-                        .statistics-box .stat-item {
-                            margin-bottom: 10px;
-                        }
-                        .statistics-box .stat-item span {
-                            display: block;
-                            font-size: 20px;
-                        }
-                        table {
-                            width: 100%;
-                            border-collapse: collapse;
-                        }
-                        th, td {
-                            border: 1px solid #ddd;
-                            padding: 8px;
-                        }
-                        th {
-                            background-color: #f2f2f2;
-                        }
-                    </style>
-                </head>
-                <div class="statistics-box">
-                    <div class="stat-item">
-                        <span>👤 Users Today :</span> {{ $visitorsToday }}
-                    </div>
-                    <div class="stat-item">
-                        <span>👥 Users Last 30 days :</span> {{ $visitorsLast30Days }}
-                    </div>
-                    <div class="stat-item">
-                        <span>📅 Views Today :</span> {{ $viewsToday }}
-                    </div>
-                    <div class="stat-item">
-                        <span>👁️ Views Last 30 days :</span> {{ $viewsLast30Days }}
-                    </div>
-                    <div class="stat-item">
-                        <span>📊 Total views :</span> {{ $totalViews }}
-                    </div>
-                </div>
-        </div>
-        </div>
-    </section> --}}
   </main>
 
 @stack('before-script')
   <div id="preloader"></div>
-
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  {{-- <script src="assets/vendor/waypoints/noframework.waypoints.js"></script> --}}
+  {{-- <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script> --}}
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->

@@ -1,5 +1,4 @@
 @extends('layouts.dashboard')
-
 @push('after-style')
 <style>
   .slider-container {
@@ -86,7 +85,7 @@
 }
 
   .card {
-    background-color: #3cb371; /* Box color */
+    background-color: #3cb371; 
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
@@ -133,7 +132,6 @@
       right: 0; 
       height: 100%; 
       background:  rgba(255, 255, 255, 0.7); 
-      /* background:  rgba(167, 167, 167, 0.7); */ 
       z-index: 1; 
   } 
 
@@ -156,21 +154,14 @@
       right: 0; 
       height: 100%; 
       background:  rgba(255, 255, 255, 0.7); 
-      /* background:  rgba(167, 167, 167, 0.7); */ 
       z-index: 1; 
   } 
-</style>
-<style type="text/css">
-  
-
 </style>
 @endpush
 @section('content')
 <section id="hero" class="call-to-action section dark-background">
   <img src="assets/img/cta-bg.jpg" alt="">
-
   <div class="container">
-
     <div class="row" data-aos="zoom-in" data-aos-delay="100">
       <div class="col-xl-8 text-center text-xl-start mt-3">
         <h1>{{ __('welcome') }} PT Rinca Cipta Karya</h1>
@@ -257,37 +248,7 @@
   </div>
 </section>
 
-{{--<section id="about" class="about section">--}}
-{{--  <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">--}}
-{{--    <h2>Tentang Kami</h2>--}}
-{{--  </div>--}}
-{{--  <div class="container">--}}
-{{--    <div class="row gy-4">--}}
-{{--      <div class="col-lg-6 content" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">--}}
-{{--        <h4>--}}
-{{--          Visi--}}
-{{--        </h4>--}}
-{{--        <p>--}}
-{{--          Menjadi Konsultan Enjiniring yang Handal, Cakap, dan Memegang Teguh Sustatainable Desain Untuk Keberlangsungan--}}
-{{--          Bumi Beserta Isinya--}}
-{{--        </p>--}}
-{{--      </div>--}}
-{{--      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">--}}
-{{--        <h4>--}}
-{{--          Misi--}}
-{{--        </h4>--}}
-{{--        <ul>--}}
-{{--          <li><i class="bi bi-check2-circle"></i> <span>Mengembangkan Karya Enjiniring Indonesia yang Berkualitas.</span></li>--}}
-{{--          <li><i class="bi bi-check2-circle"></i> <span>Menyediakan produk/ jasa Konsultan Enjiniring, Manajemen Proyek yang unggul dan berkesinambungan.</span></li>--}}
-{{--          <li><i class="bi bi-check2-circle"></i> <span>Memberikan manfaat dan nilai tambah untuk Masyarakat sekitar.</span></li>--}}
-{{--          <li><i class="bi bi-check2-circle"></i> <span>Memberdayakan pengetahuan, pengalaman, dan kreativitas untuk terciptanya solusi terbaik, dengan tidak lupa memegang teguh komitmen dan keper.</span></li>--}}
-{{--        </ul>--}}
-{{--      </div>--}}
-{{--    </div>--}}
-{{--  </div>--}}
-{{--</section>--}}
-
-<section id="direktur" class="direktur modern-building-3 section">
+<section id="direktur" class="direktur modern-building-1 section">
   <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
     <h2>Direktur</h2>
   </div>
@@ -346,12 +307,6 @@
               <h3><span>03</span> {{ __('bussines_activities_3') }}</h3>
             </div>
           </a>
-         <!--  <a href="{{ route('dashboard.about') }}#non_kontruksi">
-            <div class="faq-item mt-3"  data-aos="fade-left" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-              <h3><span>04</span>NON - KONSTRUKSI</h3>
-          </div>
-          </a> -->
-          
         </div>
       </div>
       <div class="col-lg-5 order-1 order-lg-2 why-us-img">
@@ -361,56 +316,7 @@
   </div>
 </section>
 
-{{--<section id="skills" class="skills section" style="background-color: #e2e0e0">--}}
-{{--  <div class="container section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">--}}
-{{--    <h2>Legalitas Perusahaan</h2>--}}
-{{--    <p>CORPORATE MEMBERSHIP</p>--}}
-{{--  </div>--}}
-{{--  <div class="container">--}}
-{{--    <div class="row justify-content=center"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">--}}
-{{--      <div class="col-lg-6 pt-4 pt-lg-0 content text-center">--}}
-{{--        <img src="assets/img/sertifikat/1.png" class="img-fluid" alt="">--}}
-{{--        <h5 class="mt-3">PERKINDO DKI JAKARTA</h5>--}}
-{{--        <p class="fst-italic">Keanggotaan Persatuan Konsultan IndonesiaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>--}}
-{{--      </div>--}}
-{{--      <div class="col-lg-6 pt-4 pt-lg-0 content text-center"  data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="top-bottom">--}}
-{{--        <img src="assets/img/sertifikat/2.png" class="img-fluid" alt="">--}}
-{{--          <h5 class="mt-3">SERTIFIKAT BADAN USAHA--}}
-{{--            JASA KONSTRUKSI</h5>--}}
-{{--          <p class="fst-italic">Kami telah legal dan tersertifikasi</p>--}}
-{{--      </div>--}}
-{{--    </div>--}}
-{{--  </div>--}}
-{{--</section>--}}
-
-{{-- <body>
-    <div class="container">
-        <h1>Mengapa Memilih Kami?</h1>
-        <div class="grid">
-            <div class="header">
-                <img src="path/to/icon1.png" alt="">
-                <h2>Tim Yang Professional.</h2>
-                <p>Tim kami siap untuk mengakomodasi seluruh kebutuhan anda. Kami berkomitmen, terampil, dan menjunung tinggi profesionalisme dan efisiensi , agar pekerjaan anda selesai lebih cepat dengan hasil sesuai.</p>
-            </div>
-            <div class="header">
-                <img src="path/to/icon2.png" alt="">
-                <h2>Memberikan Solusi Terbaik.</h2>
-                <p>Kami sadar KONSULTAN memang tempatnya bertanya dan konsultasi, maka misi kami memberikan SOLUSI TERBAIK untuk masalah PERIZINAN PERUSAHAAN anda.</p>
-            </div>
-            <div class="header">
-                <img src="path/to/icon3.png" alt="">
-                <h2>Hasil yang Memuaskan.</h2>
-                <p>Kami PT RINCA CIPTA KARYA memberikan hasil terbaik, dengan harga relatif murah dibanding pesaing kami.</p>
-            </div>
-            <!-- Repeat similar blocks for other cards -->
-        </div>
-    </div>
-</body> --}}
-
-<!-- Services Section -->
 <section id="services" class="services modern-building-1 section light-background">
-
-  <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>{{ __('why_choose_us') }}</h2>
   </div>
@@ -766,29 +672,10 @@
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
-         <!--  <div class="faq-item"  data-aos="fade-left" data-aos-delay="500" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-            <i class="faq-icon bi bi-question-circle"></i>
-            <h3>LAYANAN JASA KONSULTANSI PERIZINAN NON-KONSTRUKSI</h3>
-            <div class="faq-content">
-              <p>
-                1. Izin Ketenaga Listrikan (IUJPTL & SBUJPTL) <br>
-                2. Izin Usaha Jasa Pertambangan (IUJP) <br>
-                3. Jasa Pendirian Perusahaan (CV, PT, atau Yayasan) <br>
-                4. Jasa Sertifikasi Tingkat Komponan Dalam Negeri (TKDN) <br>
-                5. Jasa Pendampingan OSS Berbasis Resiko <br>
-                6. Jasa Layanan Perpajakan (PKP & SPPKP)
-              </p>
-            </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div> -->
         </div>
       </div>
-
     </div>
-
   </div>
-
-
 </section>
 @endsection
 
