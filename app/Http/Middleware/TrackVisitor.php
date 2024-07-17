@@ -13,6 +13,7 @@ class TrackVisitor
         Visitor::create([
             'ip_address' => $request->ip(),
             'user_agent' => $request->header('User-Agent'),
+            'views' => 1,
         ]);
 
         return $next($request);
