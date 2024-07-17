@@ -90,30 +90,30 @@
   <main class="main">
     @yield('content')
 
-    <section id="contact" class="contact section">
+    <section id="contact" class="contact modern-building-1 section">
         <div class="container section-title">
           <h2>{{ __('contact') }}</h2>
         </div>
         <div class="container">
           <div class="row gy-4">
             <div class="col-lg-5">
-              <div class="info-wrap">
+              <div class="">
                 <div class="info-item d-flex">
                   <div>
-                    <h2>{{ __('get_a_quote') }}</h2>
-                    <h5>{{ __('our_best') }}</h5>
+                    <h2 class="fw-semibold fst-italic text-black">{{ __('get_a_quote') }}</h2>
+                    <h5 class="fw-semibold fst-italic text-black">{{ __('our_best') }}</h5>
                   </div>
                 </div>
                 <div class="info-item d-flex">
                   <div>
-                    <p>{{ __('costs_slf') }}</p>
+                    <p class="fw-medium fst-italic text-black">{{ __('costs_slf') }}</p>
                   </div>
                 </div>
                 <div class="info-item d-flex">
                   <ul>
-                    <li>{{ __('costs_1') }}</li>
-                    <li>{{ __('costs_2') }}</li>
-                    <li>{{ __('costs_3') }}</li>
+                    <li class="fw-medium fst-italic text-black">{{ __('costs_1') }}</li>
+                    <li class="fw-medium fst-italic text-black">{{ __('costs_2') }}</li>
+                    <li class="fw-medium fst-italic text-black">{{ __('costs_3') }}</li>
                   </ul>
                 </div>
               </div>
@@ -128,35 +128,35 @@
               </div>
                 <div class="row gy-4 " id="form-contact">
                   <div class="col-md-6">
-                    <label for="nama_pemohon" class="pb-2">{{ __('name') }}</label>
+                    <label for="nama_pemohon" class="pb-2 fw-medium fst-italic text-black">{{ __('name') }}</label>
                     <input type="text" name="nama_pemohon" id="nama_pemohon" class="form-control">
                   </div>
                   <div class="col-md-6">
-                    <label for="nama_perusahaan" class="pb-2">{{ __('company') }}</label>
+                    <label for="nama_perusahaan" class="pb-2 fw-medium fst-italic text-black">{{ __('company') }}</label>
                     <input type="text" class="form-control" name="nama_perusahaan" id="nama_perusahaan">
                   </div>
                   <div class="col-md-6">
-                    <label for="nomor_handphone" class="pb-2">{{ __('phone_number') }}</label>
+                    <label for="nomor_handphone" class="pb-2 fw-medium fst-italic text-black">{{ __('phone_number') }}</label>
                     <input type="text" name="nomor_handphone" id="nomor_handphone" class="form-control">
                   </div>
                   <div class="col-md-6">
-                    <label for="email" class="pb-2">Email</label>
+                    <label for="email" class="pb-2 fw-medium fst-italic text-black">Email</label>
                     <input type="text" class="form-control" name="email" id="email">
                   </div>
                   <div class="col-md-6">
-                    <label for="luas_area" class="pb-2">Area</label>
+                    <label for="luas_area" class="pb-2 fw-medium fst-italic text-black">Area</label>
                     <input type="text" class="form-control" name="luas_area" id="luas_area">
                   </div>
                   <div class="col-md-6">
-                    <label for="lokasi_perusahaan" class="pb-2">{{ __('company_location') }}</label>
+                    <label for="lokasi_perusahaan" class="pb-2 fw-medium fst-italic text-black">{{ __('company_location') }}</label>
                     <input type="text" class="form-control" name="lokasi_perusahaan" id="lokasi_perusahaan">
                   </div>
                   <div class="col-md-12">
-                    <label for="keterangan" class="pb-2">{{ __('description') }} <span style="font-size: 11px; color: red">( optional )</span></label>
+                    <label for="keterangan" class="pb-2 fw-medium fst-italic text-black">{{ __('description') }} <span style="font-size: 11px; color: red">( optional )</span></label>
                     <textarea class="form-control" name="keterangan" rows="10" id="keterangan"></textarea>
                   </div>
                   <a href="#contact" onclick="submitOffer()" class="btn-send-message">
-                    <div class="col-md-12 text-center ">
+                    <div class="col-md-12 text-center fw-bold fst-italic ">
                         {{ __('send_offer') }}
                     </div>
                   </a>
