@@ -230,37 +230,51 @@
   }
 </style>
 
-<section id="direktur" class="direktur modern-building-1 section">
+<section id="direktur" class="direktur  section">
   <div class="container section-title">
     <h2>Direktur</h2>
   </div>
   <div class="container">
     <div class="row gy-4">
       <div class="col-lg-4 content text-center">
-        <img src="assets/img/personal/direktur.png" alt="" class="img-fluid">
-        <h5 class="mt-3">
-          DAWIN MUHAMAD YUSUF
-        </h5>
-        <p class="text-dark fw-semibold fst-italic">
-          {{ __('divisi') }}
-        </p>
-        <p class="text-dark fw-semibold fst-italic">
-          {{ __('direktur_description_1') }}
-        </p>
+        <div class="row">
+          <div class="col-5 col-lg-12">
+            <img src="assets/img/personal/direktur.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-7 col-lg-12">
+            <h5 class="mt-3 info-wrap">
+              DAWIN MUHAMAD YUSUF <br> <span style="font-size: 14px">( {{ __('divisi') }} )</span>
+            </h5>
+          </div>
+          <div class="info-wrap">
+            <p class="fst-italic">
+              <i class="bi bi-option"></i> {{ __('direktur_description_1') }}
+            </p>
+           </div>
+        </div>
+       
       </div>
-      <div class="col-lg-8">
-        <p class="text-dark fw-semibold fst-italic">
-          {{ __('direktur_description_2') }}
-        </p>
-        <p class="text-dark fw-semibold fst-italic">
-          {{ __('direktur_description_3') }}
-        </p>
-        <p class="text-dark fw-semibold fst-italic">
-          {{ __('direktur_description_4') }}
-        </p>
-        <p class="text-dark fw-semibold fst-italic">
-          {{ __('direktur_description_5') }}
-        </p>
+      <div class="col-lg-8 ">
+        <div class="info-wrap">
+          <p class="fst-italic">
+            <i class="bi bi-option"></i> {{ __('direktur_description_2') }}
+          </p>
+        </div>
+        <div class="info-wrap">
+          <p class="fst-italic">
+            <i class="bi bi-option"></i> {{ __('direktur_description_3') }}
+          </p>
+        </div>
+        <div class="info-wrap">
+          <p class="fst-italic">
+            <i class="bi bi-option"></i> {{ __('direktur_description_4') }}
+          </p>
+        </div>
+        <div class="info-wrap">
+          <p class="fst-italic">
+            <i class="bi bi-option"></i> {{ __('direktur_description_5') }}
+          </p>
+        </div>
       </div>
     </div>
   </div>
