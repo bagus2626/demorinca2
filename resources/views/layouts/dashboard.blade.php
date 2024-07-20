@@ -256,6 +256,16 @@
               </ul>
             </div>
             <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Artikel</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="{{ route('dashboard.artikel1') }}">Artikel 1</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="{{ route('dashboard.artikel2') }}">Artikel 2</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="{{ route('dashboard.artikel3') }}">Artikel 3</a></li>
+              </ul>
+            </div>
+
+
+            <div class="col-lg-2 col-md-3 footer-links">
               <h4>{{ __('bussines_activities') }}</h4>
               <ul>
                 <li><i class="bi bi-chevron-right"></i><a href="{{ route('dashboard.about') }}#perencanaan">{{ __('bussines_activities_1') }}</a></li>
