@@ -90,6 +90,14 @@
       <a href="/" class="logo d-flex align-items-center me-auto">
        <img src="assets/img/favicon2.webp" alt="" style="width: 140px; height: 90px;">
       </a>
+      <div>
+         <a><strong>Phone:</strong> <span>+628561652206</span></a>
+      </div>
+      <div>
+         <a><strong>Email:</strong> <span>info@rincakonsultan.com</span></a>
+      </div>
+       
+      
       <nav id="navmenu" class="navmenu">
         <ul>
           <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
