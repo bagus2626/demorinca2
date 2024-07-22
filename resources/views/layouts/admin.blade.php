@@ -32,6 +32,11 @@
               class="list-group-item list-group-item-action {{ Request::is('admin/documents*') ? 'active' : '' }}"
               >Documents</a
             >
+             <a
+              href="{{ route('cariers.index') }}"
+              class="list-group-item list-group-item-action {{ Request::is('admin/cariers*') ? 'active' : '' }}"
+              >Karir</a
+            >
             <a
               href="{{ route('offers.index') }}"
               class="list-group-item list-group-item-action {{ Request::is('admin/offers*') ? 'active' : '' }}"

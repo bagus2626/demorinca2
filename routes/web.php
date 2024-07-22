@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\CarierController;
 use App\Http\Controllers\Admin\DocumentController;
 use App\Http\Controllers\Admin\OfferController;
 use App\Http\Controllers\Admin\SettingController;
@@ -50,6 +51,8 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::prefix('admin')->middleware('auth')->group(function () {
     Route::resource('/documents', DocumentController::class);
     Route::get('/documents/change-status/{id}', [DocumentController::class, 'changeStatus'])->name('documents.change-status');
+    Route::resource('/cariers', CarierController::class);
+    Route::get('/cariers/change-status/{id}', [CarierController::class, 'changeStatus'])->name('cariers.change-status');
     Route::resource('/offers', OfferController::class);
     Route::get('/settings', [SettingController::class, 'index'])->name('settings.index');
     Route::put('/settings', [SettingController::class, 'update'])->name('settings.update');

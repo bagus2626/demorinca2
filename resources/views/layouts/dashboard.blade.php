@@ -100,7 +100,16 @@
       
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+           <li class="dropdown">
+            <a href="#">
+              @if (app()->getLocale() == 'en')
+                <img src="assets/img/english.svg" style="width: 40px; height: 35px;" alt="">
+              @else
+                <img src="assets/img/indonesian.svg" style="width: 40px; height: 35px;" alt="">
+              @endif
+              <i class="bi bi-chevron-down toggle-dropdown">
+              </i>
+            </a>
             <ul>
               <li><a href="{{ url('change-language/en') }}">English</a></li>
               <li><a href="{{ url('change-language/id') }}">Indonesian</a></li>
