@@ -9,6 +9,7 @@ use App\Http\Controllers\Dashboard\AboutpageController;
 use App\Http\Controllers\Dashboard\Artikelpage1Controller;
 use App\Http\Controllers\Dashboard\Artikelpage2Controller;
 use App\Http\Controllers\Dashboard\Artikelpage3Controller;
+use App\Http\Controllers\Dashboard\CarierPageController;
 use App\Http\Controllers\Dashboard\HomepageController;
 use App\Http\Controllers\Dashboard\TrackingpageController;
 use App\Http\Middleware\TrackVisitor;
@@ -41,6 +42,8 @@ Route::get('/artikel3', [Artikelpage3Controller::class, 'index'])->name('dashboa
 //Route::get('/',  [HomepageController::class, 'index'])->name('dashboard_en.homepage');
 Route::get('/tracking', [TrackingpageController::class, 'index'])->name('dashboard.tracking');
 Route::post('/tracking/search', [TrackingpageController::class, 'search']);
+Route::get('/carier', [CarierPageController::class, 'index'])->name('dashboard.carier');
+Route::get('/carier/{id}', [CarierPageController::class, 'detail'])->name('dashboard.carier-detail');
 // AUTH
 Route::get('/register', [AuthController::class, 'pageRegister'])->middleware('guest');
 Route::post('register', [AuthController::class, 'register'])->name('register')->middleware('guest');

@@ -125,6 +125,7 @@
           <li><a href="{{ route('dashboard.tracking') }}">Tracking</a></li>
           <li><a href="{{ route('dashboard.about') }}">About</a></li>
           <li><a href="{{ route('dashboard.homepage') }}#portfolio">Project</a></li>
+          <li><a href="{{ route('dashboard.carier') }}">{{ __('carier') }}</a></li>
           <li><a href="{{ route('dashboard.homepage') }}#contact">Contact</a></li>
           @guest
             <li><a href="{{ route('page-login') }}">Signin</a></li>
