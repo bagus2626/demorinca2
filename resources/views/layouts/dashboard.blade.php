@@ -60,7 +60,7 @@
 
     .modern-building-1 { 
       position: relative; 
-      background: url("assets/img/background/modern-building-1.jpg") no-repeat 
+      background: url("assets/img/background/modern-building-11.png") no-repeat 
           bottom; 
       background-size: cover; 
       padding: 60px 0; 
@@ -75,8 +75,8 @@
         bottom: 0; 
         left: 0; 
         right: 0; 
-        height: 100%; 
-        background:  rgba(255, 255, 255, 0.7); 
+       /* height: 100%;*/ 
+/*        background:  rgba(255, 255, 255, 0); */
         z-index: 1; 
     } 
   </style>
