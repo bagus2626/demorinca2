@@ -100,7 +100,7 @@
       
       <nav id="navmenu" class="navmenu">
         <ul>
-           <li class="dropdown">
+         <!--   <li class="dropdown">
             <a href="#">
               @if (app()->getLocale() == 'en')
                 <img src="assets/img/english.svg" style="width: 40px; height: 35px;" alt="">
@@ -111,10 +111,16 @@
               </i>
             </a>
             <ul>
-              <li><a href="{{ url('change-language/en') }}">English</a></li>
-              <li><a href="{{ url('change-language/id') }}">Indonesian</a></li>
+              <li><a href="{{ url('change-language/en') }}" src="assets/img/english.svg" style="width: 40px; height: 35px;" alt=""></a></li>
+              <li><a href="{{ url('change-language/id') }}" src="assets/img/english.svg" style="width: 40px; height: 35px;" alt=""></a></li>
             </ul>
-          </li>
+          </li> -->
+          <!--  <ul>
+              <li><a href="{{ url('change-language/en') }}" src="assets/img/english.svg" style="width: 40px; height: 35px;" alt=""></a></li>
+              <li><a href="{{ url('change-language/id') }}" src="assets/img/indonesian.svg" style="width: 40px; height: 35px;" alt=""></a></li>
+            </ul> -->
+            <li><a href="{{ url('change-language/en') }}"><img src="assets/img/english.svg" style="width: 40px; height: 35px;" alt="English"></a></li>
+          <li><a href="{{ url('change-language/id') }}"><img src="assets/img/indonesian.svg" style="width: 40px; height: 35px;" alt="Indonesian"></a></li>
           <li><a href="{{ route('dashboard.homepage') }}#hero" class="active">Home</a></li>
           <li><a href="{{ route('dashboard.tracking') }}">Tracking</a></li>
           <li><a href="{{ route('dashboard.about') }}">About</a></li>
