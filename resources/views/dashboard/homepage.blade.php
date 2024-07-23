@@ -230,9 +230,9 @@
   }
 </style>
 
-<section id="direktur" class="direktur  section">
+<section id="direktur" class="modern-building-1  section">
   <div class="container section-title">
-    <h2>Direktur</h2>
+    <h2 class="text-white">Direktur</h2>
   </div>
   <div class="container">
     <div class="row gy-4">
@@ -314,7 +314,7 @@
 
 <section id="services" class="services modern-building-1 section light-background">
   <div class="container section-title">
-    <h2>{{ __('why_choose_us') }}</h2>
+    <h2 class="text-white">{{ __('why_choose_us') }}</h2>
   </div>
   <div class="container">
     <div class="row gy-4">
@@ -343,9 +343,9 @@
   </div>
 </section>
 
-<section id="portfolio" class="portfolio section modern-building-1">
+<section id="portfolio" class="portfolio section modern-building-cta">
   <div class="container section-title">
-    <h2>{{ __('project') }}</h2>
+    <h2 class="text-white">{{ __('project') }}</h2>
   </div>
   <div class="container projects-desktop">
     <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">

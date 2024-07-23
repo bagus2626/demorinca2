@@ -61,7 +61,7 @@
 
     .modern-building-1 { 
       position: relative; 
-      background: url("assets/img/background/modern-building-11.png") no-repeat 
+      background: url("assets/img/background/modern-building-3.jpg") no-repeat 
           bottom; 
       background-size: cover; 
       padding: 60px 0; 
@@ -76,8 +76,30 @@
         bottom: 0; 
         left: 0; 
         right: 0; 
-       /* height: 100%;*/ 
-/*        background:  rgba(255, 255, 255, 0); */
+        height: 100%; 
+        background: color-mix(in srgb, #5db54d, transparent 35%);
+        z-index: 1; 
+    } 
+
+    .modern-building-cta { 
+      position: relative; 
+      background: url("assets/img/background/building-cta.jpg") no-repeat 
+          bottom; 
+      background-size: cover; 
+      padding: 60px 0; 
+    } 
+    .modern-building-cta .container { 
+        position: relative; 
+        z-index: 2; 
+    } 
+    .modern-building-cta::before { 
+        content: ""; 
+        position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        right: 0; 
+        height: 100%; 
+        background: color-mix(in srgb, #5db54d, transparent 35%);
         z-index: 1; 
     } 
   </style>
@@ -148,10 +170,10 @@
 
     <section id="contact" class="contact modern-building-1 section">
         <div class="container section-title">
-          <h2>{{ __('contact') }}</h2>
+          <h2 class="text-white">{{ __('contact') }}</h2>
         </div>
         <div class="container">
-          <div class="row gy-4">
+          <div class="row gy-4 info-wrap" style="background-color: #f3f4f6;">
             <div class="col-lg-5">
               <div class="">
                 <div class="info-item d-flex">
