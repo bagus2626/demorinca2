@@ -91,7 +91,7 @@
        <img src="assets/img/favicon2.webp" alt="" style="width: 140px; height: 90px;">
       </a>
       <!-- <div>
-         <a><strong>Phone:</strong> <span>+628561652206</span></a>
+         <a><strong>Phone:</strong> <span>+6281328256653</span></a>
       </div>
       <div>
          <a><strong>Email:</strong> <span>rinca.studio@gmail.com</span></a>
@@ -301,7 +301,7 @@
               <div class="social-links d-flex mt-4">
                 <a target="_blank" href="mailto:contact@rincakonsultan.com"><i class="bi bi-envelope"></i></a>
                 <a target="_blank" href="https://www.instagram.com/rincaciptakonsultan/"><i class="bi bi-instagram"></i></a>
-                <a target="_blank" href="https://api.whatsapp.com/send/?phone=628561652206"><i class="bi bi-whatsapp"></i></a>
+                <a target="_blank" href="https://api.whatsapp.com/send/?phone=6281328256653"><i class="bi bi-whatsapp"></i></a>
               </div>
             </div>
           </div>
@@ -328,7 +328,7 @@
   <script type="text/javascript">
       (function () {
           var options = {
-              whatsapp: "628561652206", // WhatsApp number
+              whatsapp: "6281328256653", // WhatsApp number
               call_to_action: "Live Chat", // Call to action
               button_color: "#FF6550", // Color of button
               position: "right", // Position may be 'right' or 'left'
