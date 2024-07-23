@@ -11,7 +11,6 @@
   <meta content="konsultan perencanaan arsitek dan pengurusan perizinan bangunan gedung yang sudah memiliki lisensi." name="description">
    
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <base href="/" >
   @stack('before-style')
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -26,9 +25,9 @@
   {{-- boxicon icons --}}
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-  <link href="{{ asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
-  <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="{{ '/assets/css/main.css' }}" rel="stylesheet">
   {{-- <link
@@ -61,7 +60,7 @@
 
     .modern-building-1 { 
       position: relative; 
-      background: url("assets/img/background/modern-building-3.jpg") no-repeat 
+      background: url("assets/img/background/modern-building-11.png") no-repeat 
           bottom; 
       background-size: cover; 
       padding: 60px 0; 
@@ -76,30 +75,8 @@
         bottom: 0; 
         left: 0; 
         right: 0; 
-        height: 100%; 
-        background: color-mix(in srgb, #5db54d, transparent 35%);
-        z-index: 1; 
-    } 
-
-    .modern-building-cta { 
-      position: relative; 
-      background: url("assets/img/background/building-cta.jpg") no-repeat 
-          bottom; 
-      background-size: cover; 
-      padding: 60px 0; 
-    } 
-    .modern-building-cta .container { 
-        position: relative; 
-        z-index: 2; 
-    } 
-    .modern-building-cta::before { 
-        content: ""; 
-        position: absolute; 
-        bottom: 0; 
-        left: 0; 
-        right: 0; 
-        height: 100%; 
-        background: color-mix(in srgb, #5db54d, transparent 35%);
+       /* height: 100%;*/ 
+/*        background:  rgba(255, 255, 255, 0); */
         z-index: 1; 
     } 
   </style>
@@ -113,11 +90,11 @@
       <a href="/" class="logo d-flex align-items-center me-auto">
        <img src="assets/img/favicon2.webp" alt="" style="width: 140px; height: 90px;">
       </a>
-      <!-- <div>
-         <a><strong>Phone:</strong> <span>+6281328256653</span></a>
+     <!--  <div>
+         <a><strong>Phone:</strong> <span>+628561652206</span></a>
       </div>
       <div>
-         <a><strong>Email:</strong> <span>rinca.studio@gmail.com</span></a>
+         <a><strong>Email:</strong> <span>info@rincakonsultan.com</span></a>
       </div> -->
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -170,10 +147,10 @@
 
     <section id="contact" class="contact modern-building-1 section">
         <div class="container section-title">
-          <h2 class="text-white">{{ __('contact') }}</h2>
+          <h2>{{ __('contact') }}</h2>
         </div>
         <div class="container">
-          <div class="row gy-4 info-wrap" style="background-color: #f3f4f6;">
+          <div class="row gy-4">
             <div class="col-lg-5">
               <div class="">
                 <div class="info-item d-flex">
@@ -266,8 +243,8 @@
                     color: #fff
                 }
               </style>
-              <p class="mt-3"><strong>Phone:</strong> <span>+6281328256653</span></p>
-              <p><strong>Email:</strong> <span>rinca.studio@gmail.com</span></p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+62856-1652-206</span></p>
+              <p><strong>Email:</strong> <span>info@rincakonsultan.com</span></p>
               <div class="visitors d-flex">
                 <div class="container">
                     <div class="row">
@@ -324,7 +301,7 @@
               <div class="social-links d-flex mt-4">
                 <a target="_blank" href="mailto:contact@rincakonsultan.com"><i class="bi bi-envelope"></i></a>
                 <a target="_blank" href="https://www.instagram.com/rincaciptakonsultan/"><i class="bi bi-instagram"></i></a>
-                <a target="_blank" href="https://api.whatsapp.com/send/?phone=6281328256653"><i class="bi bi-whatsapp"></i></a>
+                <a target="_blank" href="https://api.whatsapp.com/send/?phone=628561652206"><i class="bi bi-whatsapp"></i></a>
               </div>
             </div>
           </div>
@@ -351,7 +328,7 @@
   <script type="text/javascript">
       (function () {
           var options = {
-              whatsapp: "6281328256653", // WhatsApp number
+              whatsapp: "628561652206", // WhatsApp number
               call_to_action: "Live Chat", // Call to action
               button_color: "#FF6550", // Color of button
               position: "right", // Position may be 'right' or 'left'
