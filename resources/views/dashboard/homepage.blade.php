@@ -89,7 +89,8 @@
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
 }
 
 .card img {
@@ -282,24 +283,24 @@
 
 <section id="why-us" class="section why-us light-background" data-builder="section">
   <div class="container-fluid">
-    <div class="row gy-4">
+    <div class="row gy-4 info-wrap">
       <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
         <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
           <h3><span>{{ __('bussines_activities') }}</span></h3>
         </div>
         <div class="faq-container px-xl-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
           <a href="{{ route('dashboard.about') }}#perencanaan">
-            <div class="faq-item mt-3">
+            <div class="row gy-3 info-wrap">
               <h3><span>01</span> {{ __('bussines_activities_1') }}</h3>
             </div>
           </a>
           <a href="{{ route('dashboard.about') }}#perizinan">
-            <div class="faq-item mt-3" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
+            <div class="row gy-3 info-wrap" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
               <h3><span>02</span> {{ __('bussines_activities_2') }}</h3>
             </div>
           </a>
           <a href="{{ route('dashboard.about') }}#design">
-            <div class="faq-item mt-3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800">
+            <div class="row gy-3 info-wrap" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800">
               <h3><span>03</span> {{ __('bussines_activities_3') }}</h3>
             </div>
           </a>
@@ -317,25 +318,25 @@
     <h2 class="text-white">{{ __('why_choose_us') }}</h2>
   </div>
   <div class="container">
-    <div class="row gy-4">
+    <div class="row gy-4 info-wrap">
       <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
         <div class="service-item position-relative">
           <div class="icon"><i class="bi bi-person-video3 icon"></i></div>
-          <h4><a href="" class="stretched-link">{{ __('profesional_team') }}</a></h4>
+          <h4><a href="" class="row gy-4 info-wrap">{{ __('profesional_team') }}</a></h4>
           <p>{{ __('profesional_team_description') }}</p>
         </div>
       </div>
       <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
         <div class="service-item position-relative">
           <div class="icon"><i class="bi bi-activity icon"></i></div>
-          <h4><a href="" class="stretched-link">{{ __('solution') }}</a></h4>
+          <h4><a href="" class="row gy-4 info-wrap">{{ __('solution') }}</a></h4>
           <p>{{ __('solution_description') }}</p>
         </div>
       </div>
       <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
         <div class="service-item position-relative">
           <div class="icon"><i class="bi bi-bar-chart-line icon"></i></div>
-          <h4><a href="" class="stretched-link">{{ __('result') }}</a></h4>
+          <h4><a href="" class="row gy-4 info-wrap">{{ __('result') }}</a></h4>
           <p>{{ __('result_description') }}</p>
         </div>
       </div>
@@ -630,7 +631,7 @@
         <div class="faq-container">
         <div class="faq-item"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
             <i class="faq-icon bi bi-question-circle"></i>
-            <h3>{{ __('bussines_scope_1') }}</h3>
+            <h3 >{{ __('bussines_scope_1') }}</h3>
             <div class="faq-content">
               <p>
                 {!! __('bussines_scope_1_description') !!}
