@@ -94,7 +94,7 @@
          <a><strong>Phone:</strong> <span>+628561652206</span></a>
       </div>
       <div>
-         <a><strong>Email:</strong> <span>info@rincakonsultan.com</span></a>
+         <a><strong>Email:</strong> <span>rinca.studio@gmail.com</span></a>
       </div> -->
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -243,8 +243,8 @@
                     color: #fff
                 }
               </style>
-              <p class="mt-3"><strong>Phone:</strong> <span>+62856-1652-206</span></p>
-              <p><strong>Email:</strong> <span>info@rincakonsultan.com</span></p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+6281328256653</span></p>
+              <p><strong>Email:</strong> <span>rinca.studio@gmail.com</span></p>
               <div class="visitors d-flex">
                 <div class="container">
                     <div class="row">
