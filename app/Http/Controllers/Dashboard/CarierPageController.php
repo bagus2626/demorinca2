@@ -7,6 +7,8 @@ use App\Models\Carier;
 use App\Models\Visitor;
 use Illuminate\Support\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\CareerFormMail;
 
 class CarierPageController extends Controller
 {
@@ -56,4 +58,15 @@ class CarierPageController extends Controller
             )    
         );
     }
+
+    public function send(Request $request)
+    {
+        $formData = $request->all();
+
+        Mail::to('recipient@example.com')->send(new CareerFormMail($formData));
+
+        return back()->with('success', 'Your offer has been sent successfully!');
+    }
+
+
 }

@@ -43,7 +43,8 @@ Route::get('/artikel3', [Artikelpage3Controller::class, 'index'])->name('dashboa
 Route::get('/tracking', [TrackingpageController::class, 'index'])->name('dashboard.tracking');
 Route::post('/tracking/search', [TrackingpageController::class, 'search']);
 Route::get('/carier', [CarierPageController::class, 'index'])->name('dashboard.carier');
-Route::get('/carier/{id}', [CarierPageController::class, 'detail'])->name('dashboard.carier-detail');
+Route::get('/carier/detail/{id}', [CarierPageController::class, 'detail'])->name('dashboard.carier-detail');
+Route::post('/carier/detail/send', [CarierPageController::class, 'send'])->name('dashboard.carier-send');
 // AUTH
 Route::get('/register', [AuthController::class, 'pageRegister'])->middleware('guest');
 Route::post('register', [AuthController::class, 'register'])->name('register')->middleware('guest');
