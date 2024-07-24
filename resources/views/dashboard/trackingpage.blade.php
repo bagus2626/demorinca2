@@ -1,8 +1,14 @@
 @extends('layouts.dashboard')
 
+@push('after-style')
+<style>
+
+</style>
+@endpush
+
 @section('content')
 
-<section id="call-to-action" class="call-to-action section dark-background">
+{{-- <section id="call-to-action" class="call-to-action section dark-background">
   <img src="assets/img/cta-bg.jpg" alt="">
   <div class="container">
     <div class="row" data-aos="zoom-in" data-aos-delay="100">
@@ -17,7 +23,25 @@
       </div>
     </div>
   </div>
-</section>
+</section> --}}
+  <section class="page-title black-background" style="background-image: url(assets/img/page-title-bg.jpg);">
+    <div class="container position-relative">
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-6 text-start">
+          <h2 class="text-uppercase fw-semibold">{{ __('tracking') }}</h2>
+          <div class="d-flex mt-4">
+            <input type="text" class="tracking-input" style="margin-top: 10px" placeholder="{{ __('search') }} nomor document, ex: DC12345" id="valueTracking">
+            <button type="button" class="cta-btn align-middle bg-transparent fw-bold" onclick="searchTracking()">{{ __('search') }}</button>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-6" id="tracking-result" style="display: none">
+        </div>
+      </div>
+     
+    </div>
+  </section>
 
 <section id="clients" class="clients section light-background">
   <div class="container">

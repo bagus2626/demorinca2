@@ -255,8 +255,19 @@
 @endpush
 
 @section('content')
+    <section class="page-title black-background" style="background-image: url(assets/img/page-title-bg.jpg);">
+      <div class="container position-relative">
+        <h1>{{ __('carier') }}</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{{ route('dashboard.carier') }}">{{ __('carier') }}</a></li>
+            <li class="current">{{ __('carier') }} Detail</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
     <section id="portfolio-details" class="portfolio-details section mt-4">
-      <div class="page-title">
+      {{-- <div class="page-title">
         <div class="container">
           <nav class="breadcrumbs">
             <ol>
@@ -265,7 +276,7 @@
             </ol>
           </nav>
         </div>
-      </div>
+      </div> --}}
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
           <div class="col-lg-8">

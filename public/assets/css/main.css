@@ -47,6 +47,14 @@
     --surface-color: #ffffff;
 }
 
+.black-background {
+    --background-color: #060606;
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+    --surface-color: #252525;
+    --contrast-color: #ffffff;
+}
+
 .dark-background {
     --background-color: #5db54d;
     --default-color: #ffffff;
@@ -257,6 +265,7 @@ h6 {
 ------------------------------*/
 .index-page.scrolled .header {
     /* PUSH COLOR NAVBAR */
+    /* --background-color: #3cb371; */
     --background-color: #3cb371;
 }
 
@@ -731,7 +740,7 @@ h6 {
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
-.page-title {
+/* .page-title {
     --background-color: color-mix(
         in srgb,
         var(--default-color),
@@ -767,6 +776,55 @@ h6 {
     display: inline-block;
     padding-right: 10px;
     color: color-mix(in srgb, var(--default-color), transparent 70%);
+} */
+.page-title {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 160px 0 60px 0;
+    text-align: center;
+    position: relative;
+}
+
+.page-title:before {
+    content: "";
+    background-color: color-mix(
+        in srgb,
+        var(--background-color),
+        transparent 40%
+    );
+    position: absolute;
+    inset: 0;
+}
+
+.page-title h1 {
+    font-size: 56px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.page-title .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.page-title .breadcrumbs ol li + li {
+    padding-left: 10px;
+}
+
+.page-title .breadcrumbs ol li + li::before {
+    content: "/";
+    display: inline-block;
+    padding-right: 10px;
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
 /*--------------------------------------------------------------
@@ -839,7 +897,7 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
+/* .hero {
     width: 100%;
     min-height: 80vh;
     position: relative;
@@ -935,6 +993,151 @@ section,
     100% {
         transform: translateY(-10px);
     }
+} */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero .info {
+    position: relative;
+    inset: 0;
+    z-index: 3;
+    padding: 140px 0 60px 0;
+}
+
+@media (max-width: 768px), (max-height: 480px) {
+    .hero .info {
+        padding: 100px 50px 60px 50px;
+    }
+}
+
+.hero .info h2 {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    font-size: 56px;
+    font-weight: 700;
+    position: relative;
+    color: #3cb371;
+}
+
+.hero .info h2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .hero .info h2 {
+        font-size: 36px;
+    }
+}
+
+.hero .info p {
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    font-size: 18px;
+}
+
+.hero .carousel {
+    inset: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+.hero .carousel-item {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition-duration: 0.4s;
+}
+
+.hero .carousel-item img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero .carousel-item::before {
+    content: "";
+    background-color: color-mix(
+        in srgb,
+        var(--background-color),
+        transparent 30%
+    );
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+.hero .carousel-control-prev {
+    justify-content: start;
+}
+
+@media (min-width: 640px) {
+    .hero .carousel-control-prev {
+        padding-left: 15px;
+    }
+}
+
+.hero .carousel-control-next {
+    justify-content: end;
+}
+
+@media (min-width: 640px) {
+    .hero .carousel-control-next {
+        padding-right: 15px;
+    }
+}
+
+.hero .carousel-control-next-icon,
+.hero .carousel-control-prev-icon {
+    background: none;
+    font-size: 26px;
+    line-height: 0;
+    background: color-mix(in srgb, var(--default-color), transparent 80%);
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+    border-radius: 50px;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .carousel-control-prev,
+.hero .carousel-control-next {
+    z-index: 3;
+    transition: 0.3s;
+}
+
+.hero .carousel-control-prev:focus,
+.hero .carousel-control-next:focus {
+    opacity: 0.5;
+}
+
+.hero .carousel-control-prev:hover,
+.hero .carousel-control-next:hover {
+    opacity: 0.9;
 }
 
 /*--------------------------------------------------------------
@@ -1284,7 +1487,7 @@ section,
     color: var(--default-color);
 }
 
-.call-to-action .cta-btn {
+.cta-btn {
     font-family: var(--heading-font);
     font-weight: 500;
     font-size: 16px;
@@ -1298,9 +1501,9 @@ section,
     color: var(--contrast-color);
 }
 
-.call-to-action .cta-btn:hover {
-    background: var(--accent-color);
-    border: 2px solid var(--accent-color);
+.cta-btn:hover {
+    background: #3cb371;
+    border: 2px solid #fff;
 }
 
 /*--------------------------------------------------------------

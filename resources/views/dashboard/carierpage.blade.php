@@ -39,7 +39,7 @@
 @endpush
 @section('content')
 
-<section id="call-to-action" class="carier-page portfolio section dark-background">
+{{-- <section id="call-to-action" class="carier-page portfolio section dark-background">
     <img src="assets/img/cta-bg.jpg" alt="" class="image">
     <div class="container">
       <div class="row">
@@ -48,6 +48,16 @@
         </div>
       </div>
 
+    </div>
+  </section> --}}
+  <section class="page-title black-background" style="background-image: url(assets/img/page-title-bg.jpg);">
+    <div class="container position-relative">
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-6 text-start">
+          <h2 class="text-uppercase fw-semibold">{{ __('carier') }}</h2>
+        </div>
+      </div>
+     
     </div>
   </section>
 

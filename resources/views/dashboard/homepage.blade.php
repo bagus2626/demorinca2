@@ -108,17 +108,17 @@
     line-height: 1.5;
   }
 
-.header {
+/* .header {
       background-color: #5db54d;
     heading-color: #ffffff;
      color: var(--default-color);
-}
+} */
 
 
 </style>
 @endpush
 @section('content')
-<section id="hero" class="call-to-action section dark-background">
+{{-- <section id="hero" class="call-to-action section dark-background">
   <img src="assets/img/cta-bg.jpg" alt="">
   <div class="container">
     <div class="row" data-aos="zoom-in" data-aos-delay="100">
@@ -138,7 +138,61 @@
       </div>
     </div>
   </div>
-</section>
+</section> --}}
+<section id="hero" class="hero section black-background">
+
+      <div class="info d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6 text-center">
+              <h2>{{ __('welcome') }} PT Rinca Cipta Karya</h2>
+              <p>{{ __('description_rinca') }}</p>
+              <div class="d-flex mt-4">
+                <input type="text" class="tracking-input" style="margin-top: 10px" placeholder="{{ __('search') }} nomor document, ex: DC12345" id="valueTracking">
+                <a class="cta-btn align-middle" href="#" onclick="searchTracking()">{{ __('search') }}</a>
+              </div>
+            </div>
+          </div>
+           <div class="row justify-content-center">
+            <div class="col-xl-9" id="tracking-result" style="display: none">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+        </div>
+
+        <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-4.jpg" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-5.jpg" alt="">
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+
+    </section><!-- /Hero Section -->
 
 <section id="clients" class="clients section light-background">
   <div class="container">
@@ -207,63 +261,8 @@
   </div>
 </section>
 
-<style>
-  .direktur {
-    position: relative;
-    background: url("assets/img/background/building-12.jpg") no-repeat bottom;
-    background-size: cover;
-    padding: 80px 0;
-    color: #ffffff;
-  }
-  
-  .direktur .container {
-    position: relative;
-    z-index: 2;
-  }
-  
-  .direktur::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
-  
-  .direktur .section-title {
-    margin-bottom: 40px;
-  }
-  
-  .direktur h2 {
-    color: #ffffff;
-  }
-  
-  .direktur h5 {
-    color: #5db54d;
-    margin-top: 15px;
-  }
-  
-  .direktur .info-wrap {
-    background: #f3f4f6;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    color: #3d4b3d;
-  }
-  
-  .direktur .info-wrap p {
-    margin: 0;
-  }
-  
-  .direktur .info-wrap i {
-    color: #5db54d;
-    margin-right: 10px;
-  }
-</style>
 
-<section id="direktur" class="direktur section">
+<section id="direktur" class="modern-building-1 section">
   <div class="container section-title">
     <h2 class="text-white">Direktur</h2>
   </div>
@@ -374,6 +373,107 @@
     </div>
   </div>
 </section>
+
+<style>
+#about {
+  padding: 60px 0 30px 0;
+}
+
+#about .about-img {
+  overflow: hidden;
+}
+
+#about .about-img img {
+  margin-left: -15px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  #about .about-img {
+    height: auto;
+  }
+
+  #about .about-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+#about .content h2 {
+  color: #0c8a53;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+}
+
+#about .content h3 {
+  color: #555;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+}
+
+#about .content p {
+  line-height: 26px;
+}
+
+#about .content p:last-child {
+  margin-bottom: 0;
+}
+
+#about .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #50d8af;
+}
+
+#about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about .content ul li {
+  padding-bottom: 10px;
+}
+.btn-search-tracking {
+    background-color: #ffffff;
+    border: 2px solid #5db54d; 
+    color: #5db54d; 
+    font-weight: bold;
+    padding: 13px 27px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 20px; 
+    margin: 4px 2px; 
+    border-radius: 5px; 
+}
+</style>
+
+  <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <img src="assets/img/about-img.jpg" alt="">
+          </div>
+
+          <div class="col-lg-6 content">
+            <h2>TRACKING PLATFORM</h2>
+            <h3>PT RINCA CIPTA KARYA </h3>
+
+            <ul>
+              <li><i class="bi bi-check-circle"></i> {{ __('device_1') }}</li>
+              <li><i class="bi bi-check-circle"></i> {{ __('device_2') }}</li>
+              <li><i class="bi bi-check-circle"></i> {{ __('device_3') }}</li>
+            </ul>
+
+            <a href="{{ route('dashboard.tracking') }}" class="btn-search-tracking btn btn-success"><i class="bi bi-search"></i> Tracking</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
 <section id="portfolio" class="portfolio section modern-building-1 section light-background">
   <div class="container section-title">
