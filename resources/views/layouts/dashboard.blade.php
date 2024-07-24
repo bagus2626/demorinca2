@@ -31,10 +31,6 @@
   <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
   <link href="{{ '/assets/css/main.css' }}" rel="stylesheet">
-  {{-- <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  /> --}}
 
   <style>
     .modern-building-3 { 
@@ -77,7 +73,6 @@
         left: 0; 
         right: 0; 
         height: 100%; 
-        /* background: color-mix(in srgb, #5db54d, transparent 35%); */
         background: rgba(0, 0, 0, 0.5);
         z-index: 1; 
     } 
@@ -92,33 +87,8 @@
       <a href="/" class="logo d-flex align-items-center me-auto">
        <img src="assets/img/favicon2.webp" alt="" style="width: 140px; height: 90px;">
       </a>
-      <!-- <div>
-         <a><strong>Phone:</strong> <span>+6281328256653</span></a>
-      </div>
-      <div>
-         <a><strong>Email:</strong> <span>rinca.studio@gmail.com</span></a>
-      </div> -->
       <nav id="navmenu" class="navmenu">
         <ul>
-         <!--   <li class="dropdown">
-            <a href="#">
-              @if (app()->getLocale() == 'en')
-                <img src="assets/img/english.svg" style="width: 40px; height: 35px;" alt="">
-              @else
-                <img src="assets/img/indonesian.svg" style="width: 40px; height: 35px;" alt="">
-              @endif
-              <i class="bi bi-chevron-down toggle-dropdown">
-              </i>
-            </a>
-            <ul>
-              <li><a href="{{ url('change-language/en') }}" src="assets/img/english.svg" style="width: 40px; height: 35px;" alt=""></a></li>
-              <li><a href="{{ url('change-language/id') }}" src="assets/img/english.svg" style="width: 40px; height: 35px;" alt=""></a></li>
-            </ul>
-          </li> -->
-          <!--  <ul>
-              <li><a href="{{ url('change-language/en') }}" src="assets/img/english.svg" style="width: 40px; height: 35px;" alt=""></a></li>
-              <li><a href="{{ url('change-language/id') }}" src="assets/img/indonesian.svg" style="width: 40px; height: 35px;" alt=""></a></li>
-            </ul> -->
             <li><a href="{{ url('change-language/en') }}"><img src="assets/img/english.svg" style="width: 40px; height: 35px;" alt="English"></a></li>
           <li><a href="{{ url('change-language/id') }}"><img src="assets/img/indonesian.svg" style="width: 40px; height: 35px;" alt="Indonesian"></a></li>
           <li><a href="{{ route('dashboard.homepage') }}#hero" class="active">Home</a></li>
@@ -234,7 +204,7 @@
         <div class="container footer-top">
           <div class="row gy-4">
             <div class="col-lg-4 col-md-6 footer-about">
-              <a href="/" class="d-flex align-items-center">
+              <a href="/" class="d-flex align-items-center link">
                 <span class="sitename">PT RINCA CIPTA KARYA</span>
               </a>
               <style>
@@ -245,8 +215,8 @@
                     color: #fff
                 }
               </style>
-              <p class="mt-3"><strong>Phone:</strong> <span>+6281328256653</span></p>
-              <p><strong>Email:</strong> <span>rinca.studio@gmail.com</span></p>
+              <p class="mt-3"><a style="font-size: 13px" class="text-dark" target="_blank" href="https://api.whatsapp.com/send/?phone=6281328256653"><strong>Phone:</strong> <span>+6281328256653</span></a></p>
+              <p><a style="font-size: 13px" class="text-dark" target="_blank" href="mailto:contact@rincakonsultan.com"><strong>Email:</strong> <span>rinca.studio@gmail.com</span></a></p>
               <div class="visitors d-flex">
                 <div class="container">
                     <div class="row">
