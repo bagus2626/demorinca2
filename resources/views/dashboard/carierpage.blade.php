@@ -35,7 +35,6 @@
             position: relative;
             z-index: 3;
         }
-
     </style>
 @endpush
 @section('content')

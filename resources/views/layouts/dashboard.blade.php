@@ -33,28 +33,6 @@
   <link href="{{ '/assets/css/main.css' }}" rel="stylesheet">
 
   <style>
-    .modern-building-3 { 
-      position: relative; 
-      background: url("assets/img/background/modern-building-3.jpg") no-repeat 
-          bottom; 
-      background-size: cover; 
-      padding: 60px 0; 
-    } 
-    .modern-building-3 .container { 
-        position: relative; 
-        z-index: 2; 
-    } 
-    .modern-building-3::before { 
-        content: ""; 
-        position: absolute; 
-        bottom: 0; 
-        left: 0; 
-        right: 0; 
-        height: 100%; 
-        background:  rgba(255, 255, 255, 0.7); 
-        z-index: 1; 
-    } 
-
     .modern-building-1 { 
       position: relative; 
       background: url("assets/img/background/building-12.jpg") no-repeat 

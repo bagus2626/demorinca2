@@ -1180,22 +1180,21 @@ section,
 .grow-today .card-grow .card-content .card-title {
     font-weight: 500;
     font-size: 18px;
-    color: #353634; 
+    color: #353634;
 }
 
 .grow-today .card-grow .card-content .card-subtitle {
-    font-weight: 400; 
+    font-weight: 400;
     font-size: 14px;
     color: #808080;
     margin: 8px 0 30px;
 }
 
 .grow-today .card-grow .card-content .description {
-    font-weight: 500; 
+    font-weight: 500;
     font-size: 14px;
     color: #353634;
 }
-
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1562,56 +1561,4 @@ section,
 .contact .info-item:hover i {
     background: var(--accent-color);
     color: var(--contrast-color);
-}
-
-.contact .php-email-form {
-    background-color: var(--surface-color);
-    height: 100%;
-    padding: 30px;
-    border-top: 3px solid var(--accent-color);
-    border-bottom: 3px solid var(--accent-color);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 575px) {
-    .contact .php-email-form {
-        padding: 20px;
-    }
-}
-
-.contact .php-email-form input[type="text"],
-.contact .php-email-form input[type="email"],
-.contact .php-email-form textarea {
-    font-size: 14px;
-    padding: 10px 15px;
-    box-shadow: none;
-    border-radius: 0;
-    color: var(--default-color);
-    background-color: color-mix(
-        in srgb,
-        var(--background-color),
-        transparent 50%
-    );
-    border-color: color-mix(in srgb, var(--default-color), transparent 80%);
-}
-
-.contact .php-email-form input[type="text"]:focus,
-.contact .php-email-form input[type="email"]:focus,
-.contact .php-email-form textarea:focus {
-    border-color: var(--accent-color);
-}
-
-.contact .php-email-form input[type="text"]::placeholder,
-.contact .php-email-form input[type="email"]::placeholder,
-.contact .php-email-form textarea::placeholder {
-    color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.contact .php-email-form button[type="submit"] {
-    color: var(--contrast-color);
-    background: var(--accent-color);
-    border: 0;
-    padding: 10px 30px;
-    transition: 0.4s;
-    border-radius: 50px;
 }

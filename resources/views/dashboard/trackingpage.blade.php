@@ -2,7 +2,6 @@
 
 @section('content')
 
-<!-- Call To Action Section -->
 <section id="call-to-action" class="call-to-action section dark-background">
   <img src="assets/img/cta-bg.jpg" alt="">
   <div class="container">

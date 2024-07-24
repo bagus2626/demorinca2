@@ -143,82 +143,164 @@
       position: relative;
       z-index: 3;
   }
+  .portfolio-details .portfolio-details-slider img {
+      width: 100%;
+    }
+
+    .portfolio-details .portfolio-details-slider .swiper-pagination {
+      margin-top: 20px;
+      position: relative;
+    }
+
+    .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+      opacity: 1;
+    }
+
+    .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+      background-color: var(--accent-color);
+    }
+
+    .portfolio-details .portfolio-info {
+      background-color: var(--surface-color);
+      padding: 30px;
+      box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .portfolio-details .portfolio-info h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+    }
+
+    .portfolio-details .portfolio-info ul {
+      list-style: none;
+      padding: 0;
+      font-size: 15px;
+    }
+
+    .portfolio-details .portfolio-info ul li+li {
+      margin-top: 10px;
+    }
+
+    .portfolio-details .portfolio-description {
+      padding-top: 30px;
+    }
+
+    .portfolio-details .portfolio-description h2 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .portfolio-details .portfolio-description p {
+      padding: 0;
+      color: color-mix(in srgb, var(--default-color), transparent 30%);
+    }
+
+    .portfolio-info {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .portfolio-info h3 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .info-wrap {
+      margin: 10px 0;
+      width: 100%;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .contact-link i {
+      margin-right: 10px;
+    }
+
+    .whatsapp {
+      background: #25D366;
+      color: #fff;
+    }
+
+    .email {
+      background: #5aa4ee;
+      color: #fff;
+    }
 </style>
 @endpush
 
 @section('content')
-<section id="blog" class="blog mt-5 carier-page section dark-background">
-  <img src="assets/img/cta-bg.jpg" alt="" class="image">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-8 entries">
-
-            <article class="entry entry-single" style="background: #f3f4f6; border-radius: 20px">
-
-              <div class="entry-img">
-                <img src="{{ asset('storage/' . $data->image) }}" alt="" class="img-fluid">
-              </div>
-
-              <h2 class="entry-title">
-                <a href="{{ asset('storage/' . $data->image) }}">{{ $data->name }}</a>
-              </h2>
-
-              <div class="entry-meta">
-                <ul>
-                  <li class="d-flex align-items-center {{ $data->status === 1 ? 'text-success' : 'text-danger' }}"><i class="bi bi-clock"></i> {{ $data->status === 1 ? 'Buka' : 'Tutup' }}</li>
-                </ul>
-              </div>
-
-              <div class="entry-content">
-                <p>
-                  {{ $data->description ?? '-' }}
-                </p>
-
-              </div>
-            </article><!-- End blog entry -->
-
-            
-
-          </div><!-- End blog entries list -->
-
-          <div class="col-lg-4">
-
-            <div class="blog-comments" style="background: #f3f4f6; border-radius: 20px">
-
-              <div class="reply-form">
-                <h4 class="text-success">{{ __('form_carier') }}</h4>
-                <form action="{{ route('dashboard.carier-send') }}" method="POST" enctype="multipart/form-data">
-                  @csrf
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <input name="name" type="text" class="form-control" placeholder="{{ __('name') }}" required>
-                    </div>
-                    <div class="col-md-12 form-group">
-                      <input name="email" type="text" class="form-control" placeholder="Email*" required>
-                    </div>
-                    <div class="col-md-12 form-group">
-                      <input name="phone_number" type="text" class="form-control" placeholder="{{ __('phone_number') }}" required>
-                    </div>
-                    <div class="col-md-12 form-group">
-                      <textarea name="description" class="form-control" placeholder="{{ __('description') }}"></textarea>
-                    </div>
-                  </div>
-                  @if($data->status === 1) 
-                    <button type="submit" class="btn btn-success" disabled>{{ __('send_offer') }}</button>
-                  @endif
-
-                </form>
-
-              </div>
-
-            </div><!-- End blog comments -->
-
-          </div><!-- End blog sidebar -->
-
+    <section id="portfolio-details" class="portfolio-details section mt-4">
+      <div class="page-title">
+        <div class="container">
+          <nav class="breadcrumbs">
+            <ol>
+              <li class="current fw-bold fst-italic" style="font-size: 18px; color: green">{{ __('carier') }}</li>
+              <li class="current fst-italic" style="font-size: 18px; color: green">{{ __('carier') }} Detail</li>
+            </ol>
+          </nav>
         </div>
-
       </div>
-    </section><!-- End Blog Single Section -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img src="{{ asset('storage/' . $data->image) }}" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>KIRIM CV KAMU KE KONTAK KAMI SERTAKAN PORTOFOLIO JIKA ADA</h3>
+              <div class="row contact-container">
+                <div class="col-12">
+                  <a target="_blank" href="https://api.whatsapp.com/send/?phone=6281328256653" class="contact-link fw-semibold whatsapp">
+                    <i class="bi bi-whatsapp"></i> +6281328256653
+                  </a>
+                </div>
+                <div class="col-12 mt-3">
+                  <a target="_blank" href="mailto:contact@rincakonsultan.com" class="contact-link fw-semibold email">
+                    <i class="bi bi-envelope"></i> rinca.studio@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2 class="text-black">{{ $data->name }}</h2>
+              <p>
+                {{ $data->description ?? '-' }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 @endsection
