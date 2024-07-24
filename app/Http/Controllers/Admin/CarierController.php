@@ -16,7 +16,12 @@ class CarierController extends Controller
      */
     public function index()
     {
-        $cariers = DB::table('cariers')->get();
+        $cariers = DB::table('cariers')
+        ->select(
+            '*',
+            DB::raw('SUBSTRING_INDEX(description, " ", 20) as short_description')
+        )
+        ->get();
         return view('admin.carier.index', compact('cariers'));
     }
 

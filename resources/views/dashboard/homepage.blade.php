@@ -210,28 +210,60 @@
 <style>
   .direktur {
     position: relative;
-    background: url("assets/img/background/modern-building-11.png") no-repeat
-        bottom;
+    background: url("assets/img/background/building-12.jpg") no-repeat bottom;
     background-size: cover;
-    padding: 60px 0;
+    padding: 80px 0;
+    color: #ffffff;
   }
+  
   .direktur .container {
-      position: relative;
-      z-index: 2;
+    position: relative;
+    z-index: 2;
   }
+  
   .direktur::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-     /* height: 100%;
-      background:  rgba(255, 255, 255, 0.7);*/
-      z-index: 1;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .direktur .section-title {
+    margin-bottom: 40px;
+  }
+  
+  .direktur h2 {
+    color: #ffffff;
+  }
+  
+  .direktur h5 {
+    color: #5db54d;
+    margin-top: 15px;
+  }
+  
+  .direktur .info-wrap {
+    background: #f3f4f6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #3d4b3d;
+  }
+  
+  .direktur .info-wrap p {
+    margin: 0;
+  }
+  
+  .direktur .info-wrap i {
+    color: #5db54d;
+    margin-right: 10px;
   }
 </style>
 
-<section id="direktur" class="modern-building-1  section">
+<section id="direktur" class="direktur section">
   <div class="container section-title">
     <h2 class="text-white">Direktur</h2>
   </div>
@@ -251,11 +283,10 @@
             <p class="fst-italic">
               <i class="bi bi-option"></i> {{ __('direktur_description_1') }}
             </p>
-           </div>
+          </div>
         </div>
-       
       </div>
-      <div class="col-lg-8 ">
+      <div class="col-lg-8">
         <div class="info-wrap">
           <p class="fst-italic">
             <i class="bi bi-option"></i> {{ __('direktur_description_2') }}
@@ -318,7 +349,7 @@
     <h2 class="text-white">{{ __('why_choose_us') }}</h2>
   </div>
   <div class="container">
-    <div class="row gy-4 info-wrap">
+    <div class="row gy-4 justify-content-center">
       <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
         <div class="service-item position-relative">
           <div class="icon"><i class="bi bi-person-video3 icon"></i></div>
@@ -344,7 +375,7 @@
   </div>
 </section>
 
-<section id="portfolio" class="portfolio section modern-building-cta">
+<section id="portfolio" class="portfolio section modern-building-1 section light-background">
   <div class="container section-title">
     <h2 class="text-white">{{ __('project') }}</h2>
   </div>

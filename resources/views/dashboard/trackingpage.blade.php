@@ -20,4 +20,71 @@
   </div>
 </section>
 
+<section id="clients" class="clients section light-background">
+  <div class="container">
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 1000,
+          "autoplay": {
+            "delay": 1000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 2,
+              "spaceBetween": 40
+            },
+            "480": {
+              "slidesPerView": 3,
+              "spaceBetween": 60
+            },
+            "640": {
+              "slidesPerView": 4,
+              "spaceBetween": 80
+            },
+            "992": {
+              "slidesPerView": 5,
+              "spaceBetween": 120
+            },
+            "1200": {
+              "slidesPerView": 6,
+              "spaceBetween": 120
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper align-items-center">
+        <div class="swiper-slide"><img src="assets/img/client/rosalia-indah.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/cozy-coliving.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/flimty.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/alva.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/ultra-sakti.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/imcp.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/eco-spirit.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/amaldi.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/crv.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/gcr.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/jr.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/rsj.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/sandimas.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/sisesa.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/al-utsmani.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/muhammadiyah.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/al-zahra.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/client-9.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/saranawisesa.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/sisesa.webp" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/client/suntak.webp" class="img-fluid" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 @endsection

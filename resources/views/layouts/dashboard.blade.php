@@ -61,7 +61,7 @@
 
     .modern-building-1 { 
       position: relative; 
-      background: url("assets/img/background/modern-building-3.jpg") no-repeat 
+      background: url("assets/img/background/building-12.jpg") no-repeat 
           bottom; 
       background-size: cover; 
       padding: 60px 0; 
@@ -77,29 +77,8 @@
         left: 0; 
         right: 0; 
         height: 100%; 
-        background: color-mix(in srgb, #5db54d, transparent 35%);
-        z-index: 1; 
-    } 
-
-    .modern-building-cta { 
-      position: relative; 
-      background: url("assets/img/background/building-cta.jpg") no-repeat 
-          bottom; 
-      background-size: cover; 
-      padding: 60px 0; 
-    } 
-    .modern-building-cta .container { 
-        position: relative; 
-        z-index: 2; 
-    } 
-    .modern-building-cta::before { 
-        content: ""; 
-        position: absolute; 
-        bottom: 0; 
-        left: 0; 
-        right: 0; 
-        height: 100%; 
-        background: color-mix(in srgb, #5db54d, transparent 35%);
+        /* background: color-mix(in srgb, #5db54d, transparent 35%); */
+        background: rgba(0, 0, 0, 0.5);
         z-index: 1; 
     } 
   </style>

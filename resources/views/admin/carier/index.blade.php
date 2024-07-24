@@ -59,7 +59,7 @@
                         <div class="product-title">{{ $carier->name }}</div>
                       </td>
                       <td style="width: 15%;">
-                        <div class="product-title">{{ $carier->description }}</div>
+                        <div class="product-title">{{ $carier->short_description ?? ' - ' }}</div>
                       </td>
                       <td style="width: 15%;">
                         <div class="product-title {{ $carier->status === 1 ? 'text-success' : 'text-danger' }}">

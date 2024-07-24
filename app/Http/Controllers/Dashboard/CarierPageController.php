@@ -8,6 +8,7 @@ use App\Models\Visitor;
 use Illuminate\Support\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\DB;
 use App\Mail\CareerFormMail;
 
 class CarierPageController extends Controller
@@ -22,7 +23,12 @@ class CarierPageController extends Controller
 
         $visitors = Visitor::all();
 
-        $cariers = Carier::all();
+        $cariers = DB::table('cariers')
+                    ->select(
+                        '*',
+                        DB::raw('SUBSTRING_INDEX(description, " ", 20) as short_description')
+                    )
+                    ->get();
         return view('dashboard.carierpage', 
             compact(
                 'visitorsToday',
