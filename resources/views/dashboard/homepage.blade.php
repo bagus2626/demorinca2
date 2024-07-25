@@ -160,7 +160,8 @@
         </div>
       </div>
 
-      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      {{-- DESKTOP VERSION --}}
+      <div id="hero-carousel" class="carousel slide d-none d-md-block" data-bs-ride="carousel" data-bs-interval="5000">
 
         <div class="carousel-item">
           <img src="assets/img/hero-carousel/hero-carousel-1.jpg" loading="lazy" alt="">
@@ -189,6 +190,26 @@
         <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
           <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
         </a>
+      
+      </div>
+
+      <div id="hero-carousel" class="carousel slide d-md-none" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/carousel-mobile-1.jpg" loading="lazy" alt="">
+        </div>
+      
+        <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/carousel-mobile-2.jpg" loading="lazy" alt="">
+        </div>
+      
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/carousel-mobile-3.jpg" loading="lazy" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/carousel-mobile-4.jpg" loading="lazy" alt="">
+        </div>
       
       </div>
 
