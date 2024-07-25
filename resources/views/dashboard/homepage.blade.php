@@ -154,7 +154,7 @@
             </div>
           </div>
            <div class="row justify-content-center">
-            <div class="col-xl-9" id="tracking-result" style="display: none">
+            <div class="col-lg-6 text-center" id="tracking-result" style="display: none">
             </div>
           </div>
         </div>
