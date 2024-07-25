@@ -16,6 +16,8 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
+
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -64,12 +66,10 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <a href="/" class="logo d-flex align-items-center me-auto">
        {{-- <img src="assets/img/favicon2.webp" alt="" style="width: 140px; height: 70px;"> --}}
-       <img 
-        src="assets/img/favicon2.webp" 
-        srcset="assets/img/favicon2.webp 1x, assets/img/favicon2.webp 2x" 
-        sizes="(max-width: 768px) 140px, 280px" 
-        alt="Logo" 
-        style="width: 140px; height: 70px;">
+        <picture>
+          <source srcset="assets/img/favicon2.webp" type="image/webp">
+          <img src="assets/img/favicon2.webp" alt="Deskripsi Gambar" style="width: 140px; height: 70px;">
+        </picture>
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
