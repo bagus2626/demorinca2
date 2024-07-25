@@ -1,5 +1,5 @@
 {
-    "welcome": "Welcome to",
+    "welcome": "Welcome To <br>",
     "goodbye": "Goodbye",
     "title": "Licensed building permit consultant",
     "contact": "Contact us",
@@ -62,6 +62,7 @@
     "bussines_activities_3": "Design Interior",
     "address": "Jl. Nangka (Rafika Village 2 No. B8), Kel. Pasir Putih, Sawangan District, Depok City, West Java",
     "description_rinca": "PT Rinca Cipta Karya is a planning consultant architects and managing building permits already have a license. Has all target markets building owners, or anyone who wants to build a building.",
+    "description_rinca_short": "PT Rinca Cipta Karya is a planning consultant architects and managing building permits already have a license.",
     "search": "Search",
     "divisi": "Director & Structural Expert",
     "tracking": "Tracking Results",

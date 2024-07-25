@@ -145,7 +145,7 @@
         <div class="container">
           <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <div class="col-lg-6 text-center">
-              <h2>{{ __('welcome') }} PT Rinca Cipta Karya</h2>
+              <h2>{!! __('welcome') !!} PT Rinca Cipta Karya</h2>
               <p>{{ __('description_rinca') }}</p>
               <div class="d-flex mt-4">
                 <input type="text" class="tracking-input" style="margin-top: 10px" placeholder="{{ __('search') }} nomor document, ex: DC12345" id="valueTracking">
@@ -438,14 +438,14 @@
 }
 .btn-search-tracking {
     background-color: #ffffff;
-    border: 2px solid #5db54d; 
-    color: #5db54d; 
+    border: 2px solid #0c8a53; 
+    color: #0c8a53; 
     font-weight: bold;
-    padding: 13px 27px;
+    padding: 11px 23px;
     text-align: center; 
     text-decoration: none; 
     display: inline-block; 
-    font-size: 20px; 
+    font-size: 18px; 
     margin: 4px 2px; 
     border-radius: 5px; 
 }
@@ -455,7 +455,7 @@
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col-lg-6 about-img">
-            <img src="assets/img/about-img.jpg" alt="">
+            <img src="assets/img/about-image.jpeg" alt="">
           </div>
 
           <div class="col-lg-6 content">

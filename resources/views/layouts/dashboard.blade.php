@@ -63,7 +63,13 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <a href="/" class="logo d-flex align-items-center me-auto">
-       <img src="assets/img/favicon2.webp" alt="" style="width: 140px; height: 70px;">
+       {{-- <img src="assets/img/favicon2.webp" alt="" style="width: 140px; height: 70px;"> --}}
+       <img 
+        src="assets/img/favicon2.webp" 
+        srcset="assets/img/favicon2.webp 1x, assets/img/favicon2.webp 2x" 
+        sizes="(max-width: 768px) 140px, 280px" 
+        alt="Logo" 
+        style="width: 140px; height: 70px;">
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>

@@ -1,5 +1,5 @@
 {
-    "welcome": "Selamat Datang di",
+    "welcome": "Selamat Datang Di <br>",
     "goodbye": "Selamat Tinggal",
     "title": "Konsultan perizinan bangunan berlisensi",
     "contact": "Kontak Kami",
@@ -62,6 +62,7 @@
     "bussines_activities_3": "Desain Interior",
     "address": "Jl. Nangka (Rafika Village 2 No. B8), Kel. Pasir Putih, Kecamatan Sawangan, Kota Depok, Jawa Barat",
     "description_rinca": "PT Rinca Cipta Karya merupakan konsultan perencanaan arsitek dan pengurusan perizinan bangunan gedung yang sudah memiliki lisensi. Memiliki target market semua pemilik bangunan gedung, atau semua yang ingin membangun bangunan.",
+    "description_rinca_short": "PT Rinca Cipta Karya merupakan konsultan perencanaan arsitek dan pengurusan perizinan bangunan gedung yang sudah memiliki lisensi.",
     "search": "Cari",
     "tracking": "Hasil Pelacakan",
     "procces": "Proses",
