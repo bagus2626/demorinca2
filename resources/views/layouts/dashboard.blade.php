@@ -18,13 +18,10 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
 
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  {{-- bootstrap icons --}}
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   {{-- boxicon icons --}}
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -32,255 +29,181 @@
   <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
-  <link href="{{ '/assets/css/main.css' }}" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 
   <style>
-    .modern-building-1 { 
-      position: relative; 
-      background: url("assets/img/background/building-12.jpg") no-repeat 
-          bottom; 
-      background-size: cover; 
-      padding: 60px 0; 
-    } 
-    .modern-building-1 .container { 
-        position: relative; 
-        z-index: 2; 
-    } 
-    .modern-building-1::before { 
-        content: ""; 
-        position: absolute; 
-        bottom: 0; 
-        left: 0; 
-        right: 0; 
-        height: 100%; 
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 1; 
-    } 
+    /* Navbar Style */
+    .navbar {
+        padding: 16px;
+        background-color: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0px);
+        transition: backdrop-filter 0.3s ease-in-out;
+    }
+    .bg-blur {
+        backdrop-filter: blur(10px);
+    }
+    .bg-white {
+        background-color: white !important;
+    }
+    .bg-white .nav-link,
+    .bg-white .language-select,
+    .bg-white .bi-caret-down-fill {
+        color: black !important;
+    }
+    .bg-white .navbar-toggler-icon {
+        filter: invert(0);
+    }
+
+    /* Navbar Brand */
+    .navbar-brand img {
+        height: 32px;
+        width: 87px;
+    }
+
+    /* Navbar Links */
+    .nav-link {
+        color: white !important;
+        margin: 0 10px;
+        font-weight: 400;
+    }
+
+    /* Buttons */
+    .btn-contact {
+        border: none;
+        padding: 8px 16px;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .btn-green-custom {
+        background-color: #1F5D35;
+        border-radius: 12px;
+        color: white;
+        padding: 12px 20px;
+    }
+    .btn-outline-custom {
+        border: 1.5px solid white;
+        padding: 10px 18px;
+        font-size: 12px;
+        border-radius: 12px;
+        font-weight: 500;
+        color: white;
+    }
+
+    /* Language Selector */
+    .language-select {
+        border: none;
+        background: transparent;
+        color: white;
+    }
+    .language-select option {
+        background: #01211D;
+        color: white;
+    }
+
+    /* Navbar Toggler */
+    .navbar-toggler {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    .navbar-toggler-icon {
+        filter: invert(1);
+    }
+
+    /* Responsive Styling */
+    @media (min-width: 768px) {
+        .navbar {
+            padding: 1rem 2rem;
+            backdrop-filter: blur(10px);
+        }
+        .navbar-brand img {
+            height: 36px;
+            width: 98px;
+        }
+        .btn-outline-custom {
+            border-radius: 14px;
+            padding: 12px 20px;
+            font-size: 14px;
+        }
+        .btn-login {
+          font-size: 14px;
+        }
+    }
   </style>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   @stack('after-style')
 </head>
 <body class="index-page">
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-      <a href="/" class="logo d-flex align-items-center me-auto">
-       {{-- <img src="assets/img/favicon2.webp" alt="" style="width: 140px; height: 70px;"> --}}
-        <picture>
-          <source srcset="assets/img/favicon2.webp" type="image/webp">
-          <img src="assets/img/favicon2.webp" alt="Deskripsi Gambar" style="width: 140px; height: 70px;">
-        </picture>
-      </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-            <li><a href="{{ url('change-language/en') }}"><img src="assets/img/english.svg" style="width: 40px; height: 35px;" alt="English"></a></li>
-          <li><a href="{{ url('change-language/id') }}"><img src="assets/img/indonesian.svg" style="width: 40px; height: 35px;" alt="Indonesian"></a></li>
-          <li><a href="{{ route('dashboard.homepage') }}#hero" class="active">Home</a></li>
-          <li><a href="{{ route('dashboard.tracking') }}">Tracking</a></li>
-          <li><a href="{{ route('dashboard.about') }}">About</a></li>
-          <li><a href="{{ route('dashboard.homepage') }}#portfolio">Project</a></li>
-          <li><a href="{{ route('dashboard.carier') }}">{{ __('carier') }}</a></li>
-          <li><a href="{{ route('dashboard.homepage') }}#contact">Contact</a></li>
-          @guest
-            <li><a href="{{ route('page-login') }}">Signin</a></li>
-          @endguest
-          @auth
-            <li>
-                <form action="{{ route('logout') }}" method="post">
-                @csrf
-                    <button type="submit" class="nav-link d-inline-block text-light border-0" style="margin-top: -13px">Logout</button>
-                </form>
-            </li>
-          @endauth
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+  <nav class="navbar navbar-expand-lg bg-transparent position-absolute w-100">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="/">
+            <img src="assets/img/logo-white.png" alt="Rinca Logo">
+        </a>
+
+        <!-- Login button (mobile only) -->
+        <div class="d-lg-none ms-auto">
+            <button class="btn btn-outline-custom">Login</button>
+        </div>
+
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#">Proyek</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">RIKSA</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tentang Kami</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            </ul>
+
+            <!-- Right Side Items (desktop only) -->
+            <div class="d-flex align-items-center gap-2 d-none d-lg-flex">
+                <!-- Language Selector -->
+                <div class="d-flex align-items-center position-relative">
+                    <img src="https://flagcdn.com/w20/id.png" alt="ID">
+                    <select class="language-select form-select">
+                        <option value="id">ID</option>
+                        <option value="en">EN</option>
+                    </select>
+                    <i class="bi bi-caret-down-fill position-absolute end-0 top-50 translate-middle-y me-2 text-white"></i>
+                </div>
+
+                <!-- Buttons -->
+                <button class="btn btn-outline-custom">Login</button>
+                <button class="btn btn-green-custom">
+                    <i class="bi bi-whatsapp"></i> Hubungi Kami
+                </button>
+            </div>
+        </div>
     </div>
-  </header>
+  </nav>
 
   <main class="main">
     @yield('content')
-
-    <section id="contact" class="contact modern-building-1 section">
-        <div class="container section-title">
-          <h2 class="text-white">{{ __('contact') }}</h2>
-        </div>
-        <div class="container">
-          <div class="row gy-4 info-wrap" style="background-color: #f3f4f6;">
-            <div class="col-lg-5">
-              <div class="">
-                <div class="info-item d-flex">
-                  <div>
-                    <h2 class="fw-semibold fst-italic text-black">{{ __('get_a_quote') }}</h2>
-                    <h5 class="fw-semibold fst-italic text-black">{{ __('our_best') }}</h5>
-                  </div>
-                </div>
-                <div class="info-item d-flex">
-                  <div>
-                    <p class="fw-medium fst-italic text-black">{{ __('costs_slf') }}</p>
-                  </div>
-                </div>
-                <div class="info-item d-flex">
-                  <ul>
-                    <li class="fw-medium fst-italic text-black">{{ __('costs_1') }}</li>
-                    <li class="fw-medium fst-italic text-black">{{ __('costs_2') }}</li>
-                    <li class="fw-medium fst-italic text-black">{{ __('costs_3') }}</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="row">
-                <div class="col-12">
-                  <div id="alertForm" class="alert alert-success alert-dismissible fade show mt-2" role="alert" style="display: none">
-                    {{ __('complete_data') }}
-                  </div>
-                </div>
-              </div>
-                <div class="row gy-4 info-wrap" id="form-contact" style="background-color: #f3f4f6;">
-                  <div class="col-md-6">
-                    <label for="nama_pemohon" class="pb-2 fw-medium fst-italic text-black">{{ __('name') }}</label>
-                    <input type="text" name="nama_pemohon" id="nama_pemohon" class="form-control">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="nama_perusahaan" class="pb-2 fw-medium fst-italic text-black">{{ __('company') }}</label>
-                    <input type="text" class="form-control" name="nama_perusahaan" id="nama_perusahaan">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="nomor_handphone" class="pb-2 fw-medium fst-italic text-black">{{ __('phone_number') }}</label>
-                    <input type="text" name="nomor_handphone" id="nomor_handphone" class="form-control">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="email" class="pb-2 fw-medium fst-italic text-black">Email</label>
-                    <input type="text" class="form-control" name="email" id="email">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="luas_area" class="pb-2 fw-medium fst-italic text-black">Area</label>
-                    <input type="text" class="form-control" name="luas_area" id="luas_area">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="lokasi_perusahaan" class="pb-2 fw-medium fst-italic text-black">{{ __('company_location') }}</label>
-                    <input type="text" class="form-control" name="lokasi_perusahaan" id="lokasi_perusahaan">
-                  </div>
-                  <div class="col-md-12">
-                    <label for="keterangan" class="pb-2 fw-medium fst-italic text-black">{{ __('description') }} <span style="font-size: 11px; color: red">( optional )</span></label>
-                    <textarea class="form-control" name="keterangan" rows="10" id="keterangan"></textarea>
-                  </div>
-                  <a href="#contact" onclick="submitOffer()" class="btn-send-message">
-                    <div class="col-md-12 text-center fw-bold fst-italic ">
-                        {{ __('send_offer') }}
-                    </div>
-                  </a>
-                </div>
-                <div class="row gy-4 " id="form-success-contact" style="display: none">
-                 <div class="col-12 text-center">
-                  <h3>PT RINCA CIPTA KARYA</h3>
-                 </div>
-                 <div class="col-12 text-center">
-                  <h6>{{ __('feedback_offer') }}</h6>
-                 </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    <footer id="footer" class="footer">
-        <div class="container footer-top">
-          <div class="row gy-4">
-            <div class="col-lg-4 col-md-6 footer-about">
-              <a href="/" class="d-flex align-items-center link">
-                <span class="sitename">PT RINCA CIPTA KARYA</span>
-              </a>
-              <style>
-                .visitors {
-                    background-color: #3cb371;
-                    border-radius: 10px;
-                    padding: 15px;
-                    color: #fff
-                }
-              </style>
-              <p class="mt-3"><a style="font-size: 13px" class="text-dark" target="_blank" href="https://api.whatsapp.com/send/?phone=6281328256653"><strong>Phone:</strong> <span>+6281328256653</span></a></p>
-              <p><a style="font-size: 13px" class="text-dark" target="_blank" href="mailto:contact@rincakonsultan.com"><strong>Email:</strong> <span>rinca.studio@gmail.com</span></a></p>
-              <div class="visitors d-flex">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            Visitors
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col">
-                            <p><span><i class="bi bi-person-fill text-white"></i> Users Today :</span> {{ $visitorsToday }}</p>
-                            <p><span><i class="bi bi-people-fill text-white"></i> Users Last 30 days :</span> {{ $visitorsLast30Days }}</p>
-                            <p><span><i class="bi bi-clipboard-data text-white"></i> Total views :</span> {{ $totalViews }}</p>
-                        </div>
-                        <div class="col">
-                            <p><span><i class="bi bi-calendar-day text-white"></i>  Views Today :</span> {{ $viewsToday }}</p>
-                            <p><span><i class="bi bi-eye text-white"></i> Views Last 30 days :</span> {{ $viewsLast30Days }}</p>
-                        </div>
-                    </div>
-                </div>
-                
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Menu</h4>
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <a href="{{ route('dashboard.homepage') }}#hero">Home</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="{{ route('dashboard.tracking') }}">Tracking</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="{{ route('dashboard.about') }}">About</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="{{ route('dashboard.homepage') }}#portfolio">Project</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="{{ route('dashboard.homepage') }}#contact">Contact</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Artikel</h4>
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <a href="{{ route('dashboard.artikel1') }}">Artikel 1</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="{{ route('dashboard.artikel2') }}">Artikel 2</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="{{ route('dashboard.artikel3') }}">Artikel 3</a></li>
-              </ul>
-            </div>
-
-
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4>{{ __('bussines_activities') }}</h4>
-              <ul>
-                <li><i class="bi bi-chevron-right"></i><a href="{{ route('dashboard.about') }}#perencanaan">{{ __('bussines_activities_1') }}</a></li>
-                <li><i class="bi bi-chevron-right"></i><a href="{{ route('dashboard.about') }}#perizinan">{{ __('bussines_activities_2') }}</a></li>
-                <li><i class="bi bi-chevron-right"></i><a href="{{ route('dashboard.about') }}#design">{{ __('bussines_activities_3') }}</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <h4>{{ __('contact') }}</h4>
-              <a target="_blank" href="https://maps.app.goo.gl/xKgfHjDEnMaLwiFD7" class="text-black">{{ __('address') }}</a>
-              <div class="social-links d-flex mt-4">
-                <a target="_blank" href="mailto:contact@rincakonsultan.com"><i class="bi bi-envelope"></i></a>
-                <a target="_blank" href="https://www.instagram.com/rincaciptakonsultan/"><i class="bi bi-instagram"></i></a>
-                <a target="_blank" href="https://api.whatsapp.com/send/?phone=6281328256653"><i class="bi bi-whatsapp"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container copyright text-center mt-4">
-          <p><span>Copyright</span> © 2024 <strong class="px-1 sitename">PT Rinca Cipta Karya</strong></p>
-        </div>
-      </footer>
   </main>
 
 @stack('before-script')
   <div id="preloader"></div>
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  {{-- <script src="assets/vendor/waypoints/noframework.waypoints.js"></script> --}}
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="{{ '/assets/js/main.js' }}"></script>
   <script type="text/javascript">
       (function () {
           var options = {
@@ -297,6 +220,10 @@
   </script>
 
 <script>
+    $(".navbar-toggler").click(function () {
+      $(".navbar").toggleClass("bg-blur");
+    });
+
     function searchTracking(){
         let val = $("#valueTracking").val();
         let csrfToken = $('meta[name="csrf-token"]').attr('content');
