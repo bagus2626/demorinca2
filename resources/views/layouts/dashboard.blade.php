@@ -118,8 +118,8 @@
     /* Responsive Styling */
     @media (min-width: 768px) {
         .navbar {
-            padding: 1rem 2rem;
-            backdrop-filter: blur(10px);
+            padding: 1rem 56px;
+            backdrop-filter: blur(0px);
         }
         .navbar-brand img {
             height: 36px;
