@@ -158,6 +158,94 @@
         padding-bottom: 10px;
     }
 
+    /* Testimonial Section */
+    .testimonial-card {
+        background-color: #1F3B31;
+        color: white;
+        border-radius: 15px;
+        padding: 20px 15px;
+        position: relative;
+    }
+
+    .user-profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .profile-image {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    .user-name {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .star-rating {
+        color: #ffd700;
+        font-size: 18px;
+    }
+
+    .testimonial-text {
+        font-size: 12px;
+        line-height: 1.6;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    .quote-marks {
+        position: absolute;
+        right: 15px;
+        top: -10px;
+        font-size: 40px;
+        color: white;
+        font-family: "Arial", sans-serif;
+        transform: rotate(180deg);
+    }
+    .testimonial-swiper {
+        position: relative;
+        padding: 20px 0;
+    }
+    .navigation-rounded {
+        width: 52px;
+        height: 52px;
+        border: 1px solid white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+
+    .navigation-rounded i {
+        margin-top: 12px;
+        font-size: 28px;
+        color: white;
+    }
+
+    .swiper-button-prev {
+        position: static !important;
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .swiper-button-next {
+        position: static !important;
+        display: inline-block;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        display: none;
+    }
+
+
     .num-rounded {
         background-color: #1B4A2C;
         color: white;
@@ -415,7 +503,7 @@
     </section>
 
     {{-- Service Area Section --}}
-    <section id="service-area" class="mt-4" style="min-height: 100vh">
+    <section id="service-area" class="mt-4">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 text-center">
@@ -514,6 +602,59 @@
             </div>
         </div>
     </section>
+
+    {{-- Testimonial Section --}}
+    <section id="testimonial" class="mt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="title-background m-auto">● Testimoni Klien</p>
+                    <h3 class="fw-semibold text-white mt-3">Apa Kata Mereka Tentang Kami?</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="swiper testimonial-swiper">
+                <div class="swiper-wrapper">
+                    @foreach ([1,2,3,4,5,6,7,8,9,10] as $item)
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="user-profile">
+                                    <img src="assets/img/testimonial-avatar.png" alt="Andi S." class="profile-image">
+                                    <div>
+                                        <div class="user-name">Andi S.</div>
+                                        <div class="star-rating">
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bx-star'></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Saya sangat puas dengan pelayanan yang diberikan oleh tim konsultan ini. Semua proses perizinan bangunan selesai dengan cepat dan tanpa hambatan. Mereka benar-benar memahami setiap detail prosedur, sehingga saya merasa tenang dan tidak perlu khawatir. Terima kasih!"
+                                </p>
+                                <div class="quote-marks"><i class='bx bxs-quote-alt-right'></i></div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+
+                <div class="row mt-5 justify-content-center d-none d-md-block">
+                    <div class="col-12 text-center">
+                        <div class="swiper-button-prev navigation-rounded me-4">
+                            <i class='bx bx-left-arrow-alt'></i>
+                        </div>
+                        <div class="swiper-button-next navigation-rounded">
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 @endsection
 
@@ -534,5 +675,39 @@
             1024: { slidesPerView: 5 }
         }
     });
+    document.addEventListener('DOMContentLoaded', function() {
+        const testimonialSwiper = new Swiper(".testimonial-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            allowTouchMove: true,
+            speed: 3000,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            }
+        });
+
+        const swiperContainer = document.querySelector('.testimonial-swiper');
+        swiperContainer.addEventListener('mouseenter', () => {
+            testimonialSwiper.autoplay.stop();
+        });
+        swiperContainer.addEventListener('mouseleave', () => {
+            testimonialSwiper.autoplay.start();
+        });
+    });
+
 </script>
 @endpush
