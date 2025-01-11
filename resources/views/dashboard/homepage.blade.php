@@ -3,6 +3,13 @@
 @push('after-style')
 <style>
     /* Global Styles */
+    /* * {
+        outline: 1px solid rgba(255, 0, 0, 0.5);
+    } */
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+
     .home {
         background-color: #06261A;
     }
@@ -28,19 +35,23 @@
         font-weight: semibold;
     }
 
-    .hero-section .company {
-        background: url('assets/img/background/title-background.png') no-repeat center center;
+    .title-background {
+        background: 
+            linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 20%), 
+            linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 20%), 
+            url('assets/img/background/title-background.png') no-repeat center center;
         background-size: cover;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 4px 0px;
         color: white;
         text-align: center;
-        width: 249px;
+        width: max-content;
     }
 
     .hero-section p {
-        font-size: 1.25rem;
+        font-size: 20px;
         margin-bottom: 14px;
         font-weight: 300;
     }
@@ -74,7 +85,7 @@
 
     .image-service {
         width: 100%;
-        max-width: 746px;
+        /* max-width: 800px; */
         height: auto;
     }
 
@@ -99,6 +110,14 @@
             #06261A 80%,
             #06261A 100%
         );
+    }
+
+    /* Reason Section */
+    #reason .title {
+        font-size: 22px;
+    }
+    #reason .description {
+        font-size: 16px;
     }
 
     /* Icon Rounded */
@@ -130,9 +149,8 @@
             padding: 60px 16px;
             height: 75vh;
         }
-
-        .hero-section .company {
-            width: 200px;
+        .hero-section .title-background {
+            font-size: 14px;
         }
 
         .hero-section h1 {
@@ -156,6 +174,9 @@
 
     /* Desktop Version */
     @media (min-width: 769px) {
+        .hero-content .title-background {
+            font-size: 18px;
+        }
         .fullscreen-container {
             margin: 0;
             padding: 0;
@@ -195,7 +216,7 @@
     <section class="hero-section">
         <div class="container">
             <div class="hero-content">
-                <p class="company">● PT Rinca Cipta Karya</p>
+                <p class="title-background fw-medium">● PT Rinca Cipta Karya</p>
                 <h1>
                     Konsultasikan Perencanaan <br class="d-none d-md-block"> &amp; <br class="d-md-none"> Perizinan Proyek<br class="d-md-none"> Anda <br class="d-none d-md-block">Bersama Kami
                 </h1>
@@ -242,35 +263,33 @@
                 <div class="row">
                     <div class="col-12 col-md-5">
                         <div class="icon-rounded">● Layanan Utama</div>
-                        <h2 class="fs-3 fw-semibold mt-2">Keahlian Profesional Kami</h2>
+                        <h2 class="fw-semibold mt-2" style="font-size: 32px">Keahlian Profesional Kami</h2>
                     </div>
                     <div class="col-12 col-md-7">
-                        <p class="title-main-service">"Tim profesional kami berlisensi dan berpengalaman dalam perencanaan arsitektur, perizinan, dan desain interior, menawarkan solusi inovatif dan berstandar tinggi untuk mewujudkan visi proyek Anda dengan hasil optimal."</p>
+                        <p class="title-main-service" style="font-size: 16px">"Tim profesional kami berlisensi dan berpengalaman dalam perencanaan arsitektur, perizinan, dan desain interior, menawarkan solusi inovatif dan berstandar tinggi untuk mewujudkan visi proyek Anda dengan hasil optimal."</p>
                     </div>
                 </div>
             </div>
 
-            <div class="fullscreen-container">
-                <div class="row mt-4">
+            <div class="container fullscreen-container">
+                <div class="row mt-4 justify-content-center">
                     <div class="col-12 col-md-6 mb-3">
                         <img src="assets/img/background/service-background.png" class="image-service rounded-end-4" alt="Service">
                     </div>
                     <div class="col-12 col-md-6 d-flex align-items-center">
-                        <div class="container">
-                            <div class="row">
-                                @foreach([
-                                    ['src' => 'assets/img/icons/planning-icon.png', 'title' => 'Perencanaan Tata Ruang, Bangunan, dan Industri'],
-                                    ['src' => 'assets/img/icons/licenci-icon.png', 'title' => 'Perizinan Bangunan dan Industri'],
-                                    ['src' => 'assets/img/icons/design-icon.png', 'title' => 'Desain Interior dan Kontraktor']
-                                ] as $item)
-                                    <div class="col-12 col-md-11 text-center">
-                                        <div class="card d-flex flex-row align-items-center mb-1 w-100">
-                                            <img class="img-icon" src="{{ $item['src'] }}" alt="{{ $item['title'] }}">
-                                            <div class="title fw-medium" style="text-align: left;">{{ $item['title'] }}</div>
-                                        </div>
+                        <div class="row">
+                            @foreach([
+                                ['src' => 'assets/img/icons/planning-icon.png', 'title' => 'Perencanaan Tata Ruang, Bangunan, dan Industri'],
+                                ['src' => 'assets/img/icons/licenci-icon.png', 'title' => 'Perizinan Bangunan dan Industri'],
+                                ['src' => 'assets/img/icons/design-icon.png', 'title' => 'Desain Interior dan Kontraktor']
+                            ] as $item)
+                                <div class="text-center">
+                                    <div class="card d-flex flex-row align-items-center mb-1 w-100">
+                                        <img class="img-icon" src="{{ $item['src'] }}" alt="{{ $item['title'] }}">
+                                        <div class="title fw-medium" style="text-align: left;">{{ $item['title'] }}</div>
                                     </div>
-                                @endforeach
-                            </div>
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -300,6 +319,38 @@
                                 <div class="card-body">
                                     <h5 class="card-title fw-bolder">{{ $item['title'] }}</h5>
                                     <p class="card-text">{{ $item['description'] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Reason Section --}}
+    <section id="reason" class="pt-4" style="min-height: 100vh">
+        <div class="container">
+            <div class="row d-flex flex-col align-items-center">
+                <div class="col-12 col-md-5">
+                    <p class="title-background">● Alasan Memilih Kami</p>
+                    <h4 class="mt-1 text-white fw-semibold" style="font-size: 36px">Mengapa PT Rinca Cipta Karya?</h4>
+                    <p class="mt-1 text-white fw-light">Komitmen kami terhadap keunggulan menjadikan kami pilihan terbaik untuk konsultasi perizinan dan bangunan</p>
+                </div>
+                <div class="col-12 col-md-7">
+                    @foreach ([
+                         ['src' => 'assets/img/reasons/1-reason.png', 'title' => 'Tim Profesional', 'description' => 'Tim berpengalaman kami memastikan semua kebutuhan proyek Anda terpenuhi dengan teliti dan cepat'],
+                         ['src' => 'assets/img/reasons/2-reason.png', 'title' => 'Solusi Terbaik', 'description' => 'Kami tidak hanya menawarkan konsultasi; kami memberikan solusi yang disesuaikan dengan kebutuhan unik setiap klien'],
+                         ['src' => 'assets/img/reasons/3-reason.png', 'title' => 'Hasil Memuaskan', 'description' => 'Hasil berkualitas dan handal dengan harga yang kompetitif']
+                    ] as $index => $item)
+                        <div class="row mb-4 {{ $index === 1 ? 'ms-md-5 justify-content-end' : '' }}">
+                            <div class="col-9 col-md-5">
+                                <img src="{{ $item['src'] }}" alt="{{ $item['title'] }}" class="w-100 mb-4">
+                            </div>
+                            <div class="col-12 col-md-7 d-flex flex-row align-items-end {{ $index === 1 ? 'text-end text-md-start' : '' }}">
+                                <div>
+                                    <h4 class="text-white title fw-bold">{{ $item['title'] }}</h4>
+                                    <p class="text-white fw-light description">{{ $item['description'] }}</p>
                                 </div>
                             </div>
                         </div>

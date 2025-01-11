@@ -118,7 +118,7 @@
     /* Responsive Styling */
     @media (min-width: 768px) {
         .navbar {
-            padding: 1rem 56px;
+            padding: 1rem 62px;
             backdrop-filter: blur(0px);
         }
         .navbar-brand img {
