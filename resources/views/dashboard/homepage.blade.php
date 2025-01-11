@@ -119,6 +119,57 @@
     #reason .description {
         font-size: 16px;
     }
+    
+    /* Service Area Section */
+    #service-area .menu-list {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px auto;
+        padding: 10px 0;
+        color: white;
+        gap: 20px;
+    }
+    #service-area .menu-column {
+        list-style: none;
+        padding: 0;
+        margin-right: 10px;
+        width: 100%;
+    }
+    #service-area .menu-column li {
+        padding: 8px 0;
+        position: relative;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    #service-area .menu-column li::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: repeating-linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 5px, transparent 5px, transparent 10px);
+    }
+
+    #service-area .sub-title {
+        border-bottom: 2px dashed #1B4A2C;
+        font-weight: 300;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    .num-rounded {
+        background-color: #1B4A2C;
+        color: white;
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        flex-shrink: 0;
+    }
 
     /* Icon Rounded */
     .icon-rounded {
@@ -205,6 +256,9 @@
 
         .main-service .img-icon {
             margin-right: 20px;
+        }
+        .image-layout {
+            margin-top: -100px;
         }
     }
 </style>
@@ -329,7 +383,7 @@
     </section>
 
     {{-- Reason Section --}}
-    <section id="reason" class="pt-4" style="min-height: 100vh">
+    <section id="reason" class="pt-4">
         <div class="container">
             <div class="row d-flex flex-col align-items-center">
                 <div class="col-12 col-md-5">
@@ -355,6 +409,107 @@
                             </div>
                         </div>
                     @endforeach
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Service Area Section --}}
+    <section id="service-area" class="mt-4" style="min-height: 100vh">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 text-center">
+                    <p class="title-background m-auto">● Bidang Layanan</p>
+                    <h3 class="fw-semibold text-white mt-3">Bidang Layanan Kami</h3>
+                    <p class="fw-light text-white mt-3">Kami menawarkan berbagai layanan konsultasi yang mencakup bidang konstruksi dan non-konstruksi untuk mendukung kegiatan operasional</p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                {{-- Konsultasi Konstruksi --}}
+                <div class="col-12 col-md-6">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="num-rounded fw-bold me-2">01</div>
+                        <h4 class="text-white fw-semibold" style="font-size: 20px">Konsultasi Konstruksi</h4>
+                    </div>
+                    <div class="menu-list">
+                        <div class="d-none d-md-flex w-100">
+                            <ul class="menu-column">
+                                @foreach (['Arsitektur', 'Sipil', 'Mekanical', 'Elektrikal', 'Tata Lingkungan'] as $item)
+                                    <li>{{ $item }}</li>
+                                @endforeach
+                            </ul>
+                            <ul class="menu-column">
+                                @foreach (['Jasa Survey', 'Jasa Analisis Engineering', 'Jasa Inspeksi Teknis', 'Jasa Manajemen Proyek', 'Jasa Engineering Terpadu'] as $item)
+                                    <li>{{ $item }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        <div class="d-block d-md-none w-100">
+                            <ul class="menu-column">
+                                @foreach (['Arsitektur', 'Sipil', 'Mekanical', 'Elektrikal', 'Tata Lingkungan', 'Jasa Survey', 'Jasa Analisis Engineering', 'Jasa Inspeksi Teknis', 'Jasa Manajemen Proyek', 'Jasa Engineering Terpadu'] as $item)
+                                    <li>{{ $item }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3 mt-md-5">
+                    <img src="assets/img/services/1-service-area.png" alt="Konsultasi Konstruksi" class="w-100">
+                </div>
+                {{-- Konsultasi Perizinan Konstruksi --}}
+                <div class="col-md-5 image-layout d-none d-md-block">
+                    <img src="assets/img/services/2-service-area.png" alt="Konsultasi Konstruksi" class="w-100">
+                </div>
+                <div class="col-12 col-md-7 mt-3">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="num-rounded fw-bold me-2">02</div>
+                        <h4 class="text-white fw-semibold" style="font-size: 20px">Konsultasi Perizinan Konstruksi</h4>
+                    </div>
+                    <div class="menu-list" >
+                        <div class="d-none d-md-flex w-100">
+                            <ul class="menu-column">
+                                @foreach (['Persetujuan Bangunan Gedung (PBG/IMB)', 'Sertifikat Laik Fungsi (SLF)', 'Dokumen Lingkungan (SPPL/ UKL-UPL/ Amdal)', 'Analisis Dampak Lalu Lintas (Andalalin)', 'SLO Lingkungan (B3/IPAL)'] as $item)
+                                    <li>{{ $item }}</li>
+                                @endforeach
+                            </ul>
+                            <ul class="menu-column">
+                                @foreach (['Siteplan', 'Keterangan Rencana Kota/ Kabupaten', 'Kesesuaian Kegiatan Pemanfaatan Ruang (KKPR)', 'Surat Izin Pengambilan Air Tanah (SIPA)'] as $item)
+                                    <li>{{ $item }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        <div class="d-block d-md-none w-100">
+                            <ul class="menu-column">
+                                @foreach (['Persetujuan Bangunan Gedung (PBG/IMB)', 'Sertifikat Laik Fungsi (SLF)', 'Dokumen Lingkungan (SPPL/ UKL-UPL/ Amdal)', 'Analisis Dampak Lalu Lintas (Andalalin)', 'SLO Lingkungan (B3/IPAL)', 'Siteplan', 'Keterangan Rencana Kota/ Kabupaten', 'Kesesuaian Kegiatan Pemanfaatan Ruang (KKPR)', 'Surat Izin Pengambilan Air Tanah (SIPA)'] as $item)
+                                    <li>{{ $item }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 d-md-none">
+                    <img src="assets/img/services/2-service-area.png" alt="Konsultasi Konstruksi" class="w-100">
+                </div>
+
+                {{-- Konsultasi & Kontraktor Desain Interior --}}
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="d-flex mt-2 flex-row align-items-center">
+                        <div class="num-rounded fw-bold me-2">03</div>
+                        <h4 class="text-white fw-semibold" style="font-size: 20px">Konsultasi & Kontraktor Desain Interior</h4>
+                    </div>
+                    <p class="mt-3 text-white fw-light sub-title">Interior Design & Contractor Services</p>
+                    <img src="assets/img/services/3-service-area.png" alt="Konsultasi & Kontraktor Desain Interior" class="w-100">
+                </div>
+                {{-- Pengembangan Lahan, Kawasan, & Properti --}}
+                <div class="col-12 col-md-6 mt-3">
+                    <img src="assets/img/services/4-service-area.png" alt="Pengembangan Lahan, Kawasan, & Properti" class="w-100 d-none d-md-block">
+                    <div class="d-flex mt-2 flex-row align-items-center">
+                        <div class="num-rounded fw-bold me-2">04</div>
+                        <h4 class="text-white fw-semibold" style="font-size: 20px">Pengembangan Lahan, Kawasan, & Properti</h4>
+                    </div>
+                    <p class="mt-3 text-white fw-light sub-title">Land, Estate, & Property Development Services</p>
+                    <img src="assets/img/services/4-service-area.png" alt="Konsultasi & Kontraktor Desain Interior" class="w-100 d-md-none">
                 </div>
             </div>
         </div>
