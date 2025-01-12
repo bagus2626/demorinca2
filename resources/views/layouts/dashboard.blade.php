@@ -70,22 +70,27 @@
     }
 
     /* Buttons */
-    .btn-contact {
-        border: none;
-        padding: 8px 16px;
-        color: white;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
     .btn-green-custom {
         background-color: #1F5D35;
         border-radius: 12px;
         color: white;
         padding: 12px 20px;
     }
+    .btn-green-custom:hover {
+        background-color: #1F5D35;
+        border-radius: 12px;
+        color: white;
+        padding: 12px 20px;
+    }
     .btn-outline-custom {
+        border: 1.5px solid white;
+        padding: 10px 18px;
+        font-size: 12px;
+        border-radius: 12px;
+        font-weight: 500;
+        color: white;
+    }
+    .btn-outline-custom:hover {
         border: 1.5px solid white;
         padding: 10px 18px;
         font-size: 12px;
@@ -154,6 +159,50 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    .consultant-card {
+        height: 220px;
+        border: 0;
+        height: 187px; 
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .consultant-card .card-img-overlay {
+        padding: 20px;
+    }
+    .consultant-card img {
+        object-fit: cover;
+    }
+    .card-img-overlay {
+        padding: 24px;
+    }
+    .consultant-btn-fill {
+        background-color: #1F5D35; 
+        color: white;
+        font-weight: 400;
+        border-radius: 12px;
+        padding: 10px 20px;
+        border: none;
+        transition: all 0.3s ease-in-out;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .consultant-btn-outline {
+        background-color: transparent;
+        color: white;
+        font-weight: 400;
+        border: 1.5px solid white;
+        border-radius: 12px;
+        padding: 8px 18px;
+        transition: all 0.3s ease-in-out;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        font-size: 13px;
+    }
 
     /* Responsive Styling */
     @media (min-width: 768px) {
@@ -169,6 +218,27 @@
             border-radius: 14px;
             padding: 12px 20px;
             font-size: 14px;
+        }
+        .btn-outline-custom:hover {
+            border-radius: 14px;
+            padding: 12px 20px;
+            font-size: 14px;
+        }
+        .consultant-card {
+            height: 370px;
+            border-radius: 14px;
+        }
+        .consultant-card .card-img-overlay {
+            padding: 56px;
+        }
+        .consultant-btn-fill {
+            font-size: 14px;
+        }
+        .consultant-btn-outline {
+            font-size: 14px;
+        }
+        .card-img-overlay {
+            padding: 0px;
         }
         .btn-login {
           font-size: 14px;
@@ -229,11 +299,11 @@
     </div>
   </nav>
 
-  <main class="main">
+  <main class="main" style="background-color:#F3F4F6">
     @yield('content')
 
     {{-- Blog Section --}}
-    <section id="blog" class="py-5" style="min-height: 100vh; background-color:#F3F4F6">
+    <section id="blog" class="py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
@@ -246,7 +316,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container mt-4">
             <div class="swiper article-swiper">
                 <div class="swiper-wrapper">
                     @foreach ([1,2,3] as $num)
@@ -269,6 +339,26 @@
                             </div>
                         </div>
                     @endforeach
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Consultant Section --}}
+    <section id="consultant" class="py-4">
+        <div class="container">
+            <div class="card consultant-card text-bg-dark">
+                <img src="assets/img/background/consultant-background.png" class="card-img h-100" alt="...">
+                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                  <h3 class="card-title mb-3">Mulai Konsultasi dengan Tim Kami Sekarang</h3>
+                  <div class="flex ">
+                    <a class="consultant-btn-fill me-3">
+                        <i class="bi bi-whatsapp"></i> Hubungi Kami
+                    </a>
+                    <a class="consultant-btn-outline">
+                        Kontak Kami <i class="bi bi-arrow-up-right" style="font-weight: bold;"></i>
+                    </a>
+                  </div>
                 </div>
             </div>
         </div>
