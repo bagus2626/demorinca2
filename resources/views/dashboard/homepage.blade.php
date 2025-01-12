@@ -259,20 +259,6 @@
         flex-shrink: 0;
     }
 
-    /* Icon Rounded */
-    .icon-rounded {
-        display: inline-flex;
-        padding: 4px 12px;
-        border-radius: 50px;
-        color: #1F5D35;
-        align-items: center;
-        justify-content: center;
-        margin-right: 10px;
-        border: 1px solid #1F5D35;
-        min-width: 50px;
-        white-space: nowrap;
-    }
-
     /* Fullscreen Container */
     .fullscreen-container {
         padding: 0px 16px;
@@ -285,7 +271,7 @@
             background: url('assets/img/background/home-background-sm.png') no-repeat center center;
             background-size: cover;
             display: flex;
-            padding: 60px 16px;
+            padding: 0px 16px;
             height: 75vh;
         }
         .hero-section .title-background {
@@ -293,7 +279,7 @@
         }
 
         .hero-section h1 {
-            font-size: 36px;
+            font-size: 34px;
         }
 
         .hero-section p {
@@ -362,8 +348,8 @@
                 <h1>
                     Konsultasikan Perencanaan <br class="d-none d-md-block"> &amp; <br class="d-md-none"> Perizinan Proyek<br class="d-md-none"> Anda <br class="d-none d-md-block">Bersama Kami
                 </h1>
-                <p class="mt-4 mt-md-0">Konsultan Perizinan Bangunan &amp; Perencanaan Arsitektur Berlisensi</p>
-                <div class="mt-4 d-grid d-md-flex gap-3">
+                <p>Konsultan Perizinan Bangunan &amp; Perencanaan Arsitektur Berlisensi</p>
+                <div class="mt-0 mt-md-4 d-grid d-md-flex gap-3">
                     <button class="btn btn-green-custom">
                         <i class="bi bi-whatsapp"></i> Mulai Konsultasi Sekarang
                     </button>

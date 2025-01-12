@@ -115,6 +115,46 @@
         filter: invert(1);
     }
 
+    /* Icon Rounded */
+    .icon-rounded {
+        display: inline-flex;
+        padding: 4px 12px;
+        border-radius: 50px;
+        color: #1F5D35;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        border: 1px solid #1F5D35;
+        min-width: 50px;
+        white-space: nowrap;
+    }
+
+    .btn-outline-green {
+        border: 1.5px solid #1F5D35;
+        padding: 10px 14px;
+        border-radius: 12px;
+        color: #1F5D35;
+        cursor: pointer;
+    }
+    .btn-outline-gray {
+        border: 1.5px solid #1F2A37;
+        padding: 6px 8px;
+        border-radius: 10px;
+        color: #1F2A37;
+        cursor: pointer;
+    }
+    .article-card {
+        border: 0px;
+        border-radius: 12px;
+    }
+    .truncate-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
     /* Responsive Styling */
     @media (min-width: 768px) {
         .navbar {
@@ -191,6 +231,48 @@
 
   <main class="main">
     @yield('content')
+
+    {{-- Blog Section --}}
+    <section id="blog" class="py-5" style="min-height: 100vh; background-color:#F3F4F6">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="icon-rounded">● Blog</div>
+                    <h2 class="fw-semibold mt-2" style="font-size: 32px">Artikel Terbaru</h2>
+                    <p style="font-size: 16px">Jelajahi blog kami dan temukan inspirasi arsitektur, tren desain, dan masih banyak lagi</p>
+                    <a class="btn-outline-green flex justify-content-around fw-medium" style="max-width: 180px;margin:auto;font-size: 12px; text-decoration:none">
+                        Lihat Semua Artikel <i class="bi bi-arrow-up-right" style="font-weight: bold;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="swiper article-swiper">
+                <div class="swiper-wrapper">
+                    @foreach ([1,2,3] as $num)
+                        <div class="swiper-slide">
+                            <div class="card article-card">
+                                <div class="ps-2 pt-2 pe-2">
+                                    <img src="assets/img/article/{{ $num }}-article.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="px-2 py-1 me-1 mb-2" style="border-radius: 6px;background-color:#F3F4F6; font-size:10px"><span class="fw-medium">11 Nov 2024</span></div>
+                                    <div class="px-2 py-1 mb-2" style="border-radius: 6px;background-color:#DEF7EC; font-size:10px; color:#03543F"><span class="fw-medium">Design Berkelanjutan</span></div>
+                                </div>
+                                <h6 class="card-title fw-semibold truncate-2" style="font-size: 18px">Pentingnya Perencanaan Konstruksi yang Tepat untuk Meminimalkan Risiko Keterlambatan</h6>
+                                <p class="card-text text-truncate" style="font-size: 14px">Perencanaan yang matang dapat mengidentifikasi potensi masalah sejak awal, menghindari keterlambatan dan biaya tak terduga.</p>
+                                <a class="btn-outline-gray flex justify-content-around fw-medium" style="max-width: 120px;font-size: 12px; text-decoration:none">
+                                    <i class="bi bi-arrow-up-right" style="font-weight: bold;"></i> Baca Artikel
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </section>
   </main>
 
 @stack('before-script')
@@ -222,6 +304,17 @@
 <script>
     $(".navbar-toggler").click(function () {
       $(".navbar").toggleClass("bg-blur");
+    });
+
+    const swiper = new Swiper(".article-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        allowTouchMove: true,
+        breakpoints: {
+            768: { slidesPerView: 1 },
+            1024: { slidesPerView: 3 }
+        }
     });
 
     function searchTracking(){
