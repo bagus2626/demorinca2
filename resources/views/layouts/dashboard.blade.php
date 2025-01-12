@@ -320,7 +320,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link" href="{{ route('dashboard.project') }}">Proyek</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('dashboard.riksa') }}">RIKSA</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Tentang Kami</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('dashboard.about') }}">Tentang Kami</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
             </ul>
@@ -351,46 +351,48 @@
     @yield('content')
 
     {{-- Blog Section --}}
-    <section id="blog" class="py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <div class="icon-rounded">● Blog</div>
-                    <h2 class="fw-semibold mt-2" style="font-size: 32px">Artikel Terbaru</h2>
-                    <p style="font-size: 16px">Jelajahi blog kami dan temukan inspirasi arsitektur, tren desain, dan masih banyak lagi</p>
-                    <a class="btn-outline-green flex justify-content-around fw-medium" style="max-width: 180px;margin:auto;font-size: 12px; text-decoration:none">
-                        Lihat Semua Artikel <i class="bi bi-arrow-up-right" style="font-weight: bold;"></i>
-                    </a>
+    @if (!Request::is('about') && !Request::is('contact'))
+        <section id="blog" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="icon-rounded">● Blog</div>
+                        <h2 class="fw-semibold mt-2" style="font-size: 32px">Artikel Terbaru</h2>
+                        <p style="font-size: 16px">Jelajahi blog kami dan temukan inspirasi arsitektur, tren desain, dan masih banyak lagi</p>
+                        <a class="btn-outline-green flex justify-content-around fw-medium" style="max-width: 180px;margin:auto;font-size: 12px; text-decoration:none">
+                            Lihat Semua Artikel <i class="bi bi-arrow-up-right" style="font-weight: bold;"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container mt-4">
-            <div class="swiper article-swiper">
-                <div class="swiper-wrapper">
-                    @foreach ([1,2,3] as $num)
-                        <div class="swiper-slide">
-                            <div class="card article-card">
-                                <div class="ps-2 pt-2 pe-2">
-                                    <img src="assets/img/article/{{ $num }}-article.png" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                <div class="d-flex">
-                                    <div class="px-2 py-1 me-1 mb-2" style="border-radius: 6px;background-color:#F3F4F6; font-size:10px"><span class="fw-medium">11 Nov 2024</span></div>
-                                    <div class="px-2 py-1 mb-2" style="border-radius: 6px;background-color:#DEF7EC; font-size:10px; color:#03543F"><span class="fw-medium">Design Berkelanjutan</span></div>
-                                </div>
-                                <h6 class="card-title fw-semibold truncate-2" style="font-size: 18px">Pentingnya Perencanaan Konstruksi yang Tepat untuk Meminimalkan Risiko Keterlambatan</h6>
-                                <p class="card-text text-truncate" style="font-size: 14px">Perencanaan yang matang dapat mengidentifikasi potensi masalah sejak awal, menghindari keterlambatan dan biaya tak terduga.</p>
-                                <a class="btn-outline-gray flex justify-content-around fw-medium" style="max-width: 120px;font-size: 12px; text-decoration:none">
-                                    <i class="bi bi-arrow-up-right" style="font-weight: bold;"></i> Baca Artikel
-                                </a>
+            <div class="container mt-4">
+                <div class="swiper article-swiper">
+                    <div class="swiper-wrapper">
+                        @foreach ([1,2,3] as $num)
+                            <div class="swiper-slide">
+                                <div class="card article-card">
+                                    <div class="ps-2 pt-2 pe-2">
+                                        <img src="assets/img/article/{{ $num }}-article.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="px-2 py-1 me-1 mb-2" style="border-radius: 6px;background-color:#F3F4F6; font-size:10px"><span class="fw-medium">11 Nov 2024</span></div>
+                                        <div class="px-2 py-1 mb-2" style="border-radius: 6px;background-color:#DEF7EC; font-size:10px; color:#03543F"><span class="fw-medium">Design Berkelanjutan</span></div>
+                                    </div>
+                                    <h6 class="card-title fw-semibold truncate-2" style="font-size: 18px">Pentingnya Perencanaan Konstruksi yang Tepat untuk Meminimalkan Risiko Keterlambatan</h6>
+                                    <p class="card-text text-truncate" style="font-size: 14px">Perencanaan yang matang dapat mengidentifikasi potensi masalah sejak awal, menghindari keterlambatan dan biaya tak terduga.</p>
+                                    <a class="btn-outline-gray flex justify-content-around fw-medium" style="max-width: 120px;font-size: 12px; text-decoration:none">
+                                        <i class="bi bi-arrow-up-right" style="font-weight: bold;"></i> Baca Artikel
+                                    </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    @endif
 
     {{-- Consultant Section --}}
     <section id="consultant" class="pt-4" style="margin-bottom: -80px;">
