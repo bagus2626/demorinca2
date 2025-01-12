@@ -34,6 +34,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 
   <style>
+    /* * {
+        outline: 1px solid rgba(255, 0, 0, 0.5);
+    } */
     /* Navbar Style */
     .navbar {
         padding: 16px;
@@ -204,6 +207,50 @@
         font-size: 13px;
     }
 
+    /* Footer */
+    .footer {
+        background-color: #0C2215;
+        color: white;
+        padding-top: 144px;
+    }
+    
+    .footer-logo {
+        margin-bottom: 30px;
+        height: 41px;
+        width: 113px;
+    }
+    
+    .footer .title {
+        color: #9CA3AF;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+    .footer-links {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 12px;
+        color: white;
+        font-size: 14px;
+    }
+    .footer-links li a {
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    
+    .copyright {
+        font-size: 0.875rem;
+        color: white;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        margin-top: 2rem;
+        padding: 1.3rem 0;
+    }
+
     /* Responsive Styling */
     @media (min-width: 768px) {
         .navbar {
@@ -345,7 +392,7 @@
     </section>
 
     {{-- Consultant Section --}}
-    <section id="consultant" class="py-4">
+    <section id="consultant" class="pt-4" style="margin-bottom: -80px;">
         <div class="container">
             <div class="card consultant-card text-bg-dark">
                 <img src="assets/img/background/consultant-background.png" class="card-img h-100" alt="...">
@@ -363,6 +410,76 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer rounded-top-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 flex flex-column justify-content-center">
+                    <img src="assets/img/logo-white.png" alt="Rinca Studio Logo" class="footer-logo">
+                    <p class="fw-light">Solusi Terbaik untuk Perencanaan dan Perizinan Bangunan Anda</p>
+                </div>
+                
+                <div class="col-md-2 mb-4">
+                    <h5 class="title ms-md-5">Halaman</h5>
+                    <ul class="footer-links ms-md-5">
+                        <li><a href="#" class="fw-light">Home</a></li>
+                        <li><a href="#" class="fw-light">RIKSA</a></li>
+                        <li><a href="#" class="fw-light">Tentang Kami</a></li>
+                        <li><a href="#" class="fw-light">Proyek</a></li>
+                        <li><a href="#" class="fw-light">Kontak</a></li>
+                        <li><a href="#" class="fw-light">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <h5 class="title ms-md-5">Kontak Kami</h5>
+                    <ul class="footer-links ms-md-5">
+                        <li>
+                            <i class="bi bi-whatsapp footer-social-icon"></i>
+                            <a href="tel:0813-2825-6653" class="fw-light">0813-2825-6653</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope footer-social-icon"></i>
+                            <a href="mailto:rinca.studio@gmail.com" class="fw-light">rinca.studio@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mb-4">
+                    <h5 class="title">Sosial Media</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <i class="bi bi-instagram footer-social-icon"></i>
+                            <a href="" class="fw-light">rinca_studio</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-linkedin footer-social-icon"></i>
+                            <a href="" class="fw-light">Rinca Studio</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-facebook footer-social-icon"></i>
+                            <a href="" class="fw-light">Rinca Studio</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-2 mb-4">
+                    <h5 class="title">Alamat</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <a class="fw-light">Jl. Nangka (Rafika Village 2 No. B8), Kel. Pasir Putih, Kecamatan Sawangan, Kota Depok, Jawa Barat</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 text-center copyright fw-light" style="font-size: 13px">
+                    Copyright © 2024 PT Rinca Cipta Karya. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
   </main>
 
 @stack('before-script')
