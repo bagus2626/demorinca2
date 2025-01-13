@@ -158,6 +158,7 @@
           <div class="d-flex align-items-center mt-5 mt-md-0 justify-content-center badge">
             <span class="fw-semibold" style="font-size: 14px">Misi <i class="bi bi-arrow-down-right"></i></span> 
           </div>
+          
           <div class="row mt-3">
             @foreach ([
               ['num' => '01', 'title' => 'Meningkatkan Karya Engineering Indonesia', 'description' => 'Mengembangkan solusi engineering berkualitas tinggi yang berakar pada keahlian lokal.'],
