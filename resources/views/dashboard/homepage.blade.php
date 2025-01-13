@@ -1,865 +1,712 @@
 @extends('layouts.dashboard')
+
 @push('after-style')
 <style>
-  .slider-container {
-      position: relative;
-      max-width: 1200px;
-      margin: auto;
-      overflow: hidden;
-      border: 1px solid #ddd;
-      background-color: #fff;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+    /* Global Styles */
+    /* * {
+        outline: 1px solid rgba(255, 0, 0, 0.5);
+    } */
+    body {
+        font-family: 'Inter', sans-serif;
+    }
 
-  .slider {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-      width: 300%;
-  }
+    .home {
+        background-color: #06261A;
+    }
 
-  .slide {
-      min-width: 33.33%;
-      box-sizing: border-box;
-      text-align: center;
-      padding: 10px;
-  }
+    /* Hero Section */
+    .hero-section {
+        background: url('assets/img/background/home-background-md.png') no-repeat center center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+        color: white;
+        text-align: left;
+    }
 
-  img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-  }
+    .hero-content {
+        max-width: 700px;
+    }
 
-  .description {
-      margin-top: 10px;
-  }
+    .hero-section h1 {
+        font-size: 48px;
+        font-weight: semibold;
+    }
 
-  .description h3 {
-      font-size: 18px;
-      margin: 10px 0;
-  }
+    .title-background {
+        background:
+            linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 20%),
+            linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 20%),
+            url('assets/img/background/title-background.png') no-repeat center center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 0px;
+        color: white;
+        text-align: center;
+        width: max-content;
+    }
 
-  .description p {
-      font-size: 16px;
-      color: #666;
-  }
+    .hero-section p {
+        font-size: 20px;
+        margin-bottom: 14px;
+        font-weight: 300;
+    }
 
-  .discounted-price {
-      color: red;
-      text-decoration: line-through;
-  }
+    /* Client Section */
+    .client {
+        padding-top: 38px;
+        padding-bottom: 70px;
+    }
 
-  button {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border: none;
-      background-color: rgba(0,0,0,0.5);
-      user-select: none;
-  }
+    .client-logo {
+        max-width: 150px;
+        height: 64px;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out;
+    }
 
-  button:hover {
-      background-color: rgba(0,0,0,0.8);
-  }
+    .client-logo:hover {
+        filter: grayscale(0%);
+    }
 
-  .prev {
-      left: 0;
-  }
+    /* Main Service Section */
+    .main-service {
+        position: relative;
+    }
 
-  .next {
-      right: 0;
-  }
+    .main-service .title-main-service {
+        color: #1F2A37;
+        position: relative;
+    }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-}
+    .image-service {
+        width: 100%;
+        /* max-width: 800px; */
+        height: auto;
+    }
 
-  .card {
-    background-color: #3cb371; 
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    .main-service .card {
+        border: 0;
+        width: 100%;
+        padding: 16px;
+    }
 
-}
+    .main-service .img-icon {
+        height: 50px;
+        width: 50px;
+    }
 
-.card img {
-    max-width: 50px;
-    margin-bottom: 1rem;
-}
+    .my-service {
+        position: relative;
+        padding: 60px 0;
+        background: linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #ffffff 80%,
+            #06261A 80%,
+            #06261A 100%
+        );
+    }
 
-.card h2 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
+    /* Reason Section */
+    #reason .title {
+        font-size: 22px;
+    }
+    #reason .description {
+        font-size: 16px;
+    }
 
-.card p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+    /* Service Area Section */
+    #service-area .menu-list {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px auto;
+        padding: 10px 0;
+        color: white;
+        gap: 20px;
+    }
+    #service-area .menu-column {
+        list-style: none;
+        padding: 0;
+        margin-right: 10px;
+        width: 100%;
+    }
+    #service-area .menu-column li {
+        padding: 8px 0;
+        position: relative;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    #service-area .menu-column li::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: repeating-linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 5px, transparent 5px, transparent 10px);
+    }
 
-/* .header {
-      background-color: #5db54d;
-    heading-color: #ffffff;
-     color: var(--default-color);
-} */
+    #service-area .sub-title {
+        border-bottom: 2px dashed #1B4A2C;
+        font-weight: 300;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    /* Testimonial Section */
+    .testimonial-card {
+        background-color: #1F3B31;
+        color: white;
+        border-radius: 15px;
+        padding: 20px 15px;
+        position: relative;
+    }
+
+    .user-profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .profile-image {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    .user-name {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .star-rating {
+        color: #ffd700;
+        font-size: 18px;
+    }
+
+    .testimonial-text {
+        font-size: 12px;
+        line-height: 1.6;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    .quote-marks {
+        position: absolute;
+        right: 15px;
+        top: -10px;
+        font-size: 40px;
+        color: white;
+        font-family: "Arial", sans-serif;
+        transform: rotate(180deg);
+    }
+    .testimonial-swiper {
+        position: relative;
+        padding: 20px 0;
+    }
+    .navigation-rounded {
+        width: 52px;
+        height: 52px;
+        border: 1px solid white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+
+    .navigation-rounded i {
+        margin-top: 12px;
+        font-size: 28px;
+        color: white;
+    }
+
+    .swiper-button-prev {
+        position: static !important;
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .swiper-button-next {
+        position: static !important;
+        display: inline-block;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        display: none;
+    }
 
 
+    .num-rounded {
+        background-color: #1B4A2C;
+        color: white;
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        flex-shrink: 0;
+    }
+
+    /* Fullscreen Container */
+    .fullscreen-container {
+        padding: 0px 16px;
+    }
+
+    /* Mobile Version */
+    @media (max-width: 768px) {
+        /* Hero Section */
+        .hero-section {
+            background: url('assets/img/background/home-background-sm.png') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            padding: 0px 16px;
+            height: 75vh;
+        }
+        .hero-section .title-background {
+            font-size: 14px;
+        }
+
+        .hero-section h1 {
+            font-size: 34px;
+        }
+
+        .hero-section p {
+            font-size: 1rem;
+        }
+
+        .btn {
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        /* Main Service Section */
+        .main-service .img-icon {
+            margin-right: 5px;
+        }
+    }
+
+    /* Desktop Version */
+    @media (min-width: 769px) {
+        .hero-content .title-background {
+            font-size: 18px;
+        }
+        .fullscreen-container {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: auto;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .fullscreen-container .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .fullscreen-container .col-12.col-md-6 {
+            padding-left: 0;
+            max-width: 50vw;
+        }
+
+        .image-service {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .main-service .img-icon {
+            margin-right: 20px;
+        }
+        .image-layout {
+            margin-top: -100px;
+        }
+    }
+
+    .swiper-container {
+        width: 100%;
+        overflow: hidden;
+    }
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+    }
 </style>
 @endpush
+
 @section('content')
-{{-- <section id="hero" class="call-to-action section dark-background">
-  <img src="assets/img/cta-bg.jpg" alt="">
-  <div class="container">
-    <div class="row" data-aos="zoom-in" data-aos-delay="100">
-      <div class="col-xl-8 text-center text-xl-start mt-3">
-        <h1>{{ __('welcome') }} PT Rinca Cipta Karya</h1>
-        <p>{{ __('description_rinca') }}</p>
-          <div class="d-flex mt-4">
-            <input type="text" class="tracking-input" style="margin-top: 10px" placeholder="{{ __('search') }} nomor document, ex: DC12345" id="valueTracking">
-            <a class="cta-btn align-middle" href="#" onclick="searchTracking()">{{ __('search') }}</a>
-          </div>
-      </div>
-      <div class="col-xl-3 cta-btn-container text-center">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xl-9" id="tracking-result" style="display: none">
-      </div>
-    </div>
-  </div>
-</section> --}}
-<section id="hero" class="hero section black-background">
-
-      <div class="info d-flex align-items-center">
+<div class="home">
+    {{-- Hero Section --}}
+    <section class="hero-section">
         <div class="container">
-          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-lg-6 text-center">
-              <h2>{!! __('welcome') !!} PT Rinca Cipta Karya</h2>
-              <p>{{ __('description_rinca') }}</p>
-              <div class="d-flex mt-4">
-                <input type="text" class="tracking-input" style="margin-top: 10px" placeholder="{{ __('search') }} nomor document, ex: DC12345" id="valueTracking">
-                <a class="cta-btn align-middle" href="#" onclick="searchTracking()">{{ __('search') }}</a>
-              </div>
+            <div class="hero-content">
+                <p class="title-background fw-medium">● PT Rinca Cipta Karya</p>
+                <h1>
+                    Konsultasikan Perencanaan <br class="d-none d-md-block"> &amp; <br class="d-md-none"> Perizinan Proyek<br class="d-md-none"> Anda <br class="d-none d-md-block">Bersama Kami
+                </h1>
+                <p>Konsultan Perizinan Bangunan &amp; Perencanaan Arsitektur Berlisensi</p>
+                <div class="mt-0 mt-md-4 d-grid d-md-flex gap-3">
+                    <button class="btn btn-green-custom">
+                        <a href="https://wa.me/6281328256653">
+                            <i class="bi bi-whatsapp"></i>
+                        </a> Mulai Konsultasi Sekarang
+                    </button>
+                    <button class="btn btn-outline-custom text-white"><a class="nav-link" href="{{ route('dashboard.riksa') }}">
+                        <i class="bi bi-search" ></i> Lacak Proyek Anda
+                        </a></button>
+                </div>
             </div>
-          </div>
-           <div class="row justify-content-center">
-            <div class="col-lg-6 text-center" id="tracking-result" style="display: none">
-            </div>
-          </div>
         </div>
-      </div>
-
-      {{-- DESKTOP VERSION --}}
-      <div id="hero-carousel" class="carousel slide d-none d-md-block" data-bs-ride="carousel" data-bs-interval="5000">
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" loading="lazy" alt="">
-        </div>
-      
-        <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" loading="lazy" alt="">
-        </div>
-      
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" loading="lazy" alt="">
-        </div>
-      
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-4.jpg" loading="lazy" alt="">
-        </div>
-      
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-5.jpg" loading="lazy" alt="">
-        </div>
-      
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-      
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-      
-      </div>
-
-      <div id="hero-carousel" class="carousel slide d-md-none" data-bs-ride="carousel" data-bs-interval="5000">
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/carousel-mobile-1.jpg" loading="lazy" alt="">
-        </div>
-      
-        <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/carousel-mobile-2.jpg" loading="lazy" alt="">
-        </div>
-      
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/carousel-mobile-3.jpg" loading="lazy" alt="">
-        </div>
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/carousel-mobile-4.jpg" loading="lazy" alt="">
-        </div>
-      
-      </div>
-
-    </section><!-- /Hero Section -->
-
-<section id="clients" class="clients section light-background">
-  <div class="container">
-    <div class="swiper init-swiper">
-      <script type="application/json" class="swiper-config">
-        {
-          "loop": true,
-          "speed": 1000,
-          "autoplay": {
-            "delay": 1000
-          },
-          "slidesPerView": "auto",
-          "pagination": {
-            "el": ".swiper-pagination",
-            "type": "bullets",
-            "clickable": true
-          },
-          "breakpoints": {
-            "320": {
-              "slidesPerView": 2,
-              "spaceBetween": 40
-            },
-            "480": {
-              "slidesPerView": 3,
-              "spaceBetween": 60
-            },
-            "640": {
-              "slidesPerView": 4,
-              "spaceBetween": 80
-            },
-            "992": {
-              "slidesPerView": 5,
-              "spaceBetween": 120
-            },
-            "1200": {
-              "slidesPerView": 6,
-              "spaceBetween": 120
-            }
-          }
-        }
-      </script>
-      <div class="swiper-wrapper align-items-center">
-        <div class="swiper-slide"><img src="assets/img/client/rosalia-indah.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/cozy-coliving.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/flimty.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/alva.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/ultra-sakti.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/imcp.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/eco-spirit.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/amaldi.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/crv.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/gcr.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/jr.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/rsj.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/sandimas.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/sisesa.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/al-utsmani.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/muhammadiyah.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/al-zahra.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/client-9.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/saranawisesa.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/sisesa.webp" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/client/suntak.webp" class="img-fluid" alt=""></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="direktur" class="modern-building-1 section">
-  <div class="container section-title">
-    <h2 class="text-white">Direktur</h2>
-  </div>
-  <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-4 content text-center">
-        <div class="row">
-          <div class="col-5 col-lg-12">
-            <img src="assets/img/personal/direktur.png" alt="" class="img-fluid">
-          </div>
-          <div class="col-7 col-lg-12">
-            <h5 class="mt-3 info-wrap">
-              DAWIN MUHAMAD YUSUF <br> <span style="font-size: 14px">( {{ __('divisi') }} )</span>
-            </h5>
-          </div>
-          <div class="info-wrap">
-            <p class="fst-italic">
-              <i class="bi bi-option"></i> {{ __('direktur_description_1') }}
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-8">
-        <div class="info-wrap">
-          <p class="fst-italic">
-            <i class="bi bi-option"></i> {{ __('direktur_description_2') }}
-          </p>
-        </div>
-        <div class="info-wrap">
-          <p class="fst-italic">
-            <i class="bi bi-option"></i> {{ __('direktur_description_3') }}
-          </p>
-        </div>
-        <div class="info-wrap">
-          <p class="fst-italic">
-            <i class="bi bi-option"></i> {{ __('direktur_description_4') }}
-          </p>
-        </div>
-        <div class="info-wrap">
-          <p class="fst-italic">
-            <i class="bi bi-option"></i> {{ __('direktur_description_5') }}
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="why-us" class="section why-us light-background" data-builder="section">
-  <div class="container-fluid">
-    <div class="row gy-4 info-wrap">
-      <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-        <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-          <h3><span>{{ __('bussines_activities') }}</span></h3>
-        </div>
-        <div class="faq-container px-xl-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
-          <a href="{{ route('dashboard.about') }}#perencanaan">
-            <div class="row gy-3 info-wrap">
-              <h3><span>01</span> {{ __('bussines_activities_1') }}</h3>
-            </div>
-          </a>
-          <a href="{{ route('dashboard.about') }}#perizinan">
-            <div class="row gy-3 info-wrap" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
-              <h3><span>02</span> {{ __('bussines_activities_2') }}</h3>
-            </div>
-          </a>
-          <a href="{{ route('dashboard.about') }}#design">
-            <div class="row gy-3 info-wrap" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800">
-              <h3><span>03</span> {{ __('bussines_activities_3') }}</h3>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-        <img src="assets/img/icon-modern-1.webp" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="services" class="services modern-building-1 section light-background">
-  <div class="container section-title">
-    <h2 class="text-white">{{ __('why_choose_us') }}</h2>
-  </div>
-  <div class="container">
-    <div class="row gy-4 justify-content-center">
-      <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-item position-relative">
-          <div class="icon"><i class="bi bi-person-video3 icon"></i></div>
-          <h4><a href="" class="row gy-4 info-wrap">{{ __('profesional_team') }}</a></h4>
-          <p>{{ __('profesional_team_description') }}</p>
-        </div>
-      </div>
-      <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item position-relative">
-          <div class="icon"><i class="bi bi-activity icon"></i></div>
-          <h4><a href="" class="row gy-4 info-wrap">{{ __('solution') }}</a></h4>
-          <p>{{ __('solution_description') }}</p>
-        </div>
-      </div>
-      <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-        <div class="service-item position-relative">
-          <div class="icon"><i class="bi bi-bar-chart-line icon"></i></div>
-          <h4><a href="" class="row gy-4 info-wrap">{{ __('result') }}</a></h4>
-          <p>{{ __('result_description') }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<style>
-#about {
-  padding: 60px 0 30px 0;
-}
-
-#about .about-img {
-  overflow: hidden;
-}
-
-#about .about-img img {
-  margin-left: -15px;
-  max-width: 100%;
-}
-
-@media (max-width: 768px) {
-  #about .about-img {
-    height: auto;
-  }
-
-  #about .about-img img {
-    margin-left: 0;
-    padding-bottom: 30px;
-  }
-}
-
-#about .content h2 {
-  color: #0c8a53;
-  font-weight: 700;
-  font-size: 36px;
-  font-family: "Raleway", sans-serif;
-}
-
-#about .content h3 {
-  color: #555;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 26px;
-  font-style: italic;
-}
-
-#about .content p {
-  line-height: 26px;
-}
-
-#about .content p:last-child {
-  margin-bottom: 0;
-}
-
-#about .content i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #50d8af;
-}
-
-#about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-#about .content ul li {
-  padding-bottom: 10px;
-}
-.btn-search-tracking {
-    background-color: #ffffff;
-    border: 2px solid #0c8a53; 
-    color: #0c8a53; 
-    font-weight: bold;
-    padding: 11px 23px;
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 18px; 
-    margin: 4px 2px; 
-    border-radius: 5px; 
-}
-</style>
-
-  <section id="about">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-lg-6 about-img">
-            <img src="assets/img/about-image.jpeg" alt="">
-          </div>
-
-          <div class="col-lg-6 content">
-            <h2>TRACKING PLATFORM</h2>
-            <h3>PT RINCA CIPTA KARYA </h3>
-
-            <ul>
-              <li><i class="bi bi-check-circle"></i> {{ __('device_1') }}</li>
-              <li><i class="bi bi-check-circle"></i> {{ __('device_2') }}</li>
-              <li><i class="bi bi-check-circle"></i> {{ __('device_3') }}</li>
-            </ul>
-
-            <a href="{{ route('dashboard.tracking') }}" class="btn-search-tracking btn btn-success"><i class="bi bi-search"></i> Tracking</a>
-          </div>
-        </div>
-
-      </div>
     </section>
 
-<section id="portfolio" class="portfolio section modern-building-1 section light-background">
-  <div class="container section-title">
-    <h2 class="text-white">{{ __('project') }}</h2>
-  </div>
-  <div class="container projects-desktop">
-    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-      <div class="row gy-4 isotope-container">
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-          <img src="assets/img/projects/1.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>PT Sun Tak Indonesia</h4>
-            <p>{{ __('project_1') }}</p>
-            <a href="assets/img/projects/1.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-          <img src="assets/img/projects/2.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Perumahan Grand Cimandala Residence</h4>
-            <p>{{ __('project_2') }}</p>
-            <a href="assets/img/projects/2.png" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-          <img src="assets/img/projects/3.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Royal Tulip Luxury Hotels</h4>
-            <p>{{ __('project_2') }}</p>
-            <a href="assets/img/projects/3.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-          <img src="assets/img/projects/4.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>PT Ultra Sakti</h4>
-            <p>{{ __('project_3') }}.</p>
-            <a href="assets/img/projects/4.png" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-          <img src="assets/img/projects/5.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Asimetri Coffe</h4>
-            <p>{{ __('project_2') }}</p>
-            <a href="assets/img/projects/5.png" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-          <img src="assets/img/projects/6.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Perumahan Cikeas River Side</h4>
-            <p>{{ __('project_2') }}</p>
-            <a href="assets/img/projects/6.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-          <img src="assets/img/projects/7.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>COZY CO-LIVING JELAMBAR</h4>
-            <p>{{ __('project_4') }}</p>
-            <a href="assets/img/projects/7.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-          <img src="assets/img/projects/8.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Pergudangan Sigma Kartika Gunung Sindur</h4>
-            <p>{{ __('project_2') }}</p>
-            <a href="assets/img/projects/8.png" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-          <img src="assets/img/projects/9.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>PT Dalya Citramandiri</h4>
-            <p>{{ __('project_5') }}</p>
-            <a href="assets/img/projects/9.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-          <img src="assets/img/projects/10.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>SDIT Kharisma Azzahra Bogor</h4>
-            <p>{{ __('project_6') }}</p>
-            <a href="assets/img/projects/10.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-          <img src="assets/img/projects/11.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>PT Electra Mobilitas Indonesia</h4>
-            <p>{{ __('project_6') }}</p>
-            <a href="assets/img/projects/11.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-          <img src="assets/img/projects/12.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>PT SiSeSa Berkah Illahi</h4>
-            <p>{{ __('project_6') }}</p>
-            <a href="assets/img/projects/12.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-          <img src="assets/img/projects/13.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>PT Ultra Sakti</h4>
-            <p>{{ __('project_7') }}</p>
-            <a href="assets/img/projects/13.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-          <img src="assets/img/projects/14.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>SMK Muhammadiyah Cariu</h4>
-            <p>{{ __('project_2') }}</p>
-            <a href="assets/img/projects/14.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-          <img src="assets/img/projects/15.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Yayasan Al Ustmani</h4>
-            <p>{{ __('project_6') }}</p>
-            <a href="assets/img/projects/15.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-          <img src="assets/img/projects/16.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Puspanita Eco Spirit Center</h4>
-            <p>{{ __('project_2') }}</p>
-            <a href="assets/img/projects/16.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-   <div class="slider-container projects-mobile" style="z-index: 1">
-        <div class="slider">
-            <div class="slide">
-                <img src="assets/img/projects/1.png" alt="">
-                <div class="description">
-                    <h3>PT Sun Tak Indonesia</h3>
-                    <p>{{ __('project_1') }}</p>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="assets/img/projects/2.png" alt="">
-                <div class="description">
-                    <h3>Perumahan Grand Cimandala Residence</h3>
-                    <p>
-                      {{ __('project_2') }}
-                    </p>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="assets/img/projects/3.png" alt="">
-                <div class="description">
-                    <h3>Royal Tulip Luxury Hotels</h3>
-                    <p>{{ __('project_2') }}</p>
-                </div>
-            </div>
-             <div class="slide">
-                <img src="assets/img/projects/4.png" alt="">
-                <div class="description">
-                    <h3>PT Ultra Sakti</h3>
-                     <p>{{ __('project_3') }}</p>
-                </div>
-            </div>
-             <div class="slide">
-                <img src="assets/img/projects/5.png" alt="">
-                <div class="description">
-                    <h3>Asimetri Coffe</h3>
-                     <p>{{ __('project_2') }}</p>
-                </div>
-            </div>
-             <div class="slide">
-                <img src="assets/img/projects/6.png" alt="">
-                <div class="description">
-                    <h3>Perumahan Cikeas River Side</h3>
-                     <p>{{ __('project_2') }}</p>
-                </div>
-            </div>
-             <div class="slide">
-                <img src="assets/img/projects/7.png" alt="">
-                <div class="description">
-                    <h3>COZY CO-LIVING JELAMBAR</h3>
-                     <p>{{ __('project_4') }}</p>
-                </div>
-            </div>
-             <div class="slide">
-                <img src="assets/img/projects/8.png" alt="">
-                <div class="description">
-                    <h3>Pergudangan Sigma Kartika Gunung Sindur</h3>
-                    <p>{{ __('project_2') }}</p>
-                </div>
-            </div>
-             <div class="slide">
-                <img src="assets/img/projects/9.png" alt="">
-                <div class="description">
-                    <h3>PT Dalya Citramandiri</h3>
-                    <p>{{ __('project_5') }}</p>
-                </div>
-            </div>
-             <div class="slide">
-                <img src="assets/img/projects/10.png" alt="">
-                <div class="description">
-                    <h3>SDIT Kharisma Azzahra Bogor</h3>
-                    <p>{{ __('project_6') }}</p>
-                </div>
-            </div>
-             <div class="slide">
-                <img src="assets/img/projects/11.png" alt="">
-                <div class="description">
-                    <h3>PT Electra Mobilitas Indonesia</h3>
-                    <p>{{ __('project_6') }}</p>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="assets/img/projects/12.png" alt="">
-                <div class="description">
-                    <h3>PT SiSeSa Berkah Illahi</h3>
-                    <p>{{ __('project_6') }}</p>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="assets/img/projects/13.png" alt="">
-                <div class="description">
-                    <h3>PT Ultra Sakti</h3>
-                    <p>{{ __('project_7') }}</p>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="assets/img/projects/14.png" alt="">
-                <div class="description">
-                    <h3>SMK Muhammadiyah Cariu</h3>
-                    <p>{{ __('project_2') }}</p>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="assets/img/projects/15.png" alt="">
-                <div class="description">
-                    <h3>Yayasan Al Ustmani</h3>
-                    <p>{{ __('project_6') }}</p>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="assets/img/projects/16.png" alt="">
-                <div class="description">
-                    <h3>Puspanita Eco Spirit Center</h3>
-                    <p>{{ __('project_2') }}</p>
+    {{-- Service Section --}}
+    <section id="service">
+        {{-- Client Section --}}
+        <div class="client rounded-top-4 bg-light">
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        @foreach([
+                            'assets/img/clients/imcp-client.png',
+                            'assets/img/clients/alva-client.png',
+                            'assets/img/clients/suntak-client.png',
+                            'assets/img/clients/sisesa-client.png',
+                            'assets/img/clients/rs-juliana-client.png',
+                            'assets/img/clients/sandimas-client.png'
+                        ] as $client)
+                            <div class="swiper-slide text-center">
+                                <img src="{{ $client }}" class="client-logo" alt="Client">
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>
-        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
-    </div>
-</section>
 
-<section id="regulasi" class="faq-2 section light-background">
-  <div class="container section-title"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-    <h2>{{ __('bussines_scope') }}</h2>
-    <p>{{ __('bussines_scope_description') }}</p>
-  </div>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div class="faq-container">
-        <div class="faq-item"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
-            <i class="faq-icon bi bi-question-circle"></i>
-            <h3 >{{ __('bussines_scope_1') }}</h3>
-            <div class="faq-content">
-              <p>
-                {!! __('bussines_scope_1_description') !!}
-              </p>
+        {{-- Main Service Section --}}
+        <div class="main-service bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <div class="icon-rounded">● Layanan Utama</div>
+                        <h2 class="fw-semibold mt-2" style="font-size: 32px">Keahlian Profesional Kami</h2>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <p class="title-main-service" style="font-size: 16px">"Tim profesional kami berlisensi dan berpengalaman dalam perencanaan arsitektur, perizinan, dan desain interior, menawarkan solusi inovatif dan berstandar tinggi untuk mewujudkan visi proyek Anda dengan hasil optimal."</p>
+                    </div>
+                </div>
             </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
-          <div class="faq-item"  data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
-            <i class="faq-icon bi bi-question-circle"></i>
-            <h3>{{ __('bussines_scope_2') }}</h3>
-            <div class="faq-content">
-              <p>
-                {!! __('bussines_scope_2_description') !!}
-              </p>
+
+            <div class="container fullscreen-container">
+                <div class="row mt-4 justify-content-center">
+                    <div class="col-12 col-md-6 mb-3">
+                        <img src="assets/img/background/service-background.png" class="image-service rounded-end-4" alt="Service">
+                    </div>
+                    <div class="col-12 col-md-6 d-flex align-items-center">
+                        <div class="row">
+                            @foreach([
+                                ['src' => 'assets/img/icons/planning-icon.png', 'title' => 'Perencanaan Tata Ruang, Bangunan, dan Industri'],
+                                ['src' => 'assets/img/icons/licenci-icon.png', 'title' => 'Perizinan Bangunan dan Industri'],
+                                ['src' => 'assets/img/icons/design-icon.png', 'title' => 'Desain Interior dan Kontraktor']
+                            ] as $item)
+                                <div class="text-center">
+                                    <div class="card d-flex flex-row align-items-center mb-1 w-100">
+                                        <img class="img-icon" src="{{ $item['src'] }}" alt="{{ $item['title'] }}">
+                                        <div class="title fw-medium" style="text-align: left;">{{ $item['title'] }}</div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
             </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
-          <div class="faq-item"  data-aos="fade-left" data-aos-delay="300" data-aos-duration="800">
-            <i class="faq-icon bi bi-question-circle"></i>
-            <h3>{{ __('bussines_scope_3') }}</h3>
-            <div class="faq-content">
-              <p>
-                {!! __('bussines_scope_3_description') !!}
-              </p>
-            </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
-          <div class="faq-item"  data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
-            <i class="faq-icon bi bi-question-circle"></i>
-            <h3>{{ __('bussines_scope_4') }}</h3>
-            <div class="faq-content">
-              <p>
-                {!! __('bussines_scope_4_description') !!}
-              </p>
-            </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+        {{-- My Service Section --}}
+        <div class="my-service bg-light pt-4">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class="icon-rounded">● Layanan Kami</div>
+                        <h3 class="fw-semibold mt-2">Solusi Terpadu Legalitas & Desain Bangunan</h3>
+                        <p class="fw-normal mt-1">Memberikan Kemudahan Perizinan dan Desain Bangunan yang Terencana dengan Teliti, Cepat, dan Sesuai Standar</p>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    @foreach([
+                        ['src' => 'assets/img/services/planning-service.png', 'title' => 'Perencanaan Tata Ruang', 'description' => 'Dengan keahlian dan pengalaman di bidang perencanaan tata ruang, bangunan, dan industri. Kami memastikan setiap proyek dirancang secara terukur dan berkelanjutan'],
+                        ['src' => 'assets/img/services/licenci-service.png', 'title' => 'Perizinan Gedung & Industri', 'description' => 'Kami membantu klien memastikan proyek bangunan dan industri mereka memenuhi semua persyaratan hukum dengan mudah & cepat'],
+                        ['src' => 'assets/img/services/design-service.png', 'title' => 'Desain Interior', 'description' => 'Kami memastikan hasil akhir yang berkualitas. Dari konsep hingga pengerjaan, kami hadir untuk memberikan solusi interior yang sesuai dengan kebutuhan dan gaya klien']
+                    ] as $item)
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card" style="height: 476px">
+                                <img src="{{ $item['src'] }}" class="card-img-top" alt="{{ $item['title'] }}">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bolder">{{ $item['title'] }}</h5>
+                                    <p class="card-text">{{ $item['description'] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Reason Section --}}
+    <section id="reason" class="pt-4">
+        <div class="container">
+            <div class="row d-flex flex-col align-items-center">
+                <div class="col-12 col-md-5">
+                    <p class="title-background">● Alasan Memilih Kami</p>
+                    <h4 class="mt-1 text-white fw-semibold" style="font-size: 36px">Mengapa PT Rinca Cipta Karya?</h4>
+                    <p class="mt-1 text-white fw-light">Komitmen kami terhadap keunggulan menjadikan kami pilihan terbaik untuk konsultasi perizinan dan bangunan</p>
+                </div>
+                <div class="col-12 col-md-7">
+                    @foreach ([
+                         ['src' => 'assets/img/reasons/1-reason.png', 'title' => 'Tim Profesional', 'description' => 'Tim berpengalaman kami memastikan semua kebutuhan proyek Anda terpenuhi dengan teliti dan cepat'],
+                         ['src' => 'assets/img/reasons/2-reason.png', 'title' => 'Solusi Terbaik', 'description' => 'Kami tidak hanya menawarkan konsultasi; kami memberikan solusi yang disesuaikan dengan kebutuhan unik setiap klien'],
+                         ['src' => 'assets/img/reasons/3-reason.png', 'title' => 'Hasil Memuaskan', 'description' => 'Hasil berkualitas dan handal dengan harga yang kompetitif']
+                    ] as $index => $item)
+                        <div class="row mb-4 {{ $index === 1 ? 'ms-md-5 justify-content-end' : '' }}">
+                            <div class="col-9 col-md-5">
+                                <img src="{{ $item['src'] }}" alt="{{ $item['title'] }}" class="w-100 mb-4">
+                            </div>
+                            <div class="col-12 col-md-7 d-flex flex-row align-items-end {{ $index === 1 ? 'text-end text-md-start' : '' }}">
+                                <div>
+                                    <h4 class="text-white title fw-bold">{{ $item['title'] }}</h4>
+                                    <p class="text-white fw-light description">{{ $item['description'] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Service Area Section --}}
+    <section id="service-area" class="mt-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 text-center">
+                    <p class="title-background m-auto">● Bidang Layanan</p>
+                    <h3 class="fw-semibold text-white mt-3">Bidang Layanan Kami</h3>
+                    <p class="fw-light text-white mt-3">Kami menawarkan berbagai layanan konsultasi yang mencakup bidang konstruksi dan non-konstruksi untuk mendukung kegiatan operasional</p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                {{-- Konsultasi Konstruksi --}}
+                <div class="col-12 col-md-6">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="num-rounded fw-bold me-2">01</div>
+                        <h4 class="text-white fw-semibold" style="font-size: 20px">Konsultasi Konstruksi</h4>
+                    </div>
+                    <div class="menu-list">
+                        <div class="d-none d-md-flex w-100">
+                            <ul class="menu-column">
+                                @foreach (['Arsitektur', 'Sipil', 'Mekanical', 'Elektrikal', 'Tata Lingkungan'] as $item)
+                                    <li>{{ $item }}</li>
+                                @endforeach
+                            </ul>
+                            <ul class="menu-column">
+                                @foreach (['Jasa Survey', 'Jasa Analisis Engineering', 'Jasa Inspeksi Teknis', 'Jasa Manajemen Proyek', 'Jasa Engineering Terpadu'] as $item)
+                                    <li>{{ $item }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        <div class="d-block d-md-none w-100">
+                            <ul class="menu-column">
+                                @foreach (['Arsitektur', 'Sipil', 'Mekanical', 'Elektrikal', 'Tata Lingkungan', 'Jasa Survey', 'Jasa Analisis Engineering', 'Jasa Inspeksi Teknis', 'Jasa Manajemen Proyek', 'Jasa Engineering Terpadu'] as $item)
+                                    <li>{{ $item }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3 mt-md-5">
+                    <img src="assets/img/services/1-service-area.png" alt="Konsultasi Konstruksi" class="w-100">
+                </div>
+                {{-- Konsultasi Perizinan Konstruksi --}}
+                <div class="col-md-5 image-layout d-none d-md-block">
+                    <img src="assets/img/services/2-service-area.png" alt="Konsultasi Konstruksi" class="w-100">
+                </div>
+                <div class="col-12 col-md-7 mt-3">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="num-rounded fw-bold me-2">02</div>
+                        <h4 class="text-white fw-semibold" style="font-size: 20px">Konsultasi Perizinan Konstruksi</h4>
+                    </div>
+                    <div class="menu-list" >
+                        <div class="d-none d-md-flex w-100">
+                            <ul class="menu-column">
+                                @foreach (['Persetujuan Bangunan Gedung (PBG/IMB)', 'Sertifikat Laik Fungsi (SLF)', 'Dokumen Lingkungan (SPPL/ UKL-UPL/ Amdal)', 'Analisis Dampak Lalu Lintas (Andalalin)', 'SLO Lingkungan (B3/IPAL)'] as $item)
+                                    <li>{{ $item }}</li>
+                                @endforeach
+                            </ul>
+                            <ul class="menu-column">
+                                @foreach (['Siteplan', 'Keterangan Rencana Kota/ Kabupaten', 'Kesesuaian Kegiatan Pemanfaatan Ruang (KKPR)', 'Surat Izin Pengambilan Air Tanah (SIPA)'] as $item)
+                                    <li>{{ $item }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        <div class="d-block d-md-none w-100">
+                            <ul class="menu-column">
+                                @foreach (['Persetujuan Bangunan Gedung (PBG/IMB)', 'Sertifikat Laik Fungsi (SLF)', 'Dokumen Lingkungan (SPPL/ UKL-UPL/ Amdal)', 'Analisis Dampak Lalu Lintas (Andalalin)', 'SLO Lingkungan (B3/IPAL)', 'Siteplan', 'Keterangan Rencana Kota/ Kabupaten', 'Kesesuaian Kegiatan Pemanfaatan Ruang (KKPR)', 'Surat Izin Pengambilan Air Tanah (SIPA)'] as $item)
+                                    <li>{{ $item }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 d-md-none">
+                    <img src="assets/img/services/2-service-area.png" alt="Konsultasi Konstruksi" class="w-100">
+                </div>
+
+                {{-- Konsultasi & Kontraktor Desain Interior --}}
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="d-flex mt-2 flex-row align-items-center">
+                        <div class="num-rounded fw-bold me-2">03</div>
+                        <h4 class="text-white fw-semibold" style="font-size: 20px">Konsultasi & Kontraktor Desain Interior</h4>
+                    </div>
+                    <p class="mt-3 text-white fw-light sub-title">Interior Design & Contractor Services</p>
+                    <img src="assets/img/services/3-service-area.png" alt="Konsultasi & Kontraktor Desain Interior" class="w-100">
+                </div>
+                {{-- Pengembangan Lahan, Kawasan, & Properti --}}
+                <div class="col-12 col-md-6 mt-3">
+                    <img src="assets/img/services/4-service-area.png" alt="Pengembangan Lahan, Kawasan, & Properti" class="w-100 d-none d-md-block">
+                    <div class="d-flex mt-2 flex-row align-items-center">
+                        <div class="num-rounded fw-bold me-2">04</div>
+                        <h4 class="text-white fw-semibold" style="font-size: 20px">Pengembangan Lahan, Kawasan, & Properti</h4>
+                    </div>
+                    <p class="mt-3 text-white fw-light sub-title">Land, Estate, & Property Development Services</p>
+                    <img src="assets/img/services/4-service-area.png" alt="Konsultasi & Kontraktor Desain Interior" class="w-100 d-md-none">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Testimonial Section --}}
+    <section id="testimonial" class="mt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="title-background m-auto">● Testimoni Klien</p>
+                    <h3 class="fw-semibold text-white mt-3">Apa Kata Mereka Tentang Kami?</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="swiper testimonial-swiper">
+                <div class="swiper-wrapper">
+                    @foreach ([1,2,3,4,5,6,7,8,9,10] as $item)
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="user-profile">
+                                    <img src="assets/img/testimonial-avatar.png" alt="Andi S." class="profile-image">
+                                    <div>
+                                        <div class="user-name">Andi S.</div>
+                                        <div class="star-rating">
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bx-star'></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Saya sangat puas dengan pelayanan yang diberikan oleh tim konsultan ini. Semua proses perizinan bangunan selesai dengan cepat dan tanpa hambatan. Mereka benar-benar memahami setiap detail prosedur, sehingga saya merasa tenang dan tidak perlu khawatir. Terima kasih!"
+                                </p>
+                                <div class="quote-marks"><i class='bx bxs-quote-alt-right'></i></div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+
+                <div class="row mt-5 justify-content-center d-none d-md-block">
+                    <div class="col-12 text-center">
+                        <div class="swiper-button-prev navigation-rounded me-4">
+                            <i class='bx bx-left-arrow-alt'></i>
+                        </div>
+                        <div class="swiper-button-next navigation-rounded">
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 @endsection
 
 @push('after-script')
-    <script>
-      let slideIndex = 0;
-      const slides = document.querySelectorAll('.slide');
-      const totalSlides = slides.length;
-      const slidesToShow = 3;
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            loop: true,
+            speed: 2000,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            allowTouchMove: false,
+            breakpoints: {
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 5 }
+            }
+        });
+    });
 
-      function showSlides() {
-          const slider = document.querySelector('.slider');
-          const slideWidth = slider.clientWidth / slidesToShow;
-          slider.style.transform = `translateX(${-slideWidth * slideIndex}px)`;
-      }
+    document.addEventListener('DOMContentLoaded', function() {
+        const testimonialSwiper = new Swiper(".testimonial-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            allowTouchMove: true,
+            speed: 3000,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            }
+        });
 
-      function changeSlide(n) {
-          slideIndex += n;
-          if (slideIndex >= totalSlides) {
-              slideIndex = 0;
-          }
-          if (slideIndex < 0) {
-              slideIndex = totalSlides - 1;
-          }
-          showSlides();
-      }
+        const swiperContainer = document.querySelector('.testimonial-swiper');
+        swiperContainer.addEventListener('mouseenter', () => {
+            testimonialSwiper.autoplay.stop();
+        });
+        swiperContainer.addEventListener('mouseleave', () => {
+            testimonialSwiper.autoplay.start();
+        });
+    });
 
-      function autoSlide() {
-          changeSlide(1);
-          setTimeout(autoSlide, 3000);
-      }
-
-      document.addEventListener('DOMContentLoaded', () => {
-          showSlides();
-          autoSlide();
-      });
-    </script>
+</script>
 @endpush
